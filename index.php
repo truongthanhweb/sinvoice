@@ -122,7 +122,7 @@ $resultproducts = $conn->query($sql);
     <div class='container'>
       <div class='row'>
         <div class='col-md-12'>
-          
+
 
           <!-- </div> -->
         </div>
@@ -281,1188 +281,1161 @@ $resultproducts = $conn->query($sql);
             </div>
           </div>
         <?php endwhile ?>
-        
+
       </div>
-        <div class='row'>
-          <div class='col-md-12'>
-            <div class='section-title text-center'>
-              <h3 class='color-warning subtitle'>
-                PHÍ KHỞI TẠO BAN ĐẦU: 500.000đ/MST
-              </h3>
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class='section-title text-center'>
+            <h3 class='color-warning subtitle'>
+              PHÍ KHỞI TẠO BAN ĐẦU: 500.000đ/MST
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section Ưu điểm -->
+  <div class='service-area section-big section' id='service'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-12 text-center'>
+          <div class='section-title'>
+            <h2>Ưu điểm của Hóa đơn điện tử S-Invoice</h2>
+            <p>Hóa đơn điện tử S-Invoice là sự lựa chọn hàng đầu của hầu hết các doanh nghiệp/tổ chức.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='row' style='width: 85%; margin: 0 auto'>
+        <div class='home-services'>
+          <div class='col-md-4 col-sm-6 col-xs-12'>
+            <div class='ms-icon-feature'>
+              <div class='ms-icon-feature-icon'>
+                <span class='ms-icon ms-icon-lg'>
+                  <i class='zmdi zmdi-star'></i>
+                </span>
+              </div>
+              <div class='ms-icon-feature-content'>
+                <h2 class='subtitle'>
+                  <strong>Thương hiệu uy tín</strong>
+                </h2>
+                <p style='text-align:center'>Viettel là Tập đoàn Viễn thông và Công nghệ thông tin lớn nhất Việt Nam, cam kết đồng hành lâu dài cùng doanh nghiệp.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6 col-xs-12'>
+            <div class='ms-icon-feature'>
+              <div class='ms-icon-feature-icon'>
+                <span class='ms-icon ms-icon-lg'>
+                  <i class='zmdi zmdi-dns'></i>
+                </span>
+              </div>
+              <div class='ms-icon-feature-content'>
+                <h2 class='subtitle'>
+                  <strong>Hạ tầng mạng lớn, bảo mật</strong>
+                </h2>
+                <p style='text-align:center'>Doanh nghiệp có thể phát hành hàng triệu hóa đơn/ngày, hệ thống S-Invoice sử dụng công nghệ bảo mật nhiều lớp, an toàn tuyệt đối...</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4 col-sm-6 col-xs-12'>
+            <div class='ms-icon-feature'>
+              <div class='ms-icon-feature-icon'>
+                <span class='ms-icon ms-icon-lg'>
+                  <i class='zmdi zmdi-time-restore'></i>
+                </span>
+              </div>
+              <div class='ms-icon-feature-content'>
+                <h2 class='subtitle'>
+                  <strong>Triển khai nhanh, chất lượng</strong>
+                </h2>
+                <p style='text-align:center'>Khởi tạo tài khoản cho Doanh nghiệp ngay sau khi ký hợp đồng. Viettel có các Trung tâm CNTT trên khắp 63 tỉnh/Tp, sẵn sàng triển khai, tích hợp khi có yêu cầu, hỗ trợ 24/7.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='row' style='width: 75%; margin: 25px auto'>
+        <div class='home-services'>
+          <div class='col-md-6 col-sm-6 col-xs-12'>
+            <div class='ms-icon-feature'>
+              <div class='ms-icon-feature-icon'>
+                <span class='ms-icon ms-icon-lg'>
+                  <i class='zmdi zmdi-sun'></i>
+                </span>
+              </div>
+              <div class='ms-icon-feature-content'>
+                <h2 class='subtitle'>
+                  <strong>Hệ thống thông minh, linh hoạt</strong>
+                </h2>
+                <p style='text-align:center'>Doanh nghiệp có thể mở rộng phù hợp với nhiều loại hóa đơn đặc thù; đáp ứng da dạng các loại hình Doanh nghiệp từ nhỏ đến lớn. Khả năng tích hợp với đa dạng các phần mềm kế toán, bán hàng, quản lý doanh nghiệp.</p>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-6 col-sm-6 col-xs-12'>
+            <div class='ms-icon-feature'>
+              <div class='ms-icon-feature-icon'>
+                <span class='ms-icon ms-icon-lg'>
+                  <i class='zmdi zmdi-widgets'></i>
+                </span>
+              </div>
+              <div class='ms-icon-feature-content'>
+                <h2 class='subtitle'>
+                  <strong>Sử dụng đồng bộ nhiều dịch vụ</strong>
+                </h2>
+                <p style='text-align:center'>Doanh nghiệp có cơ hội dùng nhiều dịch vụ đồng bộ trên hạ tầng của Viettel như: Chữ ký số, Tin nhắn thương hiệu, Email server, <a href='https://www.mysign.vn/' target='_blank' title='Chữ ký số từ xa MYSIGN'>MYSIGN</a>...</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Section Ưu điểm -->
-    <div class='service-area section-big section' id='service'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-md-12 text-center'>
-            <div class='section-title'>
-              <h2>Ưu điểm của Hóa đơn điện tử S-Invoice</h2>
-              <p>Hóa đơn điện tử S-Invoice là sự lựa chọn hàng đầu của hầu hết các doanh nghiệp/tổ chức.
-              </p>
-            </div>
+  </div>
+  <!-- Section Liên hệ -->
+  <div class='contact-area section-big section' id='contact'>
+    <div class='container' id='contact'>
+      <div class='row'>
+        <div class='col-md-12 text-center'>
+          <div class='section-title'>
+            <h2>Liên hệ</h2>
+            <p>
+              Vui lòng để lại thông tin, Nhân viên Viettel sẽ liên hệ quý khách trong thời gian sớm nhất!
+            </p>
           </div>
         </div>
-        <div class='row' style='width: 85%; margin: 0 auto'>
-          <div class='home-services'>
-            <div class='col-md-4 col-sm-6 col-xs-12'>
-              <div class='ms-icon-feature'>
-                <div class='ms-icon-feature-icon'>
-                  <span class='ms-icon ms-icon-lg'>
+      </div>
+      <div class='row'>
+        <div class='col-md-6 pb-20'>
+          <div class='address'>
+            <meta content='Hóa đơn điện tử S-Invoice' itemprop='name' />
+            <meta content='https://1.bp.blogspot.com/-9avPAj2Ujyg/X5BAH6ATaOI/AAAAAAAAAAU/uiUMlVvilf0rb-UId7UATvJPfroTcnrBACLcBGAsYHQ/s16000/logo.png' itemprop='image' />
+            <link href='./1.bp.blogspot.com/-9avPAj2Ujyg/X5BAH6ATaOI/AAAAAAAAAAU/uiUMlVvilf0rb-UId7UATvJPfroTcnrBACLcBGAsYHQ/s16000/logo.png' itempro='logo' />
+            <h3 class='subtitle' itemprop='brand' style='padding-left: 18px'>
+              <strong>
+                <a href='index.php' itempro='url'>Hóa đơn điện tử S-Invoice</a>
+              </strong>
+            </h3>
+            <div class='address-box clearfix'>
+              <div class='col-md-12'>
+                <p><span class='ms-icon-sm ms-icon-small'>
                     <i class='zmdi zmdi-star'></i>
-                  </span>
-                </div>
-                <div class='ms-icon-feature-content'>
-                  <h2 class='subtitle'>
-                    <strong>Thương hiệu uy tín</strong>
-                  </h2>
-                  <p style='text-align:center'>Viettel là Tập đoàn Viễn thông và Công nghệ thông tin lớn nhất Việt Nam, cam kết đồng hành lâu dài cùng doanh nghiệp.</p>
-                </div>
+                  </span> Phòng bán hàng Khách hàng doanh nghiệp - Viettel Telecom</p>
               </div>
             </div>
-            <div class='col-md-4 col-sm-6 col-xs-12'>
-              <div class='ms-icon-feature'>
-                <div class='ms-icon-feature-icon'>
-                  <span class='ms-icon ms-icon-lg'>
-                    <i class='zmdi zmdi-dns'></i>
-                  </span>
-                </div>
-                <div class='ms-icon-feature-content'>
-                  <h2 class='subtitle'>
-                    <strong>Hạ tầng mạng lớn, bảo mật</strong>
-                  </h2>
-                  <p style='text-align:center'>Doanh nghiệp có thể phát hành hàng triệu hóa đơn/ngày, hệ thống S-Invoice sử dụng công nghệ bảo mật nhiều lớp, an toàn tuyệt đối...</p>
-                </div>
+            <div class='address-box clearfix' itemprop='address'>
+              <div class='col-md-12'>
+                <p><span class='ms-icon-sm ms-icon-small'>
+                    <i class='zmdi zmdi-pin'></i>
+                  </span> 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TPHCM</p>
               </div>
             </div>
-            <div class='col-md-4 col-sm-6 col-xs-12'>
-              <div class='ms-icon-feature'>
-                <div class='ms-icon-feature-icon'>
-                  <span class='ms-icon ms-icon-lg'>
-                    <i class='zmdi zmdi-time-restore'></i>
-                  </span>
-                </div>
-                <div class='ms-icon-feature-content'>
-                  <h2 class='subtitle'>
-                    <strong>Triển khai nhanh, chất lượng</strong>
-                  </h2>
-                  <p style='text-align:center'>Khởi tạo tài khoản cho Doanh nghiệp ngay sau khi ký hợp đồng. Viettel có các Trung tâm CNTT trên khắp 63 tỉnh/Tp, sẵn sàng triển khai, tích hợp khi có yêu cầu, hỗ trợ 24/7.</p>
-                </div>
+            <div class='address-box clearfix'>
+              <div class='col-md-6' itemprop='telephone'>
+                <p><span class='ms-icon-sm ms-icon-small'>
+                    <i class='zmdi zmdi-phone'></i>
+                  </span> 0866 531 668</p>
+              </div>
+              <div class='col-md-6' itemprop='email'>
+                <p><span class='ms-icon-sm ms-icon-small'>
+                    <i class='zmdi zmdi-email'></i>
+                  </span><img alt='Mail Hóa đơn điện tử S-Invoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIao1FN-yADRnxnc5FrlqXD2TVjqOw3L-CHKqgMov/w200-h20/hoadondientu-at-sinvoice-vn.png' title='Mail Hóa đơn điện tử S-Invoice' width='80%' /></p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class='row' style='width: 75%; margin: 25px auto'>
-          <div class='home-services'>
-            <div class='col-md-6 col-sm-6 col-xs-12'>
-              <div class='ms-icon-feature'>
-                <div class='ms-icon-feature-icon'>
-                  <span class='ms-icon ms-icon-lg'>
-                    <i class='zmdi zmdi-sun'></i>
-                  </span>
-                </div>
-                <div class='ms-icon-feature-content'>
-                  <h2 class='subtitle'>
-                    <strong>Hệ thống thông minh, linh hoạt</strong>
-                  </h2>
-                  <p style='text-align:center'>Doanh nghiệp có thể mở rộng phù hợp với nhiều loại hóa đơn đặc thù; đáp ứng da dạng các loại hình Doanh nghiệp từ nhỏ đến lớn. Khả năng tích hợp với đa dạng các phần mềm kế toán, bán hàng, quản lý doanh nghiệp.</p>
-                </div>
+            <div class='address-box clearfix text-center'>
+              <div class='col-md-12'>
+                <img alt='QR-Zalo Sinvoice'
+                  src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl3rMn8bGB1dyK73p1voXoheRsPb9_mD_aI6t7FRp/s320/zalo-sinvoice-qr.png'
+                  style="max-width: 200px; height: auto;" />
               </div>
             </div>
-            <div class='col-md-6 col-sm-6 col-xs-12'>
-              <div class='ms-icon-feature'>
-                <div class='ms-icon-feature-icon'>
-                  <span class='ms-icon ms-icon-lg'>
-                    <i class='zmdi zmdi-widgets'></i>
-                  </span>
-                </div>
-                <div class='ms-icon-feature-content'>
-                  <h2 class='subtitle'>
-                    <strong>Sử dụng đồng bộ nhiều dịch vụ</strong>
-                  </h2>
-                  <p style='text-align:center'>Doanh nghiệp có cơ hội dùng nhiều dịch vụ đồng bộ trên hạ tầng của Viettel như: Chữ ký số, Tin nhắn thương hiệu, Email server, <a href='https://www.mysign.vn/' target='_blank' title='Chữ ký số từ xa MYSIGN'>MYSIGN</a>...</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section Liên hệ -->
-    <div class='contact-area section-big section' id='contact'>
-      <div class='container' id='contact'>
-        <div class='row'>
-          <div class='col-md-12 text-center'>
-            <div class='section-title'>
-              <h2>Liên hệ</h2>
-              <p>
-                Vui lòng để lại thông tin, Nhân viên Viettel sẽ liên hệ quý khách trong thời gian sớm nhất!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-md-6 pb-20'>
-            <div class='address'>
-              <meta content='Hóa đơn điện tử S-Invoice' itemprop='name' />
-              <meta content='https://1.bp.blogspot.com/-9avPAj2Ujyg/X5BAH6ATaOI/AAAAAAAAAAU/uiUMlVvilf0rb-UId7UATvJPfroTcnrBACLcBGAsYHQ/s16000/logo.png' itemprop='image' />
-              <link href='./1.bp.blogspot.com/-9avPAj2Ujyg/X5BAH6ATaOI/AAAAAAAAAAU/uiUMlVvilf0rb-UId7UATvJPfroTcnrBACLcBGAsYHQ/s16000/logo.png' itempro='logo' />
-              <h3 class='subtitle' itemprop='brand' style='padding-left: 18px'>
-                <strong>
-                  <a href='index.php' itempro='url'>Hóa đơn điện tử S-Invoice</a>
-                </strong>
-              </h3>
-              <div class='address-box clearfix'>
-                <div class='col-md-12'>
-                  <p><span class='ms-icon-sm ms-icon-small'>
-                      <i class='zmdi zmdi-star'></i>
-                    </span> Phòng bán hàng Khách hàng doanh nghiệp - Viettel Telecom</p>
-                </div>
-              </div>
-              <div class='address-box clearfix' itemprop='address'>
-                <div class='col-md-12'>
-                  <p><span class='ms-icon-sm ms-icon-small'>
-                      <i class='zmdi zmdi-pin'></i>
-                    </span> 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TPHCM</p>
-                </div>
-              </div>
-              <div class='address-box clearfix'>
-                <div class='col-md-6' itemprop='telephone'>
-                  <p><span class='ms-icon-sm ms-icon-small'>
-                      <i class='zmdi zmdi-phone'></i>
-                    </span> 0866 531 668</p>
-                </div>
-                <div class='col-md-6' itemprop='email'>
-                  <p><span class='ms-icon-sm ms-icon-small'>
-                      <i class='zmdi zmdi-email'></i>
-                    </span><img alt='Mail Hóa đơn điện tử S-Invoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIao1FN-yADRnxnc5FrlqXD2TVjqOw3L-CHKqgMov/w200-h20/hoadondientu-at-sinvoice-vn.png' title='Mail Hóa đơn điện tử S-Invoice' width='80%' /></p>
-                </div>
-              </div>
-              <div class='address-box clearfix'>
-                <div class='col-md-6'>
-                  <img alt='QR-Zalo Sinvoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl3rMn8bGB1dyK73p1voXoheRsPb9_mD_aI6t7FRp/s320/zalo-sinvoice-qr.png' />
-                </div>
-                <div class='col-md-6'>
-                  <img alt='QR-Messenger Sinvoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfvf7e4yGnbu2n0wlkSHeba3bG3PINdC435qlYSSy/s300/ma-qr-messenger.png' />
-                </div>
-              </div>
-              <div class='address-box clearfix'>
-                <div class='col-md-12 noiDungHoTro' style='text-align:center'>
-                  <p class='level hidden'>Liên hệ hỗ trợ</p>
-                  <a class='btn' data-target='#form-order' data-toggle='modal' href='#' style='text-align: center'>Hoặc Để lại thông tin</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='col-md-6 pb-20'>
-            <div class='address'>
-              <div class='address-box clearfix'>
-                <iframe allowfullscreen='' aria-hidden='false' frameborder='0' height='300' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4367362294784!2d106.6801643!3d10.777823999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbdcb91c223%3A0x3b59a40d30fa03fb!2sS-Invoice!5e0!3m2!1svi!2s!4v1689739875552!5m2!1svi!2s' style='border:0;' tabindex='0' title='GG maps' width='600'></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Section Why choose us (Không hiển thị) -->
-    <div class='why-choose-area section-big no-items section' id='why-choose'>
+            <div class='address-box clearfix'>
+              <div class='col-md-12 noiDungHoTro' style='text-align:center'>
+                <p class='level hidden'>Liên hệ hỗ trợ</p>
+                <a class='btn' data-target='#form-order' data-toggle='modal' href='#' style='text-align: center'>Hoặc Để lại thông tin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col-md-6 pb-20'>
+          <div class='address'>
+            <div class='address-box clearfix'>
+              <iframe allowfullscreen='' aria-hidden='false' frameborder='0' height='300' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4367362294784!2d106.6801643!3d10.777823999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbdcb91c223%3A0x3b59a40d30fa03fb!2sS-Invoice!5e0!3m2!1svi!2s!4v1689739875552!5m2!1svi!2s' style='border:0;' tabindex='0' title='GG maps' width='600'></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Section Nhận mail báo giá (Không hiển thị) -->
-    <div class='subscribe-area section-big no-items section' id='subscribe'>
-    </div>
-    <!-- Section Danh sách KH (Không hiển thị) -->
-    <div class='client-area section-big no-items section' id='client'>
-    </div>
+  </div>
+
+  <!-- Section Why choose us (Không hiển thị) -->
+  <div class='why-choose-area section-big no-items section' id='why-choose'>
+  </div>
+  <!-- Section Nhận mail báo giá (Không hiển thị) -->
+  <div class='subscribe-area section-big no-items section' id='subscribe'>
+  </div>
+  <!-- Section Danh sách KH (Không hiển thị) -->
+  <div class='client-area section-big no-items section' id='client'>
+  </div>
+  <div class=''>
     <div class=''>
-      <div class=''>
-        <!-- Section menu Main-1 -->
-        <!-- Section BlogSearch và Tiêu điểm -->
-        <!-- Section Sidebar 2-->
-        <!-- Section Main-2 -->
-      </div>
+      <!-- Section menu Main-1 -->
+      <!-- Section BlogSearch và Tiêu điểm -->
+      <!-- Section Sidebar 2-->
+      <!-- Section Main-2 -->
     </div>
-    <!-- Section Footer -->
-    <footer class='footer-area section' id='footer' name='Chân trang'>
-      <div class='container'>
-        <footer class='footer'>
-          <div class='container'>
-            <div class='foot-contact'>
-              <div class='title_footer'>Liên hệ</div>
-              <ul class='hot_line'>
-                <li>
-                  <a href='https://www.sinvoice.com.vn/' target='_blank'>Hóa đơn điện tử S-Invoice</a>
-                </li>
-                <li>
-                  <p class='email'>Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM</p>
-                </li>
-                <li>
-                  <p class='email'>Hotline bán hàng: 0866531668</p>
-                </li>
-                <li>
-                  <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
-                </li>
-                <li>
-                  <p class='email'>eMail: <img alt='Mail Hóa đơn điện tử S-Invoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8qpGLee4LWMcheXSMhfJ6aoZ_PA2rsvHKCWX3L3T/s320/hoadondientu-at-sinvoice-vn.png-trang.png' title='Mail Hóa đơn điện tử S-Invoice' width='45%' /></p>
-                </li>
-                <li>
-                  <p class='email'>Website: <a href='index.php'>www.sinvoice.vn</a>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class='foot-links'>
-              <div class='title_footer'>Hỗ trợ</div>
-              <ul class='hot_line'>
-                <li>
-                  <a class='email' href='p/thu-tuc-dang-ky-sinvoice.php'>Thủ tục đăng ký</a>
-                </li>
-                <li>
-                  <a class='email' href='p/van-ban-phap-ly-sinvoice.php'>Văn bản pháp lý</a>
-                </li>
-                <li>
-                  <a class='email' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php'>Hướng dẫn sử dụng</a>
-                </li>
-                <li>
-                  <a class='email' href='p/cau-hoi-thuong-gap-sinvoice.php'>Câu hỏi thường gặp</a>
-                </li>
-                <li>
-                  <a class='email' href='2020/11/dieu-khoan-su-dung-dich-vu-hoa-don-dien-tu.php'>Điều khoản sử dụng</a>
-                </li>
-                <li>
-                  <a class='email' href='p/dang-ky-lam-dai-ly.php'>Đăng ký làm đại lý</a>
-                </li>
-              </ul>
-            </div>
-            <div class='foot-social footer_icon'>
-              <a class='email' href='https://www.viettelsolutions.com.vn/' style='text-align:left; display: block; padding-bottom:10px' target='_blank' title='Viettel Solutions'><img alt='Hóa đơn điện tử S-Invoice' height='88' loading='lazy' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhed6RoFz3j8A-J2RGbkolkTfxuGV4ioJUI-J6nOtW/s320/Viettel-Master-Vietnamese-Logo-RGB-vientrang-v2.png' width='146' /></a>
-              <p class='email'>Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội. Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007.</p>
-              <ul class='social-links'>
-                <li>
-                  <a href='https://www.facebook.com/vietteltelecom' rel='nofollow noopener' target='_blank'>
-                    <i class='fa fa-facebook'></i>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    <i class='fa fa-twitter'></i>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    <i class='fa fa-google-plus'></i>
-                  </a>
-                </li>
-                <li>
-                  <a href='https://www.youtube.com/@viettelchamsockhachhang8012' rel='nofollow noopener' target='_blank'>
-                    <i class='fa fa-youtube'></i>
-                  </a>
-                </li>
-                <li>
-                  <a href='#'>
-                    <i class='fa fa-pinterest'></i>
-                  </a>
-                </li>
-              </ul>
-              <p class='email'>&#169;S-Invoice 2018. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
-      </div>
+  </div>
+  <!-- Section Footer -->
+  <footer class='footer-area section' id='footer' name='Chân trang'>
+        <div class='container'>
+            <footer class='footer'>
+                <div class='container'>
+                    <div class='foot-contact'>
+                        <div class='title_footer'>Liên hệ</div>
+                        <ul class='hot_line'>
+                            <li>
+                                <a href='https://www.sinvoice.com.vn/' target='_blank'>Hóa đơn điện tử S-Invoice</a>
+                            </li>
+                            <li>
+                                <p class='email'>Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM</p>
+                            </li>
+                            <li>
+                                <p class='email'>Hotline bán hàng: 0866531668</p>
+                            </li>
+                            <li>
+                                <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
+                            </li>
+                            <li>
+                                <p class='email'>eMail: <img alt='Mail Hóa đơn điện tử S-Invoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8qpGLee4LWMcheXSMhfJ6aoZ_PA2rsvHKCWX3L3T/s320/hoadondientu-at-sinvoice-vn.png-trang.png' title='Mail Hóa đơn điện tử S-Invoice' width='45%' /></p>
+                            </li>
+                            <li>
+                                <p class='email'>Website: <a href='index.php'>www.sinvoice.vn</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='foot-links'>
+                        <div class='title_footer'>Hỗ trợ</div>
+                        <ul class='hot_line'>
+                            <li>
+                                <a class='email' href='p/thu-tuc-dang-ky-sinvoice.php'>Thủ tục đăng ký</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/van-ban-phap-ly-sinvoice.php'>Văn bản pháp lý</a>
+                            </li>
+                            <li>
+                                <a class='email' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php'>Hướng dẫn sử dụng</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/cau-hoi-thuong-gap-sinvoice.php'>Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a class='email' href='2020/11/dieu-khoan-su-dung-dich-vu-hoa-don-dien-tu.php'>Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/dang-ky-lam-dai-ly.php'>Đăng ký làm đại lý</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='foot-social footer_icon'>
+                        <a class='email' href='https://www.viettelsolutions.com.vn/' style='text-align:left; display: block; padding-bottom:10px' target='_blank' title='Viettel Solutions'><img alt='Hóa đơn điện tử S-Invoice' height='88' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrfdjAWfdT1uVfw9TIVbBqN8lyozwdYzLAYDSledSGsK58J7ywRNMYvqctVSNOicjzj4vQn4JxecNnqMAuPmbdZ3gSYOpCopKt73TS_tIhLEIh2mHEJdKhKdidnALynefVrD3v4vhNDFDGZK_7rib7_Ut_99mywjxI30vokNRefU8V5cbUKkufvckf5Q/s1600/logo3.png' width='146' /></a>
+                        <p class='email'>Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội. Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007.</p>
+                        <p class='email'>&#169;S-Invoice 2018. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </footer>
-    <div class='modal fade' id='form-order' role='dialog' tabindex='-1'>
-      <div class='modal-dialog' role='document'>
-        <form id="registerForm" action="modules/contracts.php" method="POST" class="modal-content">
-          <div class='modal-header'>
-            <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-              <span aria-hidden='true'>&times;</span>
-            </button>
-            <h4 class='modal-title'>Đăng ký</h4>
-          </div>
-          <div class='modal-body'>
-            <div class='form-row'>
-              <div class='form-group col-md-12'>
-                <p><em> Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất! </em></p>
-              </div>
-            </div>
-            <div class='form-row'>
-              <div class='form-group col-md-6'>
-                <label for='for-tax'>
-                  <i aria-hidden='true' class='fa fa-print'></i> MST</label>
-                <input class='form-control' id='for-tax' name='tax_code' pattern='^\d{10,13}$' placeholder='Nhập mã số thuế...' required='' type='text' value='' />
-              </div>
-              <div class='form-group col-md-6'>
-                <label for='for-name'>
-                  <i aria-hidden='true' class='fa fa-user'></i> Họ tên</label>
-                <input class='form-control' id='for-name' name='username' placeholder='Nhập tên của bạn...' required='' type='text' value='' />
-              </div>
-            </div>
-            <div class='form-row'>
-              <div class='form-group col-md-6'>
-                <label for='for-phone'>
-                  <i aria-hidden='true' class='fa fa-phone'></i> Điện thoại</label>
-                <input class='form-control' id='for-phone' name='phone' pattern='^\d{10}$' placeholder='Nhập số điện thoại...' required='' type='text' value='' />
-              </div>
-              <div class='form-group col-md-6'>
-                <label for='for-email'>
-                  <i aria-hidden='true' class='fa fa-envelope'></i> Email</label>
-                <input class='form-control' id='for-email' name='email' pattern='[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?' placeholder='Nhập địa chỉ email...' required='' type='email' value='' />
-              </div>
+  <div class='modal fade' id='form-order' role='dialog' tabindex='-1'>
+    <div class='modal-dialog' role='document'>
+      <form id="registerForm" action="modules/contracts.php" method="POST" class="modal-content">
+        <div class='modal-header'>
+          <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
+          <h4 class='modal-title'>Đăng ký</h4>
+        </div>
+        <div class='modal-body'>
+          <div class='form-row'>
+            <div class='form-group col-md-12'>
+              <p><em> Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất! </em></p>
             </div>
           </div>
-          <div class='modal-footer'>
-            <button class='btn btn-default' data-dismiss='modal' type='button'>Đóng</button>
-            <button class='btn btn-primary' type='submit'>Đăng ký</button>
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-tax'>
+                <i aria-hidden='true' class='fa fa-print'></i> MST</label>
+              <input class='form-control' id='for-tax' name='tax_code' pattern='^\d{10,13}$' placeholder='Nhập mã số thuế...' required='' type='text' value='' />
+            </div>
+            <div class='form-group col-md-6'>
+              <label for='for-name'>
+                <i aria-hidden='true' class='fa fa-user'></i> Họ tên</label>
+              <input class='form-control' id='for-name' name='username' placeholder='Nhập tên của bạn...' required='' type='text' value='' />
+            </div>
           </div>
-        </form>
-      </div>
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-phone'>
+                <i aria-hidden='true' class='fa fa-phone'></i> Điện thoại</label>
+              <input class='form-control' id='for-phone' name='phone' pattern='^\d{10}$' placeholder='Nhập số điện thoại...' required='' type='text' value='' />
+            </div>
+            <div class='form-group col-md-6'>
+              <label for='for-email'>
+                <i aria-hidden='true' class='fa fa-envelope'></i> Email</label>
+              <input class='form-control' id='for-email' name='email' pattern='[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?' placeholder='Nhập địa chỉ email...' required='' type='email' value='' />
+            </div>
+          </div>
+        </div>
+        <div class='modal-footer'>
+          <button class='btn btn-default' data-dismiss='modal' type='button'>Đóng</button>
+          <button class='btn btn-primary' type='submit'>Đăng ký</button>
+        </div>
+      </form>
     </div>
-    <iframe class='hidden' height='0' name='hidden_iframe' width='0'></iframe>
-    <script>
-      var data = {
-        view: {
-          isHomepage: "true",
-          isArchive: "",
-          isPost: "",
-          isPage: "",
-          isSearch: "",
-          isLabelSearch: "",
-          isSearchQuery: "",
-          isMultipleItems: "true",
-          isSingleItem: "",
-          isMobile: ""
-        },
-        blog: {
-          blogId: "8243747611808165490",
-          postId: "",
-          pageId: "",
-          pageName: "",
-          searchqueryescaped: "",
-          homepageUrl: "https://www.sinvoice.vn/",
-          url: "https://www.sinvoice.vn/",
-          analyticsAccountNumber: "",
-          clientid: "",
-          searchindex: 500
-        },
-        messages: {
-          home: "Trang chủ",
-          linkCopiedToClipboard: "Đã sao chép đường liên kết vào bảng nhớ tạm!",
-          share: "Chia sẻ",
-          shareheader: "Chia sẻ nội dung này qua",
-          copy: "Sao chép liên kết",
-          facebook: "Chia sẻ với Facebook",
-          twitter: "Chia sẻ với X",
-          pinterest: "Chia sẻ với Pinterest",
-          linkedin: "Chia sẻ với Linkedin",
-          email: "Gửi bài qua Email",
-          close: "Đóng"
-        }
+  </div>
+  <iframe class='hidden' height='0' name='hidden_iframe' width='0'></iframe>
+  <script>
+    var data = {
+      view: {
+        isHomepage: "true",
+        isArchive: "",
+        isPost: "",
+        isPage: "",
+        isSearch: "",
+        isLabelSearch: "",
+        isSearchQuery: "",
+        isMultipleItems: "true",
+        isSingleItem: "",
+        isMobile: ""
+      },
+      blog: {
+        blogId: "8243747611808165490",
+        postId: "",
+        pageId: "",
+        pageName: "",
+        searchqueryescaped: "",
+        homepageUrl: "https://www.sinvoice.vn/",
+        url: "https://www.sinvoice.vn/",
+        analyticsAccountNumber: "",
+        clientid: "",
+        searchindex: 500
+      },
+      messages: {
+        home: "Trang chủ",
+        linkCopiedToClipboard: "Đã sao chép đường liên kết vào bảng nhớ tạm!",
+        share: "Chia sẻ",
+        shareheader: "Chia sẻ nội dung này qua",
+        copy: "Sao chép liên kết",
+        facebook: "Chia sẻ với Facebook",
+        twitter: "Chia sẻ với X",
+        pinterest: "Chia sẻ với Pinterest",
+        linkedin: "Chia sẻ với Linkedin",
+        email: "Gửi bài qua Email",
+        close: "Đóng"
       }
-    </script>
-    <!-- //ngăn không load lại trang -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#registerForm").on("submit", function(e) {
-          e.preventDefault(); // chặn submit mặc định
+    }
+  </script>
+  <!-- //ngăn không load lại trang -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#registerForm").on("submit", function(e) {
+        e.preventDefault(); // chặn submit mặc định
 
-          $.ajax({
-            url: $(this).attr("action"),
-            type: "POST",
-            data: $(this).serialize(),
-            success: function(response) {
-              if (response.trim() === "OK") {
-                alert("✅ Đăng ký thành công!");
-                $("#registerForm")[0].reset(); // reset form
-              } else {
-                alert("❌ Đăng ký thất bại,chùng!");
-              }
-            },
-            error: function() {
-              alert("⚠️ Có lỗi xảy ra khi gửi form.");
+        $.ajax({
+          url: $(this).attr("action"),
+          type: "POST",
+          data: $(this).serialize(),
+          success: function(response) {
+            if (response.trim() === "OK") {
+              alert("✅ Đăng ký thành công!");
+              $("#registerForm")[0].reset(); // reset form
+            } else {
+              alert("❌ Đăng ký thất bại,chùng!");
             }
-          });
+          },
+          error: function() {
+            alert("⚠️ Có lỗi xảy ra khi gửi form.");
+          }
         });
       });
-    </script>
-    <script>
-      // <![CDATA[ 
-      var url = window.location.href,
-        uri = window.location.toString(),
-        rel = document.querySelector('link[rel="canonical"]').getAttribute('href'),
-        fb1 = url.substring(0, url.indexOf('?fbclid')),
-        fb2 = url.substring(0, url.indexOf('&fbclid')),
-        gi1 = url.substring(0, url.indexOf('?gidzl')),
-        gi2 = url.substring(0, url.indexOf('&gidzl')),
-        m1 = url.substring(0, url.indexOf('?m=1')),
-        m2 = url.substring(0, url.indexOf('&m=1'))
-      if ((uri.length - fb1.length) > 0) {
-        window.history.replaceState({}, document.title, fb1)
-      }
-      if ((uri.length - fb2.length) > 0) {
-        window.history.replaceState({}, document.title, fb2)
-      }
-      if ((uri.length - gi1.length) > 0) {
-        window.history.replaceState({}, document.title, gi1)
-      }
-      if ((uri.length - gi2.length) > 0) {
-        window.history.replaceState({}, document.title, gi2)
-      }
+    });
+  </script>
+  <script>
+    // <![CDATA[ 
+    var url = window.location.href,
+      uri = window.location.toString(),
+      rel = document.querySelector('link[rel="canonical"]').getAttribute('href'),
+      fb1 = url.substring(0, url.indexOf('?fbclid')),
+      fb2 = url.substring(0, url.indexOf('&fbclid')),
+      gi1 = url.substring(0, url.indexOf('?gidzl')),
+      gi2 = url.substring(0, url.indexOf('&gidzl')),
+      m1 = url.substring(0, url.indexOf('?m=1')),
+      m2 = url.substring(0, url.indexOf('&m=1'))
+    if ((uri.length - fb1.length) > 0) {
+      window.history.replaceState({}, document.title, fb1)
+    }
+    if ((uri.length - fb2.length) > 0) {
+      window.history.replaceState({}, document.title, fb2)
+    }
+    if ((uri.length - gi1.length) > 0) {
+      window.history.replaceState({}, document.title, gi1)
+    }
+    if ((uri.length - gi2.length) > 0) {
+      window.history.replaceState({}, document.title, gi2)
+    }
 
-      function appendChildHead(name, type) {
-        if (type == 'css') {
-          var fileref = document.createElement('link')
-          fileref.setAttribute('rel', 'stylesheet')
-          fileref.setAttribute('href', name)
-        } else if (type == 'js') {
-          var fileref = document.createElement('script')
-          fileref.setAttribute('type', 'text/javascript')
-          fileref.setAttribute('async', '')
-          fileref.setAttribute('src', name)
-        }
-        if (typeof fileref != 'undefined') {
-          document.getElementsByTagName('head')[0].appendChild(fileref)
-        }
+    function appendChildHead(name, type) {
+      if (type == 'css') {
+        var fileref = document.createElement('link')
+        fileref.setAttribute('rel', 'stylesheet')
+        fileref.setAttribute('href', name)
+      } else if (type == 'js') {
+        var fileref = document.createElement('script')
+        fileref.setAttribute('type', 'text/javascript')
+        fileref.setAttribute('async', '')
+        fileref.setAttribute('src', name)
       }
-
-      function appendChildBody(name, type) {
-        if (type == 'js') var src = document.createElement('script');
-        src.setAttribute('async', '');
-        src.setAttribute('src', name)
-        if (typeof src != 'undefined') document.getElementsByTagName('body')[0].appendChild(src)
+      if (typeof fileref != 'undefined') {
+        document.getElementsByTagName('head')[0].appendChild(fileref)
       }
-      window.addEventListener('load', function() {
-        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|webOS)/i) === null ||
-          window.navigator.pointerEnabled && navigator.maxTouchPoints > 1) {
-          document.documentElement.setAttribute('data-view-type', 'desktop')
-          if ((uri.length - m1.length) > 0) {
-            window.history.replaceState({}, document.title, m1)
-          }
-          if ((uri.length - m2.length) > 0) {
-            window.history.replaceState({}, document.title, m2)
-          }
-          var _a = document.querySelectorAll('a')
-          for (var i = 0; i < _a.length; i++) {
-            var _b = _a[i].getAttribute('href')
-            if (_b != null) {
-              if (_b.indexOf('?m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('?m=1')))
-              if (_b.indexOf('&m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('&m=1')))
-            }
-          }
-        } else {
-          document.documentElement.setAttribute('data-view-type', 'mobile')
-        }
-        $(window).on('scroll', function() {
-          var menu_area = $('.menu-area')
-          if ($(window).scrollTop() > 200) menu_area.addClass('sticky-menu')
-          else menu_area.removeClass('sticky-menu')
-        })
-        $(document).on('click', '.navbar-collapse.in', function(e) {
-          if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') $(this).collapse('hide')
-        })
-        $('body').scrollspy({
-          target: '.navbar-collapse',
-          offset: 195
-        })
-        $('a.smooth_scroll').on('click', function(e) {
-          e.preventDefault()
-          var anchor = $(this)
-          $('html,body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top - 50
-          }, 1000)
-        })
-        $('.portfolio').mixItUp()
-        $('.work-popup').magnificPopup({
-          type: 'image',
-          gallery: {
-            enabled: true
-          },
-          zoom: {
-            enabled: true,
-            duration: 300,
-            opener: function(element) {
-              return element.find('img')
-            }
-          }
-        })
-        $('.testimonial-list').owlCarousel({
-          lazyLoad: false,
-          pagination: false,
-          navigation: false,
-          items: 3,
-          autoPlay: true,
-          itemsDesktop: [1199, 2],
-          itemsDesktopSmall: [980, 1],
-          itemsTablet: [768, 1],
-          itemsMobile: [479, 1],
-        })
-        $('.owl-client').owlCarousel({
-          items: 5,
-          autoPlay: true,
-          itemsDesktop: [1199, 5],
-          itemsDesktopSmall: [980, 4],
-          itemsTablet: [768, 3],
-          itemsMobile: [479, 2],
-          pagination: false,
-          navigation: false,
-          autoHeight: true,
-        })
+    }
 
-        // Get the form.
-        var form = $('form[name="form_order"]'),
-          form2 = $('form[name="contact_form"]')
-        $('[data-target="#form-order"]').click(function() {
-          var name = $(this).parent('.noiDungHoTro').find('p.level').text()
-          $(form).find('.modal-title').php('Nội dung: <strong>' + name + '</strong>')
-          $(form).find('input[type=hidden]').attr('value', name)
-        })
-        // Set up an event listener for the contact form.
-        $(form).on('submit', function(e) {
-          var captcha_response = grecaptcha.getResponse()
-          if (captcha_response.length == 0) {
-            $('.error-message').php('<p style="margin-bottom:1.3rem;color:#d93025;">Vui lòng chọn hộp kiểm này nếu bạn muốn tiếp tục.</p>')
-            return false;
+    function appendChildBody(name, type) {
+      if (type == 'js') var src = document.createElement('script');
+      src.setAttribute('async', '');
+      src.setAttribute('src', name)
+      if (typeof src != 'undefined') document.getElementsByTagName('body')[0].appendChild(src)
+    }
+    window.addEventListener('load', function() {
+      if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|webOS)/i) === null ||
+        window.navigator.pointerEnabled && navigator.maxTouchPoints > 1) {
+        document.documentElement.setAttribute('data-view-type', 'desktop')
+        if ((uri.length - m1.length) > 0) {
+          window.history.replaceState({}, document.title, m1)
+        }
+        if ((uri.length - m2.length) > 0) {
+          window.history.replaceState({}, document.title, m2)
+        }
+        var _a = document.querySelectorAll('a')
+        for (var i = 0; i < _a.length; i++) {
+          var _b = _a[i].getAttribute('href')
+          if (_b != null) {
+            if (_b.indexOf('?m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('?m=1')))
+            if (_b.indexOf('&m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('&m=1')))
           }
-          alert('Yêu cầu của bạn đã được gửi đi. Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất. Trân trọng!')
-          setTimeout(function() {
-            $(form)[0].reset()
-          }, 3000)
-          $('#form-order').modal('hide')
-          return true;
-        })
-        $(form2).on('submit', function(e) {
-          alert('Yêu cầu của bạn đã được gửi đi. Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất. Trân trọng!')
-          return true
-        })
-        $('#for-select').on('change', function() {
-          var text = $('#for-select :selected').text()
-          if (text != '') $(form2).find('input[type=hidden]').attr('value', text)
-        })
-        // Home Page Slider Settings
-        $('#carousel-example-generic').carousel({
-          interval: 6000,
-          cycle: true
-        })
+        }
+      } else {
+        document.documentElement.setAttribute('data-view-type', 'mobile')
+      }
+      $(window).on('scroll', function() {
+        var menu_area = $('.menu-area')
+        if ($(window).scrollTop() > 200) menu_area.addClass('sticky-menu')
+        else menu_area.removeClass('sticky-menu')
       })
-      // ]]> 
-    </script>
-    <!-- Thay data:view.isSingleItem thành data:view.isPost nếu chỉ hiển thị trong post -->
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js'></script>
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js'></script>
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js'></script>
-    <script asysn='asysn' defer='defer' src='#'></script>
-    <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js'></script>
-    <script asyns='' defer='defer' src='./cdn.jsdelivr.net/gh/thietkeblogspot/js/contact-buttons-widget.min.js'></script>
-    <script async='async' defer='defer' src='./www.google.com/recaptcha/api.js'></script>
-    <script>
-      //<![CDATA[
-      var url = window.location.href,
-        uri = window.location.toString(),
-        rel = document.querySelector('link[rel="canonical"]').getAttribute('href'),
-        fb1 = url.substring(0, url.indexOf('?fbclid')),
-        fb2 = url.substring(0, url.indexOf('&fbclid')),
-        gi1 = url.substring(0, url.indexOf('?gidzl')),
-        gi2 = url.substring(0, url.indexOf('&gidzl')),
-        m1 = url.substring(0, url.indexOf('?m=1')),
-        m2 = url.substring(0, url.indexOf('&m=1')),
-        dv_tt = '₫',
-        strn = 'sale',
-        stock = "out-of-stock",
-        strc = '0',
-        thumb_url = './blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8WrpwoxRJ7oj2N9fek0Dnu8O7EIZwN5rVlmxPfzV/s16000/safe_image.png'
-      if ((uri.length - fb1.length) > 0) {
-        window.history.replaceState({}, document.title, fb1)
-      }
-      if ((uri.length - fb2.length) > 0) {
-        window.history.replaceState({}, document.title, fb2)
-      }
-      if ((uri.length - gi1.length) > 0) {
-        window.history.replaceState({}, document.title, gi1)
-      }
-      if ((uri.length - gi2.length) > 0) {
-        window.history.replaceState({}, document.title, gi2)
-      }
-
-      function loadCSS(filename, filetype) {
-        if (filetype == 'css') {
-          var fileref = document.createElement('link')
-          fileref.setAttribute('rel', 'stylesheet')
-          fileref.setAttribute('href', filename)
-        } else if (filetype == 'js') {
-          var fileref = document.createElement('script')
-          fileref.setAttribute('type', 'text/javascript')
-          fileref.setAttribute('async', '')
-          fileref.setAttribute('src', filename)
-        }
-        if (typeof fileref != 'undefined') {
-          document.getElementsByTagName('head')[0].appendChild(fileref)
-        }
-      }
-      var _widget_settings = {
-        positions: 'bottom right',
-        support: {
-          staff: {
-            name: 'Chăm sóc khách hàng',
-            image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tKkNpgTVEELAiBo7IICiGKDNlq-MJM0gznciTpYgiHPjGcoEx4jeF3Wj-VCaED4SFVijzBrKqfyT5yO2bCkApmDgq69bxZ4jrXx9q7vFMEUfgTmiopeyA_9PJBXWWy6Kt-tk-OCttD0B/s16000/cc.png',
-            messages: 'Không biết chúng tôi có thể hỗ trợ gì cho anh/chị không ạ?'
-          }
+      $(document).on('click', '.navbar-collapse.in', function(e) {
+        if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') $(this).collapse('hide')
+      })
+      $('body').scrollspy({
+        target: '.navbar-collapse',
+        offset: 195
+      })
+      $('a.smooth_scroll').on('click', function(e) {
+        e.preventDefault()
+        var anchor = $(this)
+        $('html,body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top - 50
+        }, 1000)
+      })
+      $('.portfolio').mixItUp()
+      $('.work-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+          enabled: true
         },
-        buttons: {
-          contact: {
-            visible: 'true',
-            id: 'https://www.sinvoice.vn/#contact',
-            messages: 'Liên hệ'
-          },
-          email: {
-            visible: 'true',
-            id: 'hoadondientu@sinvoice.vn',
-            messages: 'Gửi email'
-          },
-          call: {
-            visible: 'true',
-            id: '+84866531668',
-            messages: 'Gọi điện'
-          },
-          sms: {
-            visible: 'true',
-            id: '0866531668',
-            messages: 'Nhắn tin'
-          },
-          viber: {
-            visible: 'false',
-            id: 'sinvoice',
-            messages: 'Chat Viber'
-          },
-          telegram: {
-            visible: 'false',
-            id: 'sinvoice',
-            messages: 'Chat Telegram'
-          },
-          zalo: {
-            visible: 'true',
-            id: '0866531668',
-            messages: 'Chat Zalo'
-          },
-          facebook: {
-            visible: 'true',
-            id: 'sinvoicevn',
-            messages: 'Chat Facebook'
+        zoom: {
+          enabled: true,
+          duration: 300,
+          opener: function(element) {
+            return element.find('img')
           }
         }
-      }
-
-      function check_out(e) {
-        e.preventDefault()
-        var $this = $(this)
-        $this.addClass('adding')
-        var product_name = 'Giao hàng ' + $this.parents('.card').find('.title-wrapper a').text()
-        $('.modal--header ._mht').php(product_name)
-        $('.modal--body #productname').attr('value', product_name)
-        setTimeout(function() {
-          $this.removeClass('adding')
-        }, 500)
-      }
-
-      function modal_open(e) {
-        var target = '#' + $('.modal--target').attr('id')
-        e.preventDefault()
-        if ($(this).is('a')) {
-          target = $(this).attr('href')
-        } else {
-          target = $(this).attr('data-target')
-        }
-        $(target).show()
-        $(target).find('.modal--confirm').fadeIn('slow', function() {
-          $(this).addClass('show')
-        })
-        $('.modal--close').click(function() {
-          var $this = $(this)
-          $this.parents('.modal--confirm').removeClass('show')
-          setTimeout(function() {
-            $this.parents('.modal--target').removeAttr('style')
-          }, 200)
-        })
-        $(document).on('keyup', function(k) {
-          if (k.keyCode == 27) {
-            target = $('.modal--confirm.show')
-            var parent = $(target).parent()
-            setTimeout(function() {
-              $(target).remove()
-            }, 200)
-          }
-        })
-      }
-      window.addEventListener('load', function() {
-        if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|webOS)/i) === null ||
-          window.navigator.pointerEnabled && navigator.maxTouchPoints > 1) {
-          document.documentElement.setAttribute('data-view-type', 'desktop')
-          if ((uri.length - m1.length) > 0) {
-            window.history.replaceState({}, document.title, m1)
-          }
-          if ((uri.length - m2.length) > 0) {
-            window.history.replaceState({}, document.title, m2)
-          }
-          var _a = document.querySelectorAll('a')
-          for (var i = 0; i < _a.length; i++) {
-            var _b = _a[i].getAttribute('href')
-            if (_b != null) {
-              if (_b.indexOf('?m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('?m=1')))
-              if (_b.indexOf('&m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('&m=1')))
-            }
-          }
-        } else {
-          document.documentElement.setAttribute('data-view-type', 'mobile')
-        }
-        loadCSS('./cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css', 'css')
-        loadCSS('./cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', 'css')
-        $('.modal--icon.modal--close').append('<svg height="21px" tabindex="0" viewBox="0 0 24 24" width="21px"><path fill="#707070" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>')
-        $('input.input-qty').each(function() {
-          var $this = $(this),
-            qty = $this.parent().find('.is-form'),
-            min = Number($this.attr('min')),
-            max = Number($this.attr('max'))
-          if (min == 0) {
-            var d = 0
-          } else d = min
-          $(qty).on('click', function() {
-            if ($(this).hasClass('minus')) {
-              if (d > min) d += -1
-            } else if ($(this).hasClass('plus')) {
-              var x = Number($this.val()) + 1
-              if (x <= max) d += 1
-            }
-            $this.attr('value', d).val(d)
-          })
-        })
-        if ([data.view.isHomepage, data.view.isPost].includes('true')) {
-          var _feeds = 0
-
-          function _cate() {
-            if (_feeds == 0) {
-              _feeds = 1
-              var cate = $('.products-list'),
-                cate_blog = $('.archive')
-              if (cate.length != '') {
-                $(cate).each(function(i) {
-                  var r = Number($(cate[i]).attr('data-item')),
-                    attr = $(cate[i]).attr('data-category'),
-                    cate_type = $(cate[i]).attr('data-type')
-                  if (typeof attr !== typeof undefined && attr !== false) var cate_name = $(cate[i]).attr('data-category')
-                  if (cate_type == 'label posts') var cate_url = '/feeds/posts/default/-/' + cate_name + '?alt=json-in-script&max-results=' + r
-                  else if (cate_type == 'recent posts') cate_url = '/feeds/posts/default?alt=json-in-script&max-results=' + r
-                  else if (cate_type == 'random posts') cate_url = 'feeds/posts/summary615d?alt=json-in-script&amp;max-results=0'
-                  else if (cate_type == 'related posts') cate_url = '/feeds/posts/summary/-/' + cate_name + '?alt=json-in-script&max-results=0'
-
-                  function feed_entry(e) {
-                    if (e.feed.entry) {
-                      for (var t = 0; t < e.feed.entry.length; t++) {
-                        var start_rating = '',
-                          contents = '',
-                          entry = e.feed.entry[t],
-                          post_id = entry.id.$t.replace('tag:blogger.com,1999:blog-' + data.blog.blogId + '.post-', ''),
-                          post_title = entry.title.$t
-                        for (var a = 0; a < entry.link.length; a++) {
-                          if (entry.link[a].rel == 'alternate') {
-                            var post_url = entry.link[a].href
-                            break
-                          }
-                        }
-                        if ('media$thumbnail' in entry) {
-                          var post_thumb = entry.media$thumbnail.url.replace('s72-c', 's1600')
-                        } else {
-                          var st = entry.content.$t,
-                            at = st.indexOf("<img"),
-                            bt = st.indexOf('src="', at),
-                            ct = st.indexOf('"', bt + 5),
-                            dt = st.substr(bt + 5, ct - bt - 5)
-                          if (at != -1 && bt != -1 && ct != -1 && dt != "") {
-                            post_thumb = dt
-                          } else {
-                            post_thumb = thumb_url
-                          }
-                        }
-                        var thumb_show = '<img class="img-fluid" alt="' + post_title + '" src=' + post_thumb + '>'
-                        if ('category' in entry) {
-                          var listlabel = '',
-                            price = entry.category[0].term
-                          for (var k = 0; k < entry.category.length; k++) {
-                            listlabel += entry.category[k].term
-                            var strsc = listlabel.indexOf(strc),
-                              strnt = listlabel.indexOf(stock),
-                              strsa = listlabel.indexOf(strn),
-                              no_price = listlabel.slice(strsc, Number(strsc) + strc),
-                              cate_sale = listlabel.slice(strsa, Number(strsa) + strn.length),
-                              cate_stock = listlabel.slice(strnt, Number(strnt) + stock.length)
-                            if (no_price) {
-                              if (cate_sale == strn) {
-                                var price_sale = entry.category[1].term
-                                var price_wrapper = '<div class="price-wrapper w-50"><span class="gia-ban"><ins>' + price + '</ins><label class="dvt">' + dv_tt + '</label></span><br><span class="gia-giam"><del>' + price_sale + '</del><label class="dvt">' + dv_tt + '</label></span></div>'
-                              } else {
-                                price_wrapper = '<div class="price-wrapper w-50"><span class="gia-ban"><ins>' + price + '</ins><label class="dvt">' + dv_tt + '</label></span></div>'
-                              }
-                              if (cate_stock != stock) {
-                                var button_wrapper = '<div class="button-wrapper w-50 text-right"><button aria-label="' + data.messages.quickbuy + '" class="button quick-buy modal--open" data-target="#order" value=' + post_id + '>' + data.messages.quickbuy + '</button></div>'
-                              } else {
-                                button_wrapper = '<div class="button-wrapper w-50 text-right"><button class="button quick-buy modal--open" disabled="disabled" value=' + post_id + '>' + data.messages.outstock + '</button></div>'
-                              }
-                            } else {
-                              price_wrapper = '<div class="price-wrapper w-50"><span class="bolder">' + data.messages.contact + '</span></div>'
-                              button_wrapper = '<div class="button-wrapper w-50 text-right"><a class="button order" href="tel:0913997967">0913.997.967</a></div>'
-                            }
-                          }
-                        }
-                        if ('thr$total' in entry) {
-                          var numcm = Number(entry.thr$total.$t)
-                          if (numcm < 3) {
-                            start_rating = '<div class="star-rating"><span style="width:60%">Rated 3.00 out of 5</span></div>'
-                          } else if ([3, 4, 5].includes(numcm)) {
-                            start_rating = '<div class="star-rating"><span style="width:70%">Rated 3.50 out of 5</span></div>'
-                          } else if ([6, 7, 8].includes(numcm)) {
-                            start_rating = '<div class="star-rating"><span style="width:80%">Rated 4.00 out of 5</span></div>'
-                          } else if ([9, 10, 11].includes(numcm)) {
-                            start_rating = '<div class="star-rating"><span style="width:90%">Rated 4.50 out of 5</span></div>'
-                          } else if (numcm > 11) {
-                            start_rating = '<div class="star-rating"><span style="width:100%">Rated 5.00 out of 5</span></div>'
-                          }
-                        } else {
-                          start_rating = ''
-                        }
-                        $(cate[i]).find('.spinner').removeClass('spinner')
-                        $(cate[i]).find('.row.contents').append('<div class="col-md-3 pb-4"><article class="card"><div class="card-header pd-0"><div class="image-cover"><a class="flex" href=' + post_url + ' title="' + post_title + '">' + thumb_show + '</a></div></div><div class="card-body"><div class="title-wrapper"><a href=' + post_url + ' title="' + post_title + '">' + post_title + '</a></div><div class="rating-wrapper flex align-center">' + start_rating + '</div></div><div class="card-footer flex align-center">' + price_wrapper + button_wrapper + '</div></article></div>')
-                      }
-                    }
-                    if (data.view.isHomepage == 'true') {
-                      $(cate[i]).find('.row.contents').slick({
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        arrows: false,
-                        dots: false,
-                        autoplaySpeed: 4000,
-                        responsive: [{
-                            breakpoint: 1920,
-                            settings: {
-                              slidesToShow: 4
-                            }
-                          },
-                          {
-                            breakpoint: 769,
-                            settings: {
-                              slidesToShow: 2
-                            }
-                          },
-                          {
-                            breakpoint: 550,
-                            settings: {
-                              slidesToShow: 1
-                            }
-                          }
-                        ]
-                      })
-                    }
-                  }
-                  if (cate_type == 'random posts') {
-                    $.get(cate_url, function(data) {
-                      if (data.feed) {
-                        var a = data.feed.openSearch$totalResults.$t
-                        if (a < r) r = a
-                        let arr = []
-                        do {
-                          let num = Math.floor(Math.random() * a)
-                          arr.push(num)
-                          arr = arr.filter((item, index) => {
-                            return arr.indexOf(item) === index
-                          })
-                        } while (arr.length < r)
-                        arr.forEach(function(m) {
-                          m += 1
-                          $.ajax({
-                            type: 'GET',
-                            url: '/feeds/posts/default',
-                            data: {
-                              'alt': 'json',
-                              'start-index': m,
-                              'max-results': 1
-                            },
-                            dataType: 'jsonp',
-                            success: feed_entry
-                          })
-                        })
-                      }
-                    }, 'jsonp')
-                  } else if (cate_type == 'related posts') {
-                    $.get(cate_url, function(data) {
-                      if (data.feed) {
-                        var a = data.feed.openSearch$totalResults.$t
-                        if (a < r) r = a
-                        let arr = []
-                        do {
-                          let num = Math.floor(Math.random() * a)
-                          arr.push(num)
-                          arr = arr.filter((item, index) => {
-                            return arr.indexOf(item) === index
-                          })
-                        } while (arr.length < r)
-                        arr.forEach(function(m) {
-                          m += 1
-                          $.ajax({
-                            type: 'GET',
-                            url: '/feeds/posts/default/-/' + cate_name,
-                            data: {
-                              'alt': 'json',
-                              'start-index': m,
-                              'max-results': 1
-                            },
-                            dataType: 'jsonp',
-                            success: feed_entry
-                          })
-                        })
-                      }
-                    }, 'jsonp')
-                  } else {
-                    $.ajax({
-                      type: 'GET',
-                      url: cate_url,
-                      data: {
-                        'alt': 'json',
-                        'max-results': r
-                      },
-                      dataType: 'jsonp',
-                      success: feed_entry
-                    })
-                  }
-                })
-              }
-              if (cate_blog.length != '') {
-                $(cate_blog).each(function(i) {
-                  var r = Number($(cate_blog[i]).attr('data-item')),
-                    attr = $(cate_blog[i]).attr('data-category'),
-                    cate_type = $(cate_blog[i]).attr('data-type')
-                  if (typeof attr !== typeof undefined && attr !== false) var cate_name = $(cate_blog[i]).attr('data-category')
-                  if (cate_type == 'recent posts') var cate_url = 'feeds/posts/default'
-                  else if (cate_type == 'label posts') cate_url = '/feeds/posts/default/-/' + cate_name
-                  else if (cate_type == 'random posts') cate_url = 'feeds/posts/summary615d?alt=json-in-script&amp;max-results=0'
-                  else if (cate_type == 'related posts') cate_url = '/feeds/posts/summary/-/' + cate_name + '?alt=json-in-script&max-results=0'
-
-                  function get_data(e) {
-                    if (e.feed.entry) {
-                      for (var t = 0; t < e.feed.entry.length; t++) {
-                        var entry = e.feed.entry[t],
-                          entry_title = entry.title.$t
-                        for (var a = 0; a < entry.link.length; a++) {
-                          if (entry.link[a].rel == 'alternate') {
-                            var entry_url = entry.link[a].href
-                            break
-                          }
-                        }
-                        if ('media$thumbnail' in entry) {
-                          var entry_thumb = entry.media$thumbnail.url.replace('s72-c', 's1600')
-                        } else {
-                          var st = entry.content.$t,
-                            at = st.indexOf("<img"),
-                            bt = st.indexOf('src="', at),
-                            ct = st.indexOf('"', bt + 5),
-                            dt = st.substr(bt + 5, ct - bt - 5)
-                          if (at != -1 && bt != -1 && ct != -1 && dt != "") {
-                            entry_thumb = dt
-                          } else {
-                            entry_thumb = thumb_url
-                          }
-                        }
-                        if ('content' in entry) {
-                          var post_snippet = entry.content.$t,
-                            snippets = 100,
-                            summary = '',
-                            re = /<\S[^>]*>/g,
-                            post_snippet = post_snippet.replace(re, "")
-                          if (post_snippet.length < snippets) {
-                            summary = post_snippet
-                          } else {
-                            post_snippet = post_snippet.substring(0, snippets)
-                            var quoteEnd = post_snippet.lastIndexOf(' '),
-                              entry_summary = post_snippet.substring(0, quoteEnd)
-                          }
-                        } else {
-                          entry_summary = ''
-                        }
-                        $(cate_blog[i]).find('.spinner').removeClass('spinner')
-                        $(cate_blog[i]).find('.row.contents').append('<div class="col-md-3 pb-4"><article class="card"><div class="card-header pd-0"><div class="featured-image"><a  href=' + entry_url + ' title="' + entry_title + '"><img src=' + entry_thumb + ' title="' + entry_title + '" alt="' + entry_title + '"></a></div></div><div class="card-body"><div class="entry-title mb-10"><a href=' + entry_url + ' title="' + entry_title + '">' + entry_title + '</a></div><div class="entry-summary">' + entry_summary + '[...]</div></div><div class="card-footer text-center"><a class="button" href=' + entry_url + ' title="' + entry_title + '">Đọc thêm</a></div></article></div>')
-                      }
-                    }
-                    if (data.view.isHomepage == 'true') {
-                      $(cate_blog[i]).find('.row.contents').slick({
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        arrows: false,
-                        dots: false,
-                        autoplaySpeed: 4000,
-                        responsive: [{
-                            breakpoint: 1920,
-                            settings: {
-                              slidesToShow: 4
-                            }
-                          },
-                          {
-                            breakpoint: 769,
-                            settings: {
-                              slidesToShow: 2
-                            }
-                          },
-                          {
-                            breakpoint: 550,
-                            settings: {
-                              slidesToShow: 1
-                            }
-                          }
-                        ]
-                      })
-                    }
-                  }
-                  if (cate_type == 'random posts') {
-                    $.get(cate_url, function(data) {
-                      if (data.feed) {
-                        var a = data.feed.openSearch$totalResults.$t
-                        if (a < r) r = a
-                        let arr = []
-                        do {
-                          let num = Math.floor(Math.random() * a)
-                          arr.push(num)
-                          arr = arr.filter((item, index) => {
-                            return arr.indexOf(item) === index
-                          })
-                        } while (arr.length < r)
-                        arr.forEach(function(m) {
-                          m += 1
-                          $.ajax({
-                            type: 'GET',
-                            url: '/feeds/posts/default',
-                            data: {
-                              'alt': 'json',
-                              'start-index': m,
-                              'max-results': 1
-                            },
-                            dataType: 'jsonp',
-                            success: get_data
-                          })
-                        })
-                      }
-                    }, 'jsonp')
-                  } else if (cate_type == 'related posts') {
-                    $.get(cate_url, function(data) {
-                      if (data.feed) {
-                        var a = data.feed.openSearch$totalResults.$t
-                        if (a < r) r = a
-                        let arr = []
-                        do {
-                          let num = Math.floor(Math.random() * a)
-                          arr.push(num)
-                          arr = arr.filter((item, index) => {
-                            return arr.indexOf(item) === index
-                          })
-                        } while (arr.length < r)
-                        arr.forEach(function(m) {
-                          m += 1
-                          $.ajax({
-                            type: 'GET',
-                            url: '/feeds/posts/default/-/' + cate_name,
-                            data: {
-                              'alt': 'json',
-                              'start-index': m,
-                              'max-results': 1
-                            },
-                            dataType: 'jsonp',
-                            success: get_data
-                          })
-                        })
-                      }
-                    }, 'jsonp')
-                  } else {
-                    $.ajax({
-                      type: 'GET',
-                      url: cate_url,
-                      data: {
-                        'alt': 'json',
-                        'max-results': r
-                      },
-                      dataType: 'jsonp',
-                      success: get_data
-                    })
-                  }
-                })
-              }
-            }
-          }
-          var is_load = 0
-
-          function loadpl() {
-            if (is_load == 0) {
-              is_load = 1
-              loadCSS('./cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', 'css')
-              var an = document.createElement('script')
-              an.async = true;
-              an.src = './cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'
-              var sc = document.getElementsByTagName('script')[0]
-              sc.parentNode.insertBefore(an, sc)
-            }
-          }
-          $(window).scroll(function() {
-            loadpl();
-            _cate()
-          })
-          $(window).mousemove(function() {
-            loadpl();
-            _cate()
-          })
-          setTimeout(function() {
-            loadpl()
-          }, 3000)
-          setTimeout(function() {
-            _cate()
-          }, 1000)
-        }
-        $(document).off('click', '.modal--open', modal_open).on('click', '.modal--open', modal_open)
-        $(document).off('click', 'button.quick-buy', modal_open).on('click', 'button.quick-buy', check_out)
-        $(function() {
-          $.fn.scrollToTop = function() {
-            $(this).hide(), "0" != $(window).scrollTop() && $(this).fadeIn("slow")
-            var o = $(this)
-            $(window).scroll(function() {
-              "0" == $(window).scrollTop() ? $(o).fadeOut("slow") : $(o).fadeIn("slow")
-            }), $(this).click(function() {
-              $("html,body").animate({
-                scrollTop: 0
-              }, "slow")
-            })
-          }
-        }), $(function() {
-          $(".MD-StoTop").scrollToTop()
-        })
-
       })
-      //]]>
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-182978106-1'>
-    </script>
-    <style type='text/css'>
-      body {
-        overflow: hidden;
-      }
-    </style>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+      $('.testimonial-list').owlCarousel({
+        lazyLoad: false,
+        pagination: false,
+        navigation: false,
+        items: 3,
+        autoPlay: true,
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
+      })
+      $('.owl-client').owlCarousel({
+        items: 5,
+        autoPlay: true,
+        itemsDesktop: [1199, 5],
+        itemsDesktopSmall: [980, 4],
+        itemsTablet: [768, 3],
+        itemsMobile: [479, 2],
+        pagination: false,
+        navigation: false,
+        autoHeight: true,
+      })
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+      // Get the form.
+      var form = $('form[name="form_order"]'),
+        form2 = $('form[name="contact_form"]')
+      $('[data-target="#form-order"]').click(function() {
+        var name = $(this).parent('.noiDungHoTro').find('p.level').text()
+        $(form).find('.modal-title').php('Nội dung: <strong>' + name + '</strong>')
+        $(form).find('input[type=hidden]').attr('value', name)
+      })
+      // Set up an event listener for the contact form.
+      $(form).on('submit', function(e) {
+        var captcha_response = grecaptcha.getResponse()
+        if (captcha_response.length == 0) {
+          $('.error-message').php('<p style="margin-bottom:1.3rem;color:#d93025;">Vui lòng chọn hộp kiểm này nếu bạn muốn tiếp tục.</p>')
+          return false;
+        }
+        alert('Yêu cầu của bạn đã được gửi đi. Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất. Trân trọng!')
+        setTimeout(function() {
+          $(form)[0].reset()
+        }, 3000)
+        $('#form-order').modal('hide')
+        return true;
+      })
+      $(form2).on('submit', function(e) {
+        alert('Yêu cầu của bạn đã được gửi đi. Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất. Trân trọng!')
+        return true
+      })
+      $('#for-select').on('change', function() {
+        var text = $('#for-select :selected').text()
+        if (text != '') $(form2).find('input[type=hidden]').attr('value', text)
+      })
+      // Home Page Slider Settings
+      $('#carousel-example-generic').carousel({
+        interval: 6000,
+        cycle: true
+      })
+    })
+    // ]]> 
+  </script>
+  <!-- Thay data:view.isSingleItem thành data:view.isPost nếu chỉ hiển thị trong post -->
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js'></script>
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js'></script>
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js'></script>
+  <script asysn='asysn' defer='defer' src='#'></script>
+  <script asysn='asysn' defer='defer' src='./cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js'></script>
+  <script asyns='' defer='defer' src='./cdn.jsdelivr.net/gh/thietkeblogspot/js/contact-buttons-widget.min.js'></script>
+  <script async='async' defer='defer' src='./www.google.com/recaptcha/api.js'></script>
+  <script>
+    //<![CDATA[
+    var url = window.location.href,
+      uri = window.location.toString(),
+      rel = document.querySelector('link[rel="canonical"]').getAttribute('href'),
+      fb1 = url.substring(0, url.indexOf('?fbclid')),
+      fb2 = url.substring(0, url.indexOf('&fbclid')),
+      gi1 = url.substring(0, url.indexOf('?gidzl')),
+      gi2 = url.substring(0, url.indexOf('&gidzl')),
+      m1 = url.substring(0, url.indexOf('?m=1')),
+      m2 = url.substring(0, url.indexOf('&m=1')),
+      dv_tt = '₫',
+      strn = 'sale',
+      stock = "out-of-stock",
+      strc = '0',
+      thumb_url = './blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8WrpwoxRJ7oj2N9fek0Dnu8O7EIZwN5rVlmxPfzV/s16000/safe_image.png'
+    if ((uri.length - fb1.length) > 0) {
+      window.history.replaceState({}, document.title, fb1)
+    }
+    if ((uri.length - fb2.length) > 0) {
+      window.history.replaceState({}, document.title, fb2)
+    }
+    if ((uri.length - gi1.length) > 0) {
+      window.history.replaceState({}, document.title, gi1)
+    }
+    if ((uri.length - gi2.length) > 0) {
+      window.history.replaceState({}, document.title, gi2)
+    }
 
-      gtag('config', 'UA-182978106-1');
-    </script>
+    function loadCSS(filename, filetype) {
+      if (filetype == 'css') {
+        var fileref = document.createElement('link')
+        fileref.setAttribute('rel', 'stylesheet')
+        fileref.setAttribute('href', filename)
+      } else if (filetype == 'js') {
+        var fileref = document.createElement('script')
+        fileref.setAttribute('type', 'text/javascript')
+        fileref.setAttribute('async', '')
+        fileref.setAttribute('src', filename)
+      }
+      if (typeof fileref != 'undefined') {
+        document.getElementsByTagName('head')[0].appendChild(fileref)
+      }
+    }
+    var _widget_settings = {
+      positions: 'bottom right',
+      support: {
+        staff: {
+          name: 'Chăm sóc khách hàng',
+          image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7tKkNpgTVEELAiBo7IICiGKDNlq-MJM0gznciTpYgiHPjGcoEx4jeF3Wj-VCaED4SFVijzBrKqfyT5yO2bCkApmDgq69bxZ4jrXx9q7vFMEUfgTmiopeyA_9PJBXWWy6Kt-tk-OCttD0B/s16000/cc.png',
+          messages: 'Không biết chúng tôi có thể hỗ trợ gì cho anh/chị không ạ?'
+        }
+      },
+      buttons: {
+        contact: {
+          visible: 'true',
+          id: 'https://www.sinvoice.vn/#contact',
+          messages: 'Liên hệ'
+        },
+        email: {
+          visible: 'true',
+          id: 'hoadondientu@sinvoice.vn',
+          messages: 'Gửi email'
+        },
+        call: {
+          visible: 'true',
+          id: '+84866531668',
+          messages: 'Gọi điện'
+        },
+        sms: {
+          visible: 'true',
+          id: '0866531668',
+          messages: 'Nhắn tin'
+        },
+        viber: {
+          visible: 'false',
+          id: 'sinvoice',
+          messages: 'Chat Viber'
+        },
+        telegram: {
+          visible: 'false',
+          id: 'sinvoice',
+          messages: 'Chat Telegram'
+        },
+        zalo: {
+          visible: 'true',
+          id: '0866531668',
+          messages: 'Chat Zalo'
+        },
+        facebook: {
+          visible: 'true',
+          id: 'sinvoicevn',
+          messages: 'Chat Facebook'
+        }
+      }
+    }
+
+    function check_out(e) {
+      e.preventDefault()
+      var $this = $(this)
+      $this.addClass('adding')
+      var product_name = 'Giao hàng ' + $this.parents('.card').find('.title-wrapper a').text()
+      $('.modal--header ._mht').php(product_name)
+      $('.modal--body #productname').attr('value', product_name)
+      setTimeout(function() {
+        $this.removeClass('adding')
+      }, 500)
+    }
+
+    function modal_open(e) {
+      var target = '#' + $('.modal--target').attr('id')
+      e.preventDefault()
+      if ($(this).is('a')) {
+        target = $(this).attr('href')
+      } else {
+        target = $(this).attr('data-target')
+      }
+      $(target).show()
+      $(target).find('.modal--confirm').fadeIn('slow', function() {
+        $(this).addClass('show')
+      })
+      $('.modal--close').click(function() {
+        var $this = $(this)
+        $this.parents('.modal--confirm').removeClass('show')
+        setTimeout(function() {
+          $this.parents('.modal--target').removeAttr('style')
+        }, 200)
+      })
+      $(document).on('keyup', function(k) {
+        if (k.keyCode == 27) {
+          target = $('.modal--confirm.show')
+          var parent = $(target).parent()
+          setTimeout(function() {
+            $(target).remove()
+          }, 200)
+        }
+      })
+    }
+    window.addEventListener('load', function() {
+      if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone|webOS)/i) === null ||
+        window.navigator.pointerEnabled && navigator.maxTouchPoints > 1) {
+        document.documentElement.setAttribute('data-view-type', 'desktop')
+        if ((uri.length - m1.length) > 0) {
+          window.history.replaceState({}, document.title, m1)
+        }
+        if ((uri.length - m2.length) > 0) {
+          window.history.replaceState({}, document.title, m2)
+        }
+        var _a = document.querySelectorAll('a')
+        for (var i = 0; i < _a.length; i++) {
+          var _b = _a[i].getAttribute('href')
+          if (_b != null) {
+            if (_b.indexOf('?m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('?m=1')))
+            if (_b.indexOf('&m=1') != -1) _a[i].setAttribute('href', _b.substr(0, _b.indexOf('&m=1')))
+          }
+        }
+      } else {
+        document.documentElement.setAttribute('data-view-type', 'mobile')
+      }
+      loadCSS('./cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css', 'css')
+      loadCSS('./cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css', 'css')
+      $('.modal--icon.modal--close').append('<svg height="21px" tabindex="0" viewBox="0 0 24 24" width="21px"><path fill="#707070" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>')
+      $('input.input-qty').each(function() {
+        var $this = $(this),
+          qty = $this.parent().find('.is-form'),
+          min = Number($this.attr('min')),
+          max = Number($this.attr('max'))
+        if (min == 0) {
+          var d = 0
+        } else d = min
+        $(qty).on('click', function() {
+          if ($(this).hasClass('minus')) {
+            if (d > min) d += -1
+          } else if ($(this).hasClass('plus')) {
+            var x = Number($this.val()) + 1
+            if (x <= max) d += 1
+          }
+          $this.attr('value', d).val(d)
+        })
+      })
+      if ([data.view.isHomepage, data.view.isPost].includes('true')) {
+        var _feeds = 0
+
+        function _cate() {
+          if (_feeds == 0) {
+            _feeds = 1
+            var cate = $('.products-list'),
+              cate_blog = $('.archive')
+            if (cate.length != '') {
+              $(cate).each(function(i) {
+                var r = Number($(cate[i]).attr('data-item')),
+                  attr = $(cate[i]).attr('data-category'),
+                  cate_type = $(cate[i]).attr('data-type')
+                if (typeof attr !== typeof undefined && attr !== false) var cate_name = $(cate[i]).attr('data-category')
+                if (cate_type == 'label posts') var cate_url = '/feeds/posts/default/-/' + cate_name + '?alt=json-in-script&max-results=' + r
+                else if (cate_type == 'recent posts') cate_url = '/feeds/posts/default?alt=json-in-script&max-results=' + r
+                else if (cate_type == 'random posts') cate_url = 'feeds/posts/summary615d?alt=json-in-script&amp;max-results=0'
+                else if (cate_type == 'related posts') cate_url = '/feeds/posts/summary/-/' + cate_name + '?alt=json-in-script&max-results=0'
+
+                function feed_entry(e) {
+                  if (e.feed.entry) {
+                    for (var t = 0; t < e.feed.entry.length; t++) {
+                      var start_rating = '',
+                        contents = '',
+                        entry = e.feed.entry[t],
+                        post_id = entry.id.$t.replace('tag:blogger.com,1999:blog-' + data.blog.blogId + '.post-', ''),
+                        post_title = entry.title.$t
+                      for (var a = 0; a < entry.link.length; a++) {
+                        if (entry.link[a].rel == 'alternate') {
+                          var post_url = entry.link[a].href
+                          break
+                        }
+                      }
+                      if ('media$thumbnail' in entry) {
+                        var post_thumb = entry.media$thumbnail.url.replace('s72-c', 's1600')
+                      } else {
+                        var st = entry.content.$t,
+                          at = st.indexOf("<img"),
+                          bt = st.indexOf('src="', at),
+                          ct = st.indexOf('"', bt + 5),
+                          dt = st.substr(bt + 5, ct - bt - 5)
+                        if (at != -1 && bt != -1 && ct != -1 && dt != "") {
+                          post_thumb = dt
+                        } else {
+                          post_thumb = thumb_url
+                        }
+                      }
+                      var thumb_show = '<img class="img-fluid" alt="' + post_title + '" src=' + post_thumb + '>'
+                      if ('category' in entry) {
+                        var listlabel = '',
+                          price = entry.category[0].term
+                        for (var k = 0; k < entry.category.length; k++) {
+                          listlabel += entry.category[k].term
+                          var strsc = listlabel.indexOf(strc),
+                            strnt = listlabel.indexOf(stock),
+                            strsa = listlabel.indexOf(strn),
+                            no_price = listlabel.slice(strsc, Number(strsc) + strc),
+                            cate_sale = listlabel.slice(strsa, Number(strsa) + strn.length),
+                            cate_stock = listlabel.slice(strnt, Number(strnt) + stock.length)
+                          if (no_price) {
+                            if (cate_sale == strn) {
+                              var price_sale = entry.category[1].term
+                              var price_wrapper = '<div class="price-wrapper w-50"><span class="gia-ban"><ins>' + price + '</ins><label class="dvt">' + dv_tt + '</label></span><br><span class="gia-giam"><del>' + price_sale + '</del><label class="dvt">' + dv_tt + '</label></span></div>'
+                            } else {
+                              price_wrapper = '<div class="price-wrapper w-50"><span class="gia-ban"><ins>' + price + '</ins><label class="dvt">' + dv_tt + '</label></span></div>'
+                            }
+                            if (cate_stock != stock) {
+                              var button_wrapper = '<div class="button-wrapper w-50 text-right"><button aria-label="' + data.messages.quickbuy + '" class="button quick-buy modal--open" data-target="#order" value=' + post_id + '>' + data.messages.quickbuy + '</button></div>'
+                            } else {
+                              button_wrapper = '<div class="button-wrapper w-50 text-right"><button class="button quick-buy modal--open" disabled="disabled" value=' + post_id + '>' + data.messages.outstock + '</button></div>'
+                            }
+                          } else {
+                            price_wrapper = '<div class="price-wrapper w-50"><span class="bolder">' + data.messages.contact + '</span></div>'
+                            button_wrapper = '<div class="button-wrapper w-50 text-right"><a class="button order" href="tel:0913997967">0913.997.967</a></div>'
+                          }
+                        }
+                      }
+                      if ('thr$total' in entry) {
+                        var numcm = Number(entry.thr$total.$t)
+                        if (numcm < 3) {
+                          start_rating = '<div class="star-rating"><span style="width:60%">Rated 3.00 out of 5</span></div>'
+                        } else if ([3, 4, 5].includes(numcm)) {
+                          start_rating = '<div class="star-rating"><span style="width:70%">Rated 3.50 out of 5</span></div>'
+                        } else if ([6, 7, 8].includes(numcm)) {
+                          start_rating = '<div class="star-rating"><span style="width:80%">Rated 4.00 out of 5</span></div>'
+                        } else if ([9, 10, 11].includes(numcm)) {
+                          start_rating = '<div class="star-rating"><span style="width:90%">Rated 4.50 out of 5</span></div>'
+                        } else if (numcm > 11) {
+                          start_rating = '<div class="star-rating"><span style="width:100%">Rated 5.00 out of 5</span></div>'
+                        }
+                      } else {
+                        start_rating = ''
+                      }
+                      $(cate[i]).find('.spinner').removeClass('spinner')
+                      $(cate[i]).find('.row.contents').append('<div class="col-md-3 pb-4"><article class="card"><div class="card-header pd-0"><div class="image-cover"><a class="flex" href=' + post_url + ' title="' + post_title + '">' + thumb_show + '</a></div></div><div class="card-body"><div class="title-wrapper"><a href=' + post_url + ' title="' + post_title + '">' + post_title + '</a></div><div class="rating-wrapper flex align-center">' + start_rating + '</div></div><div class="card-footer flex align-center">' + price_wrapper + button_wrapper + '</div></article></div>')
+                    }
+                  }
+                  if (data.view.isHomepage == 'true') {
+                    $(cate[i]).find('.row.contents').slick({
+                      slidesToScroll: 1,
+                      autoplay: true,
+                      arrows: false,
+                      dots: false,
+                      autoplaySpeed: 4000,
+                      responsive: [{
+                          breakpoint: 1920,
+                          settings: {
+                            slidesToShow: 4
+                          }
+                        },
+                        {
+                          breakpoint: 769,
+                          settings: {
+                            slidesToShow: 2
+                          }
+                        },
+                        {
+                          breakpoint: 550,
+                          settings: {
+                            slidesToShow: 1
+                          }
+                        }
+                      ]
+                    })
+                  }
+                }
+                if (cate_type == 'random posts') {
+                  $.get(cate_url, function(data) {
+                    if (data.feed) {
+                      var a = data.feed.openSearch$totalResults.$t
+                      if (a < r) r = a
+                      let arr = []
+                      do {
+                        let num = Math.floor(Math.random() * a)
+                        arr.push(num)
+                        arr = arr.filter((item, index) => {
+                          return arr.indexOf(item) === index
+                        })
+                      } while (arr.length < r)
+                      arr.forEach(function(m) {
+                        m += 1
+                        $.ajax({
+                          type: 'GET',
+                          url: '/feeds/posts/default',
+                          data: {
+                            'alt': 'json',
+                            'start-index': m,
+                            'max-results': 1
+                          },
+                          dataType: 'jsonp',
+                          success: feed_entry
+                        })
+                      })
+                    }
+                  }, 'jsonp')
+                } else if (cate_type == 'related posts') {
+                  $.get(cate_url, function(data) {
+                    if (data.feed) {
+                      var a = data.feed.openSearch$totalResults.$t
+                      if (a < r) r = a
+                      let arr = []
+                      do {
+                        let num = Math.floor(Math.random() * a)
+                        arr.push(num)
+                        arr = arr.filter((item, index) => {
+                          return arr.indexOf(item) === index
+                        })
+                      } while (arr.length < r)
+                      arr.forEach(function(m) {
+                        m += 1
+                        $.ajax({
+                          type: 'GET',
+                          url: '/feeds/posts/default/-/' + cate_name,
+                          data: {
+                            'alt': 'json',
+                            'start-index': m,
+                            'max-results': 1
+                          },
+                          dataType: 'jsonp',
+                          success: feed_entry
+                        })
+                      })
+                    }
+                  }, 'jsonp')
+                } else {
+                  $.ajax({
+                    type: 'GET',
+                    url: cate_url,
+                    data: {
+                      'alt': 'json',
+                      'max-results': r
+                    },
+                    dataType: 'jsonp',
+                    success: feed_entry
+                  })
+                }
+              })
+            }
+            if (cate_blog.length != '') {
+              $(cate_blog).each(function(i) {
+                var r = Number($(cate_blog[i]).attr('data-item')),
+                  attr = $(cate_blog[i]).attr('data-category'),
+                  cate_type = $(cate_blog[i]).attr('data-type')
+                if (typeof attr !== typeof undefined && attr !== false) var cate_name = $(cate_blog[i]).attr('data-category')
+                if (cate_type == 'recent posts') var cate_url = 'feeds/posts/default'
+                else if (cate_type == 'label posts') cate_url = '/feeds/posts/default/-/' + cate_name
+                else if (cate_type == 'random posts') cate_url = 'feeds/posts/summary615d?alt=json-in-script&amp;max-results=0'
+                else if (cate_type == 'related posts') cate_url = '/feeds/posts/summary/-/' + cate_name + '?alt=json-in-script&max-results=0'
+
+                function get_data(e) {
+                  if (e.feed.entry) {
+                    for (var t = 0; t < e.feed.entry.length; t++) {
+                      var entry = e.feed.entry[t],
+                        entry_title = entry.title.$t
+                      for (var a = 0; a < entry.link.length; a++) {
+                        if (entry.link[a].rel == 'alternate') {
+                          var entry_url = entry.link[a].href
+                          break
+                        }
+                      }
+                      if ('media$thumbnail' in entry) {
+                        var entry_thumb = entry.media$thumbnail.url.replace('s72-c', 's1600')
+                      } else {
+                        var st = entry.content.$t,
+                          at = st.indexOf("<img"),
+                          bt = st.indexOf('src="', at),
+                          ct = st.indexOf('"', bt + 5),
+                          dt = st.substr(bt + 5, ct - bt - 5)
+                        if (at != -1 && bt != -1 && ct != -1 && dt != "") {
+                          entry_thumb = dt
+                        } else {
+                          entry_thumb = thumb_url
+                        }
+                      }
+                      if ('content' in entry) {
+                        var post_snippet = entry.content.$t,
+                          snippets = 100,
+                          summary = '',
+                          re = /<\S[^>]*>/g,
+                          post_snippet = post_snippet.replace(re, "")
+                        if (post_snippet.length < snippets) {
+                          summary = post_snippet
+                        } else {
+                          post_snippet = post_snippet.substring(0, snippets)
+                          var quoteEnd = post_snippet.lastIndexOf(' '),
+                            entry_summary = post_snippet.substring(0, quoteEnd)
+                        }
+                      } else {
+                        entry_summary = ''
+                      }
+                      $(cate_blog[i]).find('.spinner').removeClass('spinner')
+                      $(cate_blog[i]).find('.row.contents').append('<div class="col-md-3 pb-4"><article class="card"><div class="card-header pd-0"><div class="featured-image"><a  href=' + entry_url + ' title="' + entry_title + '"><img src=' + entry_thumb + ' title="' + entry_title + '" alt="' + entry_title + '"></a></div></div><div class="card-body"><div class="entry-title mb-10"><a href=' + entry_url + ' title="' + entry_title + '">' + entry_title + '</a></div><div class="entry-summary">' + entry_summary + '[...]</div></div><div class="card-footer text-center"><a class="button" href=' + entry_url + ' title="' + entry_title + '">Đọc thêm</a></div></article></div>')
+                    }
+                  }
+                  if (data.view.isHomepage == 'true') {
+                    $(cate_blog[i]).find('.row.contents').slick({
+                      slidesToScroll: 1,
+                      autoplay: true,
+                      arrows: false,
+                      dots: false,
+                      autoplaySpeed: 4000,
+                      responsive: [{
+                          breakpoint: 1920,
+                          settings: {
+                            slidesToShow: 4
+                          }
+                        },
+                        {
+                          breakpoint: 769,
+                          settings: {
+                            slidesToShow: 2
+                          }
+                        },
+                        {
+                          breakpoint: 550,
+                          settings: {
+                            slidesToShow: 1
+                          }
+                        }
+                      ]
+                    })
+                  }
+                }
+                if (cate_type == 'random posts') {
+                  $.get(cate_url, function(data) {
+                    if (data.feed) {
+                      var a = data.feed.openSearch$totalResults.$t
+                      if (a < r) r = a
+                      let arr = []
+                      do {
+                        let num = Math.floor(Math.random() * a)
+                        arr.push(num)
+                        arr = arr.filter((item, index) => {
+                          return arr.indexOf(item) === index
+                        })
+                      } while (arr.length < r)
+                      arr.forEach(function(m) {
+                        m += 1
+                        $.ajax({
+                          type: 'GET',
+                          url: '/feeds/posts/default',
+                          data: {
+                            'alt': 'json',
+                            'start-index': m,
+                            'max-results': 1
+                          },
+                          dataType: 'jsonp',
+                          success: get_data
+                        })
+                      })
+                    }
+                  }, 'jsonp')
+                } else if (cate_type == 'related posts') {
+                  $.get(cate_url, function(data) {
+                    if (data.feed) {
+                      var a = data.feed.openSearch$totalResults.$t
+                      if (a < r) r = a
+                      let arr = []
+                      do {
+                        let num = Math.floor(Math.random() * a)
+                        arr.push(num)
+                        arr = arr.filter((item, index) => {
+                          return arr.indexOf(item) === index
+                        })
+                      } while (arr.length < r)
+                      arr.forEach(function(m) {
+                        m += 1
+                        $.ajax({
+                          type: 'GET',
+                          url: '/feeds/posts/default/-/' + cate_name,
+                          data: {
+                            'alt': 'json',
+                            'start-index': m,
+                            'max-results': 1
+                          },
+                          dataType: 'jsonp',
+                          success: get_data
+                        })
+                      })
+                    }
+                  }, 'jsonp')
+                } else {
+                  $.ajax({
+                    type: 'GET',
+                    url: cate_url,
+                    data: {
+                      'alt': 'json',
+                      'max-results': r
+                    },
+                    dataType: 'jsonp',
+                    success: get_data
+                  })
+                }
+              })
+            }
+          }
+        }
+        var is_load = 0
+
+        function loadpl() {
+          if (is_load == 0) {
+            is_load = 1
+            loadCSS('./cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', 'css')
+            var an = document.createElement('script')
+            an.async = true;
+            an.src = './cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'
+            var sc = document.getElementsByTagName('script')[0]
+            sc.parentNode.insertBefore(an, sc)
+          }
+        }
+        $(window).scroll(function() {
+          loadpl();
+          _cate()
+        })
+        $(window).mousemove(function() {
+          loadpl();
+          _cate()
+        })
+        setTimeout(function() {
+          loadpl()
+        }, 3000)
+        setTimeout(function() {
+          _cate()
+        }, 1000)
+      }
+      $(document).off('click', '.modal--open', modal_open).on('click', '.modal--open', modal_open)
+      $(document).off('click', 'button.quick-buy', modal_open).on('click', 'button.quick-buy', check_out)
+      $(function() {
+        $.fn.scrollToTop = function() {
+          $(this).hide(), "0" != $(window).scrollTop() && $(this).fadeIn("slow")
+          var o = $(this)
+          $(window).scroll(function() {
+            "0" == $(window).scrollTop() ? $(o).fadeOut("slow") : $(o).fadeIn("slow")
+          }), $(this).click(function() {
+            $("html,body").animate({
+              scrollTop: 0
+            }, "slow")
+          })
+        }
+      }), $(function() {
+        $(".MD-StoTop").scrollToTop()
+      })
+
+    })
+    //]]>
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async='async' src='https://www.googletagmanager.com/gtag/js?id=UA-182978106-1'>
+  </script>
+  <style type='text/css'>
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-182978106-1');
+  </script>
 
 </body><!--<head><style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiArmlw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiArmlw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiArmlw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiArmlw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiArmlw.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iArmlw.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiArmlw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiArmlw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>

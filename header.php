@@ -24,8 +24,6 @@
       padding: 8px 20px;
       gap: 20px;
       font-size: 14px;
-      width: 100%;
-      box-sizing: border-box;
     }
 
     .top-bar div {
@@ -48,7 +46,6 @@
     .social-icons {
       display: flex;
       gap: 6px;
-      margin-left: 5px;
     }
 
     .social-icons a {
@@ -72,19 +69,18 @@
     /* ========== NAVBAR ========== */
     .menu {
       background: #fff;
-      padding: 0px 200px;
+      padding: 0 200px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid #eee;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       position: relative;
-      width: 100%;
-      box-sizing: border-box;
     }
 
     .menu img {
       height: 55px;
+      flex-shrink: 0;
     }
 
     .menu ul {
@@ -93,6 +89,7 @@
       padding: 0;
       display: flex;
       gap: 25px;
+      flex-wrap: nowrap;
     }
 
     .menu li {
@@ -107,6 +104,7 @@
       padding: 6px 12px;
       border-radius: 12px;
       transition: all 0.3s ease;
+      white-space: nowrap;
     }
 
     .menu li a:hover,
@@ -116,7 +114,7 @@
       background-color: rgba(216, 0, 0, 0.05);
     }
 
-    /* Hamburger menu cho mobile */
+    /* Hamburger menu */
     .menu-toggle {
       display: none;
       font-size: 28px;
@@ -124,6 +122,12 @@
     }
 
     /* ========== RESPONSIVE ========== */
+    @media (max-width: 1200px) {
+      .menu {
+        padding: 0 40px;
+      }
+    }
+
     @media (max-width: 1024px) {
       .menu {
         padding: 0 20px;
@@ -131,10 +135,12 @@
     }
 
     @media (max-width: 768px) {
-
-      /* Ẩn top-bar trên mobile */
       .top-bar {
         display: none;
+      }
+
+      .menu {
+        flex-wrap: wrap;
       }
 
       .menu ul {
@@ -142,12 +148,13 @@
         width: 100%;
         display: none;
         margin-top: 10px;
-        gap: 0;
         background: #fff;
+        border-top: 1px solid #eee;
+        padding: 10px 0;
       }
 
       .menu li a {
-        padding: 10px;
+        padding: 12px 20px;
         border-radius: 0;
       }
 
@@ -210,13 +217,11 @@
         const linkFull = linkUrl.pathname + linkUrl.hash;
         if (linkFull === currentUrl) {
           link.parentElement.classList.add("active");
-        } else {
-          link.parentElement.classList.remove("active");
         }
       });
     });
 
-    // Scroll đến anchor với offset
+    // Scroll với offset
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
@@ -229,7 +234,7 @@
       }
     }
 
-    // Toggle menu mobile
+    // Toggle mobile menu
     const menuToggle = document.querySelector(".menu-toggle");
     const menuUL = document.querySelector(".menu ul");
     menuToggle.addEventListener("click", () => {
