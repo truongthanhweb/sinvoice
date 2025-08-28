@@ -77,6 +77,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_GET['upload_image'])) {
     $product_description = trim($_POST['product_description'] ?? '');
     $product_price = floatval(trim($_POST['product_price'] ?? 0));
     $outstanding_products = isset($_POST['outstanding_products']) ? 'true' : 'false';
+    $stock_quantity   = intval(trim($_POST['stock_quantity'] ?? 0));
+    $product_features = floatval(trim($_POST['product_features'] ?? 0));
+
 
 
 
@@ -85,21 +88,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_GET['upload_image'])) {
     if (empty($product_name)) $errors[] = "Tên Bảng giá là bắt buộc.";
     if (empty($product_description)) $errors[] = "Nội dung là bắt buộc.";
     if (empty($product_price)) $errors[] = "Giá Bảng giá là bắt buộc.";
+    if (empty($stock_quantity)) $errors[] = "Số lượng không hợp lệ.";
+    if (empty($product_features)) $errors[] = "Đơn giá không hợp lệ.";
 
     if (empty($errors)) {
         $sql = "UPDATE products 
-        SET product_name = ?, product_description = ?, product_price = ?,outstanding_products=?, update_at = NOW() 
+        SET product_name = ?, 
+            product_description = ?, 
+            product_price = ?,
+            stock_quantity = ?,
+            product_features = ?,
+            outstanding_products = ?,
+            update_at = NOW() 
         WHERE product_id = ?";
         $stmt = $conn->prepare($sql);
         if ($stmt) {
+            // Kiểu dữ liệu lần lượt: s,s,d,i,d,s,i
             $stmt->bind_param(
-                "ssdsi",
+                "ssdidsi",
                 $product_name,
                 $product_description,
                 $product_price,
+                $stock_quantity,
+                $product_features,
                 $outstanding_products,
                 $product_id
             );
+
 
 
             if ($stmt->execute()) {
@@ -257,6 +272,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_GET['upload_image'])) {
                                                 <label for="product_price" class="form-label">Giá:</label>
                                                 <input type="text" class="form-control" id="product_price" name="product_price" value="<?php echo htmlspecialchars($product['product_price'] ?? ''); ?>" required>
                                             </div>
+                                            <div class="mb-3">
+                                                <label for="stock_quantity" class="form-label">Số lượng:</label>
+                                                <input type="number" class="form-control" id="stock_quantity" name="stock_quantity"
+                                                    value="<?php echo htmlspecialchars($product['stock_quantity'] ?? 0); ?>" required>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="product_features" class="form-label">Đơn giá:</label>
+                                                <input type="number" step="0.01" class="form-control" id="product_features" name="product_features"
+                                                    value="<?php echo htmlspecialchars($product['product_features'] ?? 0); ?>" required>
+                                            </div>
+
                                             <div class="mb-3">
                                                 <label for="outstanding_products" class="form-label">Sản phẩm nổi bật:</label>
                                                 <div class="form-check form-switch">

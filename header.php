@@ -20,8 +20,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 8px 20px;
-      gap: 40px;
+      gap: 20px;
       font-size: 14px;
     }
 
@@ -42,11 +43,9 @@
       text-decoration: none;
     }
 
-    /* Social icons */
     .social-icons {
       display: flex;
       gap: 6px;
-      margin-left: 5px;
     }
 
     .social-icons a {
@@ -70,15 +69,18 @@
     /* ========== NAVBAR ========== */
     .menu {
       background: #fff;
-      padding: 0px 200px;
+      padding: 0 200px;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       border-bottom: 1px solid #eee;
+      flex-wrap: nowrap;
+      position: relative;
     }
 
     .menu img {
       height: 55px;
+      flex-shrink: 0;
     }
 
     .menu ul {
@@ -87,6 +89,7 @@
       padding: 0;
       display: flex;
       gap: 25px;
+      flex-wrap: nowrap;
     }
 
     .menu li {
@@ -99,19 +102,71 @@
       font-size: 17px;
       font-weight: 500;
       padding: 6px 12px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
       border-radius: 12px;
-      /* Viền tròn mặc định */
+      transition: all 0.3s ease;
+      white-space: nowrap;
     }
 
-    /* Hover và active effect */
     .menu li a:hover,
     .menu li.active a {
       color: #d80000;
       border: 2.5px solid #d80000;
       background-color: rgba(216, 0, 0, 0.05);
-      /* nền nhạt khi hover */
+    }
+
+    /* Hamburger menu */
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1200px) {
+      .menu {
+        padding: 0 40px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .menu {
+        padding: 0 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        display: none;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+        background: #fff;
+        border-top: 1px solid #eee;
+        padding: 10px 0;
+      }
+
+      .menu li a {
+        padding: 12px 20px;
+        border-radius: 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu img {
+        height: 45px;
+      }
     }
   </style>
 </head>
@@ -126,7 +181,7 @@
     <div class="divider"></div>
     <div><i class="ri-truck-line"></i> Khuyến mãi khủng</div>
     <div class="divider"></div>
-    <div>
+    <div style="display: flex; align-items: center; gap: 6px;">
       Follow Us:
       <div class="social-icons">
         <a href="#"><i class="ri-facebook-fill"></i></a>
@@ -141,58 +196,56 @@
     <a href="index.php" class="logo">
       <img src="https://dichvuviettel.com.vn/upload/data/config/2/682C88BF-4FDB-9A87-5DE2-EFB4086F18AF.png" alt="S-Invoice Logo">
     </a>
+    <i class="ri-menu-line menu-toggle"></i>
     <?php $base = '/sinvoice/'; ?>
     <ul>
       <li><a href="<?= $base ?>index.php">Trang chủ</a></li>
+      <li><a href="<?= $base ?>p/bang-gia-sinvoice.php">Bảng giá</a></li>
+      <li><a href="<?= $base ?>p/mau-hoa-don-gtgt.php">Mẫu hóa đơn</a></li>
       <li><a href="<?= $base ?>p/tinh-nang.php">Tính năng</a></li>
       <li><a href="<?= $base ?>p/tai-ve.php">Tải về</a></li>
       <li><a href="<?= $base ?>2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php">Hỗ trợ</a></li>
-      <li><a href="<?= $base ?>index.php#contact">Bảng giá</a></li>
-      <li><a href="<?= $base ?>p/mau-hoa-don-gtgt.php">Mẫu hóa đơn</a></li>
     </ul>
   </nav>
 
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const currentPage = location.pathname.split("/").pop();
-      document.querySelectorAll(".menu a").forEach(link => {
-        if (link.getAttribute("href").endsWith(currentPage)) {
-          link.parentElement.classList.add("active");
-        }
-      });
-    });
-  </script>
-  <script>
+    // Active menu
     document.addEventListener("DOMContentLoaded", () => {
       const currentUrl = location.pathname + location.hash;
-
       document.querySelectorAll(".menu a").forEach(link => {
         const linkUrl = new URL(link.href, location.origin);
         const linkFull = linkUrl.pathname + linkUrl.hash;
-
-        // Chỉ active đúng link
         if (linkFull === currentUrl) {
           link.parentElement.classList.add("active");
-        } else {
-          link.parentElement.classList.remove("active");
         }
       });
+    });
 
-      // Scroll xuống phần anchor nếu có, với offset
-      if (location.hash) {
-        const element = document.querySelector(location.hash);
-        if (element) {
-          const offset = 80; // khoảng cách muốn cách header
-          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-          window.scrollTo({
-            top: elementPosition - offset,
-            behavior: "smooth"
-          });
-        }
+    // Scroll với offset
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    // Toggle mobile menu
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuUL = document.querySelector(".menu ul");
+    menuToggle.addEventListener("click", () => {
+      if (menuUL.style.display === "flex") {
+        menuUL.style.display = "none";
+      } else {
+        menuUL.style.display = "flex";
+        menuUL.style.flexDirection = "column";
       }
     });
   </script>
-
 
 </body>
 

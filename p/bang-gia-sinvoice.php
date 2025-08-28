@@ -1,3 +1,12 @@
+<?php
+include __DIR__ . '../../config/db_connection.php';
+
+// Lấy dữ liệu sản phẩm từ DB
+$sql = "SELECT product_id, product_name, product_price, stock_quantity, product_features 
+        FROM products 
+        ORDER BY product_id ASC";
+$resultproducts = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html data-page-items="single" data-page-type="page" dir="ltr" lang="vi">
 <!-- Added by HTTrack -->
@@ -2826,6 +2835,7 @@
       font-family: fontawesome;
       transition: all 0.5s ease-out;
     }
+
     #header-image-2 {
       margin-top: 100px;
       /* chỉnh bằng chiều cao thực tế của header */
@@ -2834,6 +2844,36 @@
       z-index: 0;
       /* thấp hơn header */
     }
+    body {
+      text-align: center;
+    }
+
+    .modal.fade .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      transform: none !important;
+    }
+
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+
+    .modal-dialog {
+      width: auto !important;
+      max-width: 600px;
+    }
+
+    @media (max-width: 767px) {
+      .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
   </style>
 </head>
 
@@ -2841,7 +2881,6 @@
   <!-- Section Top menu và Toggle menu (mobile) -->
   <div class="menu-area navbar-fixed-top section" id="header">
     <?php
-    // include 'topflag.html';
     include '../header.php';
     ?>
   </div>
@@ -3000,159 +3039,46 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <strong>DT 100</strong>
-                      </td>
-                      <td>100</td>
-                      <td>1.430</td>
-                      <td>143.000</td>
-                      <td rowspan="15">
-                        <ul class="ulPostBody" style="text-align: left">
-                          <li>
-                            Phí khởi tạo
-                            <span class="color-warning">500.000đ/tài khoản</span>, chỉ áp dụng cho khách hàng đăng ký lần đầu;
-                          </li>
-                          <li>
-                            Miễn phí chữ ký số HSM ký HDDT trong 6 tháng;
-                          </li>
-                          <li>
-                            <a
-                              href="../2023/11/khuyen-mai-tang-20-phan-tram-khi-mua-them-hoa-don-dien-tu-viettel.php"
-                              target="_blank"
-                              title="Tặng thêm 20% khi khách hàng mua thêm hóa đơn">Tặng thêm 20% khi khách hàng mua thêm hóa
-                              đơn</a>
-                            hoặc giảm giá bán cho Khách hàng mua thêm trên
-                            50.000 hóa đơn.
-                          </li>
-                          <li>Miễn phí thiết kế mẫu hóa đơn;</li>
-                          <li>
-                            Hỗ trợ 100% thủ tục thông báo phát hành hóa đơn
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 200</strong>
-                      </td>
-                      <td>200</td>
-                      <td>1.430</td>
-                      <td>286.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 300</strong>
-                      </td>
-                      <td>300</td>
-                      <td>1.430</td>
-                      <td>429.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 500</strong>
-                      </td>
-                      <td>500</td>
-                      <td>1.166</td>
-                      <td>583.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 1.000</strong>
-                      </td>
-                      <td>1.000</td>
-                      <td>913</td>
-                      <td>913.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 2.000</strong>
-                      </td>
-                      <td>2.000</td>
-                      <td>687,5</td>
-                      <td>1.375.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 5.000</strong>
-                      </td>
-                      <td>5.000</td>
-                      <td>587,4</td>
-                      <td>2.937.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 10.000</strong>
-                      </td>
-                      <td>10.000</td>
-                      <td>486,2</td>
-                      <td>4.862.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 20.000</strong>
-                      </td>
-                      <td>20.000</td>
-                      <td>414,7</td>
-                      <td>8.294.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 50.000</strong>
-                      </td>
-                      <td>50.000</td>
-                      <td>352</td>
-                      <td>17.600.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 100.000</strong>
-                      </td>
-                      <td>100.000</td>
-                      <td>220</td>
-                      <td>22.000.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 200.000</strong>
-                      </td>
-                      <td>200.000</td>
-                      <td>198</td>
-                      <td>39.600.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 500.000</strong>
-                      </td>
-                      <td>500.000</td>
-                      <td>165</td>
-                      <td>82.500.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 1.000.000</strong>
-                      </td>
-                      <td>1.000.000</td>
-                      <td>100</td>
-                      <td>110.000.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT-Max</strong>
-                      </td>
-                      <td>Không giới hạn</td>
-                      <td colspan="2">Liên hệ hotline</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center noiDungHoTro" colspan="5">
-                        <p class="level hidden">Đăng ký HDDT đại trà</p>
-                        <a
-                          class="btn"
-                          data-target="#form-order"
-                          data-toggle="modal"
-                          href="#">Đăng ký Online</a>
-                      </td>
-                    </tr>
+                    <?php
+                    if ($resultproducts && $resultproducts->num_rows > 0) {
+                      $rowIndex = 0;
+                      while ($row = $resultproducts->fetch_assoc()) {
+                        $rowIndex++;
+
+                        echo "<tr>";
+                        echo "<td><strong>" . htmlspecialchars($row['product_name']) . "</strong></td>";
+                        echo "<td>" . number_format($row['stock_quantity'] ?? 0, 0, ',', '.') . "</td>";
+                        echo "<td>" . number_format($row['product_features'], 0, ',', '.') . "</td>";
+                        echo "<td>" . number_format(($row['product_price'] ?? 0), 0, ',', '.') . "</td>";
+
+                        // Chỉ hiển thị cột "mô tả/ưu đãi" 1 lần (rowspan)
+                        if ($rowIndex == 1) {
+                          echo '<td rowspan="' . $resultproducts->num_rows . '">';
+                          echo '<ul class="ulPostBody" style="text-align: left">';
+                          echo '<li>Phí khởi tạo <span class="color-warning">500.000đ/tài khoản</span>, chỉ áp dụng cho khách hàng đăng ký lần đầu;</li>';
+                          echo '<li>Miễn phí chữ ký số HSM ký HDDT trong 6 tháng;</li>';
+                          echo '<li><a href="../2023/11/khuyen-mai-tang-20-phan-tram-khi-mua-them-hoa-don-dien-tu-viettel.php" target="_blank" title="Tặng thêm 20% khi khách hàng mua thêm hóa đơn">Tặng thêm 20% khi khách hàng mua thêm hóa đơn</a> hoặc giảm giá bán cho Khách hàng mua thêm trên 50.000 hóa đơn.</li>';
+                          echo '<li>Miễn phí thiết kế mẫu hóa đơn;</li>';
+                          echo '<li>Hỗ trợ 100% thủ tục thông báo phát hành hóa đơn</li>';
+                          echo '</ul>';
+                          echo '</td>';
+                        }
+
+                        echo "</tr>";
+                      }
+
+                      // Hàng cuối cùng: đăng ký
+                      echo '<tr>';
+                      echo '<td class="text-center noiDungHoTro" colspan="5">';
+                      echo '<p class="level hidden">Đăng ký HDDT đại trà</p>';
+                      echo '<a class="btn" data-target="#form-order" data-toggle="modal" href="#">Đăng ký Online</a>';
+                      echo '</td>';
+                      echo '</tr>';
+                    } else {
+                      echo "<tr><td colspan='5' class='text-center'>Chưa có sản phẩm</td></tr>";
+                    }
+                    ?>
+                    ?>
                   </tbody>
                 </table>
               </div>
@@ -3843,227 +3769,109 @@
     </div>
   </div>
   <!-- Section Footer -->
-  <footer class="footer-area section" id="footer" name="Chân trang">
-    <div class="container">
-      <footer class="footer">
-        <div class="container">
-          <div class="foot-contact">
-            <div class="title_footer">Liên hệ</div>
-            <ul class="hot_line">
-              <li>
-                <a href="https://www.sinvoice.com.vn/" target="_blank">Hóa đơn điện tử S-Invoice</a>
-              </li>
-              <li>
-                <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
-                </p>
-              </li>
-              <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
-              </li>
-              <li>
-                <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
-              </li>
-              <li>
-                <p class="email">
-                  eMail:
-                  <img
-                    alt="Mail Hóa đơn điện tử S-Invoice"
-                    src="../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8qpGLee4LWMcheXSMhfJ6aoZ_PA2rsvHKCWX3L3T/s320/hoadondientu-at-sinvoice-vn.png-trang.png"
-                    title="Mail Hóa đơn điện tử S-Invoice"
-                    width="45%" />
-                </p>
-              </li>
-              <li>
-                <p class="email">
-                  Website: <a href="../index.php">www.sinvoice.vn</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="foot-links">
-            <div class="title_footer">Hỗ trợ</div>
-            <ul class="hot_line">
-              <li>
-                <a class="email" href="thu-tuc-dang-ky-sinvoice.php">Thủ tục đăng ký</a>
-              </li>
-              <li>
-                <a class="email" href="van-ban-phap-ly-sinvoice.php">Văn bản pháp lý</a>
-              </li>
-              <li>
-                <a
-                  class="email"
-                  href="../2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php">Hướng dẫn sử dụng</a>
-              </li>
-              <li>
-                <a class="email" href="cau-hoi-thuong-gap-sinvoice.php">Câu hỏi thường gặp</a>
-              </li>
-              <li>
-                <a
-                  class="email"
-                  href="../2020/11/dieu-khoan-su-dung-dich-vu-hoa-don-dien-tu.php">Điều khoản sử dụng</a>
-              </li>
-              <li>
-                <a class="email" href="dang-ky-lam-dai-ly.php">Đăng ký làm đại lý</a>
-              </li>
-            </ul>
-          </div>
-          <div class="foot-social footer_icon">
-            <a
-              class="email"
-              href="https://www.viettelsolutions.com.vn/"
-              style="text-align: left; display: block; padding-bottom: 10px"
-              target="_blank"
-              title="Viettel Solutions"><img
-                alt="Hóa đơn điện tử S-Invoice"
-                height="88"
-                loading="lazy"
-                src="../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhed6RoFz3j8A-J2RGbkolkTfxuGV4ioJUI-J6nOtW/s320/Viettel-Master-Vietnamese-Logo-RGB-vientrang-v2.png"
-                width="146" /></a>
-            <p class="email">
-              Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội.
-              Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp
-              ngày 18/04/2007.
-            </p>
-            <ul class="social-links">
-              <li>
-                <a
-                  href="https://www.facebook.com/vietteltelecom"
-                  rel="nofollow noopener"
-                  target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/@viettelchamsockhachhang8012"
-                  rel="nofollow noopener"
-                  target="_blank">
-                  <i class="fa fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-pinterest"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="email">&#169;S-Invoice 2018. All rights reserved.</p>
-          </div>
+  <footer class='footer-area section' id='footer' name='Chân trang'>
+        <div class='container'>
+            <footer class='footer'>
+                <div class='container'>
+                    <div class='foot-contact'>
+                        <div class='title_footer'>Liên hệ</div>
+                        <ul class='hot_line'>
+                            <li>
+                                <a href='https://www.sinvoice.com.vn/' target='_blank'>Hóa đơn điện tử S-Invoice</a>
+                            </li>
+                            <li>
+                                <p class='email'>Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM</p>
+                            </li>
+                            <li>
+                                <p class='email'>Hotline bán hàng: 0866531668</p>
+                            </li>
+                            <li>
+                                <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
+                            </li>
+                            <li>
+                                <p class='email'>eMail: <img alt='Mail Hóa đơn điện tử S-Invoice' src='../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8qpGLee4LWMcheXSMhfJ6aoZ_PA2rsvHKCWX3L3T/s320/hoadondientu-at-sinvoice-vn.png-trang.png' title='Mail Hóa đơn điện tử S-Invoice' width='45%' /></p>
+                            </li>
+                            <li>
+                                <p class='email'>Website: <a href='index.php'>www.sinvoice.vn</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='foot-links'>
+                        <div class='title_footer'>Hỗ trợ</div>
+                        <ul class='hot_line'>
+                            <li>
+                                <a class='email' href='p/thu-tuc-dang-ky-sinvoice.php'>Thủ tục đăng ký</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/van-ban-phap-ly-sinvoice.php'>Văn bản pháp lý</a>
+                            </li>
+                            <li>
+                                <a class='email' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php'>Hướng dẫn sử dụng</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/cau-hoi-thuong-gap-sinvoice.php'>Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a class='email' href='2020/11/dieu-khoan-su-dung-dich-vu-hoa-don-dien-tu.php'>Điều khoản sử dụng</a>
+                            </li>
+                            <li>
+                                <a class='email' href='p/dang-ky-lam-dai-ly.php'>Đăng ký làm đại lý</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class='foot-social footer_icon'>
+                        <a class='email' href='https://www.viettelsolutions.com.vn/' style='text-align:left; display: block; padding-bottom:10px' target='_blank' title='Viettel Solutions'><img alt='Hóa đơn điện tử S-Invoice' height='88' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrfdjAWfdT1uVfw9TIVbBqN8lyozwdYzLAYDSledSGsK58J7ywRNMYvqctVSNOicjzj4vQn4JxecNnqMAuPmbdZ3gSYOpCopKt73TS_tIhLEIh2mHEJdKhKdidnALynefVrD3v4vhNDFDGZK_7rib7_Ut_99mywjxI30vokNRefU8V5cbUKkufvckf5Q/s1600/logo3.png' width='146' /></a>
+                        <p class='email'>Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội. Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007.</p>
+                        <p class='email'>&#169;S-Invoice 2018. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </footer>
-    </div>
-  </footer>
+    </footer>
   <div class="modal fade" id="form-order" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
-      <form
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrxuKvWTZvNRZ99-TtpUkqR1NtLH-efooEDp-Fubaxn59Dhw/formResponse"
-        class="modal-content"
-        method="POST"
-        name="form_order"
-        target="hidden_iframe">
-        <div class="modal-header">
-          <button
-            aria-label="Close"
-            class="close"
-            data-dismiss="modal"
-            type="button">
-            <span aria-hidden="true">&times;</span>
+      <form id="registerForm" action="modules/contracts.php" method="POST" class="modal-content">
+        <div class='modal-header'>
+          <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span aria-hidden='true'>&times;</span>
           </button>
-          <h4 class="modal-title">Đăng ký</h4>
+          <h4 class='modal-title'>Đăng ký</h4>
         </div>
-        <div class="modal-body">
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <p>
-                <em>
-                  Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong
-                  thời gian sớm nhất!
-                </em>
-              </p>
+        <div class='modal-body'>
+          <div class='form-row'>
+            <div class='form-group col-md-12'>
+              <p><em> Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất! </em></p>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="for-tax">
-                <i aria-hidden="true" class="fa fa-print"></i> MST</label>
-              <input
-                class="form-control"
-                id="for-tax"
-                name="entry.1013576786"
-                pattern="^\d{10,13}$"
-                placeholder="Nhập mã số thuế..."
-                required=""
-                type="text"
-                value="" />
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-tax'>
+                <i aria-hidden='true' class='fa fa-print'></i> MST</label>
+              <input class='form-control' id='for-tax' name='tax_code' pattern='^\d{10,13}$' placeholder='Nhập mã số thuế...' required='' type='text' value='' />
             </div>
-            <div class="form-group col-md-6">
-              <label for="for-name">
-                <i aria-hidden="true" class="fa fa-user"></i> Họ tên</label>
-              <input
-                class="form-control"
-                id="for-name"
-                name="entry.912541212"
-                placeholder="Nhập tên của bạn..."
-                required=""
-                type="text"
-                value="" />
+            <div class='form-group col-md-6'>
+              <label for='for-name'>
+                <i aria-hidden='true' class='fa fa-user'></i> Họ tên</label>
+              <input class='form-control' id='for-name' name='username' placeholder='Nhập tên của bạn...' required='' type='text' value='' />
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="for-phone">
-                <i aria-hidden="true" class="fa fa-phone"></i> Điện
-                thoại</label>
-              <input
-                class="form-control"
-                id="for-phone"
-                name="entry.305010059"
-                pattern="^\d{10}$"
-                placeholder="Nhập số điện thoại..."
-                required=""
-                type="text"
-                value="" />
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-phone'>
+                <i aria-hidden='true' class='fa fa-phone'></i> Điện thoại</label>
+              <input class='form-control' id='for-phone' name='phone' pattern='^\d{10}$' placeholder='Nhập số điện thoại...' required='' type='text' value='' />
             </div>
-            <div class="form-group col-md-6">
-              <label for="for-email">
-                <i aria-hidden="true" class="fa fa-envelope"></i> Email</label>
-              <input
-                class="form-control"
-                id="for-email"
-                name="entry.819416013"
-                pattern="[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?"
-                placeholder="Nhập địa chỉ email..."
-                required=""
-                type="email"
-                value="" />
+            <div class='form-group col-md-6'>
+              <label for='for-email'>
+                <i aria-hidden='true' class='fa fa-envelope'></i> Email</label>
+              <input class='form-control' id='for-email' name='email' pattern='[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?' placeholder='Nhập địa chỉ email...' required='' type='email' value='' />
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LfqH5olAAAAAFejH_3Td1AeTsMuv3HjeA5ya1Co"></div>
-              <div class="error-message"></div>
-            </div>
-          </div>
-          <input name="entry.708968311" type="hidden" value="" />
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal" type="button">
-            Đóng
-          </button>
-          <button class="btn btn-primary" type="submit">Đăng ký</button>
+        <div class='modal-footer'>
+          <button class='btn btn-default' data-dismiss='modal' type='button'>Đóng</button>
+          <button class='btn btn-primary' type='submit'>Đăng ký</button>
         </div>
       </form>
     </div>
@@ -5160,45 +4968,5 @@
     gtag("config", "UA-182978106-1");
   </script>
 </body>
-<!--<head><style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiArmlw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiArmlw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiArmlw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiArmlw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiArmlw.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iArmlw.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiArmlw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiArmlw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
-<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8243747611808165490&amp;zx=1e587f5b-da7b-41a0-a6f3-4ddad8ce39ac' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8243747611808165490&amp;zx=1e587f5b-da7b-41a0-a6f3-4ddad8ce39ac' rel='stylesheet'/></noscript>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-
-</head>
-<body>
-<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2422103421-widgets.js"></script>
-<script type='text/javascript'>
-window['__wavt'] = 'AOuZoY68Mv3d7TNWGdEi1QiI8YYEpM3hNg:1755252622966';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8243747611808165490','//www.sinvoice.vn/p/bang-gia-sinvoice.php','8243747611808165490');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '8243747611808165490', 'title': 'H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'url': 'https://www.sinvoice.vn/p/bang-gia-sinvoice.php', 'canonicalUrl': 'https://www.sinvoice.vn/p/bang-gia-sinvoice.php', 'homepageUrl': 'https://www.sinvoice.vn/', 'searchUrl': 'https://www.sinvoice.vn/search', 'canonicalHomepageUrl': 'https://www.sinvoice.vn/', 'blogspotFaviconUrl': 'https://www.sinvoice.vn/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'vi', 'localeUnderscoreDelimited': 'vi', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice - Atom\x22 href\x3d\x22https://www.sinvoice.vn/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice - RSS\x22 href\x3d\x22https://www.sinvoice.vn/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/8243747611808165490/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/df31f371d64631dc', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Nh\u1eadn \u0111\u01b0\u1eddng li\xean k\u1ebft', 'key': 'link', 'shareMessage': 'Nh\u1eadn \u0111\u01b0\u1eddng li\xean k\u1ebft', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Chia s\u1ebb v\u1edbi Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Chia s\u1ebb v\u1edbi X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Chia s\u1ebb v\u1edbi Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27vi\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': '\u0110\u1ecdc th\xeam', 'pageType': 'static_page', 'pageId': '3831676352191386635', 'pageName': 'B\u1ea3ng gi\xe1 Sinvoice', 'pageTitle': 'H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice: B\u1ea3ng gi\xe1 Sinvoice', 'metaDescription': 'Tr\xe2n tr\u1ecdng g\u1eedi \u0111\u1ebfn qu\xfd kh\xe1ch h\xe0ng b\u1ea3ng gi\xe1 d\u1ecbch v\u1ee5 H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice | C\xe1c g\xf3i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed | Ph\xed thi\u1ebft k\u1ebf h\xf3a \u0111\u1edbn | Ph\xed kh\u1edfi t\u1ea1o h\xf3a \u0111\u01a1n'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Ch\u1ec9nh s\u1eeda', 'linkCopiedToClipboard': '\u0110\xe3 sao ch\xe9p \u0111\u01b0\u1eddng li\xean k\u1ebft v\xe0o b\u1ea3ng nh\u1edb t\u1ea1m!', 'ok': 'Ok', 'postLink': 'Li\xean k\u1ebft b\xe0i \u0111\u0103ng'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'T\xf9y ch\u1ec9nh', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'B\u1ea3ng gi\xe1 Sinvoice', 'description': 'Tr\xe2n tr\u1ecdng g\u1eedi \u0111\u1ebfn qu\xfd kh\xe1ch h\xe0ng b\u1ea3ng gi\xe1 d\u1ecbch v\u1ee5 H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice | C\xe1c g\xf3i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed | Ph\xed thi\u1ebft k\u1ebf h\xf3a \u0111\u1edbn | Ph\xed kh\u1edfi t\u1ea1o h\xf3a \u0111\u01a1n', 'url': 'https://www.sinvoice.vn/p/bang-gia-sinvoice.php', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': true, 'isPost': false, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'pageId': 3831676352191386635}}, {'name': 'widgets', 'data': [{'title': 'Menu', 'type': 'HTML', 'sectionId': 'header', 'id': 'HTML1'}, {'title': 'Banner', 'type': 'HTML', 'sectionId': 'header-image-tin-tuc', 'id': 'HTML142'}, {'title': 'Page banners', 'type': 'HTML', 'sectionId': 'header-image-2', 'id': 'HTML2'}, {'title': 'Menu 1', 'type': 'HTML', 'sectionId': 'main-menu', 'id': 'HTML4'}, {'title': 'Menu 1', 'type': 'HTML', 'sectionId': 'main-menu-mau', 'id': 'HTML44'}, {'title': 'Menu 1', 'type': 'HTML', 'sectionId': 'main-menu-bang-gia', 'id': 'HTML59'}, {'title': 'M\u1eabu h\xf3a \u0111\u01a1n GTGT', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML45'}, {'title': 'M\u1eabu h\xf3a \u0111\u01a1n B\xe1n h\xe0ng', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML46'}, {'title': 'M\u1eabu h\xf3a \u0111\u01a1n theo ng\xe0nh', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML47'}, {'title': 'PXK ki\xeam v\u1eadn chuy\u1ec3n n\u1ed9i b\u1ed9', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML48'}, {'title': 'Th\u1ee7 t\u1ee5c \u0111\u0103ng k\xfd', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML15'}, {'title': 'V\u0103n b\u1ea3n ph\xe1p l\xfd', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML16'}, {'title': 'C\xe2u h\u1ecfi th\u01b0\u1eddng g\u1eb7p Sinvoice', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML17'}, {'title': 'Tra c\u1ee9u h\xf3a \u0111\u01a1n', 'type': 'HTML', 'sectionId': 'content-register', 'id': 'HTML49'}, {'title': 'Slider', 'type': 'HTML', 'sectionId': 'slider', 'id': 'HTML5'}, {'title': 'D\u1ecbch v\u1ee5 H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'type': 'HTML', 'sectionId': 'pricing', 'id': 'HTML7'}, {'title': 'B\u1ea3ng gi\xe1 d\u1ecbch v\u1ee5 h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'type': 'HTML', 'sectionId': 'pricing', 'id': 'HTML8'}, {'title': 'Instant Setup', 'type': 'HTML', 'sectionId': 'service', 'id': 'HTML6'}, {'title': 'Contact Us', 'type': 'HTML', 'sectionId': 'contact', 'id': 'HTML13'}, {'title': 'Testimonials', 'type': 'PopularPosts', 'sectionId': 'testimonial', 'id': 'PopularPosts3', 'posts': [{'title': 'C\xe1c b\u01b0\u1edbc c\u1ea5u h\xecnh k\xfd h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice b\u1eb1ng USB token Viettel', 'id': 4037834531788994869}, {'title': 'Danh s\xe1ch c\xe1c l\u1ed7i th\u01b0\u1eddng g\u1eb7p tr\xean h\u1ec7 th\u1ed1ng H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'id': 127588574643958352}, {'title': 'C\xe1c b\u01b0\u1edbc c\u1ea5u h\xecnh g\u1eedi mail h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed cho ng\u01b0\u1eddi mua h\xe0ng b\u1eb1ng Gmail, Yahoo, Hotmail', 'id': 4660380960816121266}, {'title': 'C\xe1ch l\u1eadp bi\xean b\u1ea3n \u0111i\u1ec1u ch\u1ec9nh h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'id': 9111414425531320957}, {'title': 'C\u1ea5u h\xecnh k\xfd h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed Sinvoice b\u1eb1ng USB token Viettel', 'id': 294291847184222266}, {'title': 'G\xf3i 500 ch\u1ee9ng t\u1eeb kh\u1ea5u tr\u1eeb Thu\u1ebf TNCN \u0111i\u1ec7n t\u1eed Viettel cung c\u1ea5p', 'id': 3312758321226570714}, {'title': 'G\xf3i 1000 h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed kh\u1edfi t\u1ea1o t\u1eeb m\xe1y t\xednh ti\u1ec1n', 'id': 2536054750461989675}, {'title': 'H\u01b0\u1edbng d\u1eabn chuy\u1ec3n \u0111\u1ed5i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice th\xe0nh h\xf3a \u0111\u01a1n gi\u1ea5y', 'id': 331578944806037205}, {'title': '[VIDEO] H\u01b0\u1edbng d\u1eabn x\xf3a b\u1ecf v\xe0 kh\xf4i ph\u1ee5c l\u1ea1i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed Sinvoice', 'id': 8451072648409455349}, {'title': 'T\xecm hi\u1ec3u v\u1ec1 ch\u1eef k\xfd s\u1ed1 server HSM c\u1ee7a Viettel', 'id': 2371530100648964646}]}, {'title': 'B\xe0i \u0111\u0103ng tr\xean Blog', 'type': 'Blog', 'sectionId': 'main-1', 'id': 'Blog1', 'posts': [{'id': '3831676352191386635', 'title': 'B\u1ea3ng gi\xe1 Sinvoice', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'share', 'label': ''}, {'name': 'author', 'label': 'B\u1edfi'}, {'name': 'timestamp', 'label': 'v\xe0o'}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': '-'}]}], 'allBylineItems': [{'name': 'share', 'label': ''}, {'name': 'author', 'label': 'B\u1edfi'}, {'name': 'timestamp', 'label': 'v\xe0o'}, {'name': 'comments', 'label': 'comments'}, {'name': 'icons', 'label': ''}, {'name': 'labels', 'label': '-'}]}, {'title': 'T\xecm ki\u1ebfm', 'type': 'BlogSearch', 'sectionId': 'sidebar-1', 'id': 'BlogSearch1'}, {'title': 'Ti\xeau \u0111i\u1ec3m', 'type': 'PopularPosts', 'sectionId': 'sidebar-1', 'id': 'PopularPosts1', 'posts': [{'title': 'C\xe1c b\u01b0\u1edbc c\u1ea5u h\xecnh k\xfd h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice b\u1eb1ng USB token Viettel', 'id': 4037834531788994869}, {'title': 'Danh s\xe1ch c\xe1c l\u1ed7i th\u01b0\u1eddng g\u1eb7p tr\xean h\u1ec7 th\u1ed1ng H\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'id': 127588574643958352}, {'title': 'C\xe1c b\u01b0\u1edbc c\u1ea5u h\xecnh g\u1eedi mail h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed cho ng\u01b0\u1eddi mua h\xe0ng b\u1eb1ng Gmail, Yahoo, Hotmail', 'id': 4660380960816121266}, {'title': 'C\xe1ch l\u1eadp bi\xean b\u1ea3n \u0111i\u1ec1u ch\u1ec9nh h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice', 'id': 9111414425531320957}, {'title': 'C\u1ea5u h\xecnh k\xfd h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed Sinvoice b\u1eb1ng USB token Viettel', 'id': 294291847184222266}, {'title': 'G\xf3i 500 ch\u1ee9ng t\u1eeb kh\u1ea5u tr\u1eeb Thu\u1ebf TNCN \u0111i\u1ec7n t\u1eed Viettel cung c\u1ea5p', 'id': 3312758321226570714}, {'title': 'G\xf3i 1000 h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed kh\u1edfi t\u1ea1o t\u1eeb m\xe1y t\xednh ti\u1ec1n', 'id': 2536054750461989675}, {'title': 'H\u01b0\u1edbng d\u1eabn chuy\u1ec3n \u0111\u1ed5i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed S-Invoice th\xe0nh h\xf3a \u0111\u01a1n gi\u1ea5y', 'id': 331578944806037205}, {'title': '[VIDEO] H\u01b0\u1edbng d\u1eabn x\xf3a b\u1ecf v\xe0 kh\xf4i ph\u1ee5c l\u1ea1i h\xf3a \u0111\u01a1n \u0111i\u1ec7n t\u1eed Sinvoice', 'id': 8451072648409455349}, {'title': 'T\xecm hi\u1ec3u v\u1ec1 ch\u1eef k\xfd s\u1ed1 server HSM c\u1ee7a Viettel', 'id': 2371530100648964646}]}, {'title': 'T\xecm ki\u1ebfm h\u01b0\u1edbng d\u1eabn', 'type': 'BlogSearch', 'sectionId': 'sidebar-2', 'id': 'BlogSearch2'}, {'title': 'Link list 1', 'type': 'LinkList', 'sectionId': 'sidebar-2', 'id': 'LinkList2'}, {'title': 'B\xe0i \u0111\u0103ng tr\xean Blog', 'type': 'Blog', 'sectionId': 'main-2', 'id': 'Blog2', 'posts': [{'id': '3831676352191386635', 'title': 'B\u1ea3ng gi\xe1 Sinvoice', 'showInlineAds': false}], 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'author', 'label': 'B\u1edfi'}, {'name': 'timestamp', 'label': 'v\xe0o'}, {'name': 'comments', 'label': 'nh\u1eadn x\xe9t'}, {'name': 'icons', 'label': ''}, {'name': 'share', 'label': ''}]}, {'regionName': 'footer2', 'items': [{'name': 'labels', 'label': '-'}]}], 'allBylineItems': [{'name': 'author', 'label': 'B\u1edfi'}, {'name': 'timestamp', 'label': 'v\xe0o'}, {'name': 'comments', 'label': 'nh\u1eadn x\xe9t'}, {'name': 'icons', 'label': ''}, {'name': 'share', 'label': ''}, {'name': 'labels', 'label': '-'}]}, {'title': 'Copyright', 'type': 'HTML', 'sectionId': 'footer', 'id': 'HTML31'}]}]);
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'header', document.getElementById('HTML1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML142', 'header-image-tin-tuc', document.getElementById('HTML142'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'header-image-2', document.getElementById('HTML2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'main-menu', document.getElementById('HTML4'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML44', 'main-menu-mau', document.getElementById('HTML44'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML59', 'main-menu-bang-gia', document.getElementById('HTML59'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML45', 'content-register', document.getElementById('HTML45'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML46', 'content-register', document.getElementById('HTML46'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML47', 'content-register', document.getElementById('HTML47'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML48', 'content-register', document.getElementById('HTML48'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML15', 'content-register', document.getElementById('HTML15'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML16', 'content-register', document.getElementById('HTML16'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML17', 'content-register', document.getElementById('HTML17'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML49', 'content-register', document.getElementById('HTML49'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'slider', document.getElementById('HTML5'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'pricing', document.getElementById('HTML7'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'pricing', document.getElementById('HTML8'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'service', document.getElementById('HTML6'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML13', 'contact', document.getElementById('HTML13'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts3', 'testimonial', document.getElementById('PopularPosts3'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main-1', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3789099744-lbx__vi.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/123180807-lightbox_bundle.css'}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'sidebar-1', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-1', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2', 'sidebar-2', document.getElementById('BlogSearch2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar-2', document.getElementById('LinkList2'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog2', 'main-2', document.getElementById('Blog2'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3789099744-lbx__vi.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/123180807-lightbox_bundle.css'}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML31', 'footer', document.getElementById('HTML31'), {}, 'displayModeFull'));
-</script>
-</body>-->
 
 </html>
