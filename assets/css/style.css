@@ -488,6 +488,7 @@
     body {
       width: 100%;
       margin-top: 85px
+      
     }
 
     .subtitle {
@@ -1408,6 +1409,12 @@
       position: relative;
       min-height: 1px
     }
+    .btn[data-toggle="modal"] {
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+  touch-action: manipulation;
+}
 
     @media (max-width:520px) {
       .header .logo {
@@ -1449,6 +1456,11 @@
     }
 
     @media (min-width:768px) {
+      .btn[data-toggle="modal"] {
+    pointer-events: auto !important;
+    display: inline-block;
+    padding: 10px 20px;
+  }
       .footer .foot-contact {
         float: left;
         padding-left: 0;
@@ -2192,7 +2204,7 @@
 
 
     .ms-icon-feature .ms-icon-feature-icon {
-      display: table-cell;
+      display: contents;
       vertical-align: middle;
       padding-right: 20px;
     }
@@ -2241,7 +2253,7 @@
     .abcRioButton {
       -webkit-border-radius: 1px;
       border-radius: 1px;
-      -webkit-box-shadow 0 2px 4px 0px rgba(0, 0, 0, .25): ;
+      -webkit-box-shadow: 0 2px 4px 0px rgba(0, 0, 0, .25);
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
       -webkit-box-sizing: border-box;
       box-sizing: border-box;

@@ -9,6 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim($_POST['name'] ?? '');
     $price = trim($_POST['price'] ?? '');
     $descriptions = $_POST['description'] ?? [];
+    $stock_quantity = trim($_POST['stock_quantity'] ?? '');
+    $product_features = trim($_POST['product_features'] ?? '');
     $outstanding_products = isset($_POST['outstanding_products']) ? 'true' : 'false';
 
 
@@ -22,17 +24,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($descriptions) || !is_array($descriptions)) {
         $errors[] = "Mô tả bảng giá là bắt buộc.";
     }
+    if (empty($stock_quantity) || !is_numeric($stock_quantity)) {
+        $errors[] = "Số lượng không hợp lệ.";
+    }
+    if (empty($product_features) || !is_numeric($product_features)) {
+        $errors[] = "Đơn giá không hợp lệ.";
+    }
 
     // Convert description array -> JSON
     $description_json = json_encode($descriptions, JSON_UNESCAPED_UNICODE);
 
     // Lưu vào DB
     if (empty($errors)) {
-        $sql = "INSERT INTO products (product_name, product_price, product_description, outstanding_products) 
-        VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO products (product_name, product_price, product_description, stock_quantity, product_features, outstanding_products) 
+        VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         if ($stmt) {
-            $stmt->bind_param("sdss", $name, $price, $description_json, $outstanding_products);
+            $stmt->bind_param("sdssss", $name, $price, $description_json, $stock_quantity, $product_features, $outstanding_products);
 
             if ($stmt->execute()) {
                 $success_message = "Bảng giá mới đã được thêm thành công!";
@@ -185,6 +193,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <tr>
                                                         <th scope="col">Tên sản phẩm</th>
                                                         <th scope="col">Giá sản phẩm</th>
+                                                        <th scope="col">Số lượng</th>
+                                                        <th scope="col">Đơn giá</th>
                                                         <th scope="col">Sản phẩm nổi bật</th>
                                                         <th scope="col">Mô tả sản phẩm</th>
                                                     </tr>
@@ -196,6 +206,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </td>
                                                         <td>
                                                             <input type="number" class="form-control" id="price" name="price" required>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="form-control" id="stock_quantity" name="stock_quantity" required>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="form-control" id="product_features" name="product_features" required>
                                                         </td>
                                                         <td>
                                                             <div class="mb-3">
@@ -308,4 +324,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="../js/custom.js"></script>
 </body>
 
-</html>
+</html> 

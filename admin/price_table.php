@@ -3,16 +3,16 @@
 include 'config/db_connection.php';
 if (isset($_GET['current_page'])) {
     switch ($_GET['current_page']) {
-        case 'delete_products':
-            include 'delete_products.php';
+        case 'delete_price':
+            include 'delete_price.php';
             exit; // Trả JSON, không render HTML
 
-        case 'add_products':
-            include 'add_products.php';
+        case 'add_price':
+            include 'add_price.php';
             exit; // Nếu muốn hiển thị form add riêng
 
-        case 'edit_products':
-            include 'edit_products.php';
+        case 'edit_price':
+            include 'edit_price.php';
             exit; // Nếu muốn hiển thị form edit riêng
     }
 }
@@ -86,7 +86,7 @@ $conn->close();
         }
 
         .pagination {
-            margin-top: 20px;
+            margin: margin-top: 20px;
         }
 
         .page-item.active .page-link {
@@ -176,7 +176,7 @@ $conn->close();
                         </div>
                         <div class="header_right d-flex justify-content-between align-items-center">
                             <div class="profile_info">
-                                <img src="./img/client_img-1.png" alt="#">
+                                <img src="././img/client_img-1.png" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <p>Xin Chào </p>
@@ -228,7 +228,7 @@ $conn->close();
                                         </div>
                                     </div>
                                     <div class="add_button ms-2">
-                                        <a href="price_table.php?current_page=add_products" class="btn_1">THÊM BẢNG GIÁ</a>
+                                        <a href="price_table.php?current_page=add_price" class="btn_1">THÊM BẢNG GIÁ</a>
                                     </div>
                                 </div>
                             </div>
@@ -241,6 +241,8 @@ $conn->close();
                                                 <th>Tên Bảng Giá</th>
                                                 <th>Giá Tiền</th>
                                                 <th>Mô Tả</th>
+                                                <th>Số Lượng</th>
+                                                <th>Đơn Giá</th>
                                                 <th>Bảng Giá HOT</th>
                                                 <th>Ngày Tạo</th>
                                                 <th>Hành Động</th>
@@ -264,6 +266,8 @@ $conn->close();
                                                     echo "<td>" . htmlspecialchars($row['product_name']) . "</td>";
                                                     echo "<td>" . htmlspecialchars($row['product_price']) . "</td>";
                                                     echo "<td>" . htmlspecialchars($row['product_description']) . "</td>";
+                                                    echo "<td>" . htmlspecialchars($row['stock_quantity']) . "</td>";
+                                                    echo "<td>" . htmlspecialchars($row['product_features']) . "</td>";
                                                     echo "<td>
                                                             <label class='switch'>
                                                                 <input type='checkbox' class='toggle-outstanding' data-id='" . $row['product_id'] . "' " . ($row['outstanding_products'] === 'true' ? 'checked' : '') . ">
@@ -273,10 +277,10 @@ $conn->close();
 
                                                     echo "<td>" . htmlspecialchars($row['create_at']) . "</td>";
                                                     echo "<td>
-                                                        <a href='price_table.php?current_page=edit_products&id=" . urlencode($row['product_id']) . "' class='btn btn-primary text-white btn-sm'>
+                                                        <a href='price_table.php?current_page=edit_price&id=" . urlencode($row['product_id']) . "' class='btn btn-primary text-white btn-sm'>
                                                             <i class='fa-solid fa-pen-to-square'></i>
                                                         </a>
-                                                        <a href='delete_products.php?id=" . urlencode($row['product_id']) . "' class='btn btn-danger text-white btn-sm delete-btn' data-id='" . urlencode($row['product_id']) . "'>
+                                                        <a href='delete_price.php?id=" . urlencode($row['product_id']) . "' class='btn btn-danger text-white btn-sm delete-btn' data-id='" . urlencode($row['product_id']) . "'>
                                                             <i class='fa-solid fa-trash'></i>
                                                         </a>
                                                     </td>";
@@ -284,7 +288,7 @@ $conn->close();
                                                     $stt++;
                                                 }
                                             } else {
-                                                echo "<tr><td colspan='7' class='text-center'>Không có bài viết nào.</td></tr>";
+                                                echo "<tr><td colspan='9' class='text-center'>Không có bài viết nào.</td></tr>";
                                             }
                                             ?>
                                         </tbody>
@@ -371,7 +375,7 @@ $conn->close();
                         if (result.isConfirmed) {
                             // Gửi yêu cầu xóa đến server bằng AJAX
                             $.ajax({
-                                url: 'delete_products.php?id=<?php echo $productId; ?>',
+                                url: 'delete_price.php?id=<?php echo $productId; ?>',
                                 method: 'POST',
                                 dataType: 'json', // bắt buộc
                                 data: {

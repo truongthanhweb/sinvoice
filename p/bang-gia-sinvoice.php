@@ -1,3 +1,12 @@
+<?php
+include __DIR__ . '../../config/db_connection.php';
+
+// Lấy dữ liệu sản phẩm từ DB
+$sql = "SELECT product_id, product_name, product_price, stock_quantity, product_features 
+        FROM products 
+        ORDER BY product_id ASC";
+$resultproducts = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html data-page-items="single" data-page-type="page" dir="ltr" lang="vi">
 <!-- Added by HTTrack -->
@@ -2826,6 +2835,7 @@
       font-family: fontawesome;
       transition: all 0.5s ease-out;
     }
+
     #header-image-2 {
       margin-top: 100px;
       /* chỉnh bằng chiều cao thực tế của header */
@@ -2833,6 +2843,36 @@
       /* giữ layer bình thường */
       z-index: 0;
       /* thấp hơn header */
+    }
+    body {
+      text-align: center;
+    }
+
+    .modal.fade .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      transform: none !important;
+    }
+
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+
+    .modal-dialog {
+      width: auto !important;
+      max-width: 600px;
+    }
+
+    @media (max-width: 767px) {
+      .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+      }
     }
   </style>
 </head>
@@ -3000,159 +3040,46 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <strong>DT 100</strong>
-                      </td>
-                      <td>100</td>
-                      <td>1.430</td>
-                      <td>143.000</td>
-                      <td rowspan="15">
-                        <ul class="ulPostBody" style="text-align: left">
-                          <li>
-                            Phí khởi tạo
-                            <span class="color-warning">500.000đ/tài khoản</span>, chỉ áp dụng cho khách hàng đăng ký lần đầu;
-                          </li>
-                          <li>
-                            Miễn phí chữ ký số HSM ký HDDT trong 6 tháng;
-                          </li>
-                          <li>
-                            <a
-                              href="../2023/11/khuyen-mai-tang-20-phan-tram-khi-mua-them-hoa-don-dien-tu-viettel.php"
-                              target="_blank"
-                              title="Tặng thêm 20% khi khách hàng mua thêm hóa đơn">Tặng thêm 20% khi khách hàng mua thêm hóa
-                              đơn</a>
-                            hoặc giảm giá bán cho Khách hàng mua thêm trên
-                            50.000 hóa đơn.
-                          </li>
-                          <li>Miễn phí thiết kế mẫu hóa đơn;</li>
-                          <li>
-                            Hỗ trợ 100% thủ tục thông báo phát hành hóa đơn
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 200</strong>
-                      </td>
-                      <td>200</td>
-                      <td>1.430</td>
-                      <td>286.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 300</strong>
-                      </td>
-                      <td>300</td>
-                      <td>1.430</td>
-                      <td>429.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 500</strong>
-                      </td>
-                      <td>500</td>
-                      <td>1.166</td>
-                      <td>583.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 1.000</strong>
-                      </td>
-                      <td>1.000</td>
-                      <td>913</td>
-                      <td>913.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 2.000</strong>
-                      </td>
-                      <td>2.000</td>
-                      <td>687,5</td>
-                      <td>1.375.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 5.000</strong>
-                      </td>
-                      <td>5.000</td>
-                      <td>587,4</td>
-                      <td>2.937.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 10.000</strong>
-                      </td>
-                      <td>10.000</td>
-                      <td>486,2</td>
-                      <td>4.862.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 20.000</strong>
-                      </td>
-                      <td>20.000</td>
-                      <td>414,7</td>
-                      <td>8.294.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 50.000</strong>
-                      </td>
-                      <td>50.000</td>
-                      <td>352</td>
-                      <td>17.600.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 100.000</strong>
-                      </td>
-                      <td>100.000</td>
-                      <td>220</td>
-                      <td>22.000.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 200.000</strong>
-                      </td>
-                      <td>200.000</td>
-                      <td>198</td>
-                      <td>39.600.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 500.000</strong>
-                      </td>
-                      <td>500.000</td>
-                      <td>165</td>
-                      <td>82.500.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT 1.000.000</strong>
-                      </td>
-                      <td>1.000.000</td>
-                      <td>100</td>
-                      <td>110.000.000</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>DT-Max</strong>
-                      </td>
-                      <td>Không giới hạn</td>
-                      <td colspan="2">Liên hệ hotline</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center noiDungHoTro" colspan="5">
-                        <p class="level hidden">Đăng ký HDDT đại trà</p>
-                        <a
-                          class="btn"
-                          data-target="#form-order"
-                          data-toggle="modal"
-                          href="#">Đăng ký Online</a>
-                      </td>
-                    </tr>
+                    <?php
+                    if ($resultproducts && $resultproducts->num_rows > 0) {
+                      $rowIndex = 0;
+                      while ($row = $resultproducts->fetch_assoc()) {
+                        $rowIndex++;
+
+                        echo "<tr>";
+                        echo "<td><strong>" . htmlspecialchars($row['product_name']) . "</strong></td>";
+                        echo "<td>" . number_format($row['stock_quantity'] ?? 0, 0, ',', '.') . "</td>";
+                        echo "<td>" . number_format($row['product_features'], 0, ',', '.') . "</td>";
+                        echo "<td>" . number_format(($row['product_price'] ?? 0), 0, ',', '.') . "</td>";
+
+                        // Chỉ hiển thị cột "mô tả/ưu đãi" 1 lần (rowspan)
+                        if ($rowIndex == 1) {
+                          echo '<td rowspan="' . $resultproducts->num_rows . '">';
+                          echo '<ul class="ulPostBody" style="text-align: left">';
+                          echo '<li>Phí khởi tạo <span class="color-warning">500.000đ/tài khoản</span>, chỉ áp dụng cho khách hàng đăng ký lần đầu;</li>';
+                          echo '<li>Miễn phí chữ ký số HSM ký HDDT trong 6 tháng;</li>';
+                          echo '<li><a href="../2023/11/khuyen-mai-tang-20-phan-tram-khi-mua-them-hoa-don-dien-tu-viettel.php" target="_blank" title="Tặng thêm 20% khi khách hàng mua thêm hóa đơn">Tặng thêm 20% khi khách hàng mua thêm hóa đơn</a> hoặc giảm giá bán cho Khách hàng mua thêm trên 50.000 hóa đơn.</li>';
+                          echo '<li>Miễn phí thiết kế mẫu hóa đơn;</li>';
+                          echo '<li>Hỗ trợ 100% thủ tục thông báo phát hành hóa đơn</li>';
+                          echo '</ul>';
+                          echo '</td>';
+                        }
+
+                        echo "</tr>";
+                      }
+
+                      // Hàng cuối cùng: đăng ký
+                      echo '<tr>';
+                      echo '<td class="text-center noiDungHoTro" colspan="5">';
+                      echo '<p class="level hidden">Đăng ký HDDT đại trà</p>';
+                      echo '<a class="btn" data-target="#form-order" data-toggle="modal" href="#">Đăng ký Online</a>';
+                      echo '</td>';
+                      echo '</tr>';
+                    } else {
+                      echo "<tr><td colspan='5' class='text-center'>Chưa có sản phẩm</td></tr>";
+                    }
+                    ?>
+                    ?>
                   </tbody>
                 </table>
               </div>
@@ -3966,104 +3893,47 @@
   </footer>
   <div class="modal fade" id="form-order" role="dialog" tabindex="-1">
     <div class="modal-dialog" role="document">
-      <form
-        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrxuKvWTZvNRZ99-TtpUkqR1NtLH-efooEDp-Fubaxn59Dhw/formResponse"
-        class="modal-content"
-        method="POST"
-        name="form_order"
-        target="hidden_iframe">
-        <div class="modal-header">
-          <button
-            aria-label="Close"
-            class="close"
-            data-dismiss="modal"
-            type="button">
-            <span aria-hidden="true">&times;</span>
+      <form id="registerForm" action="modules/contracts.php" method="POST" class="modal-content">
+        <div class='modal-header'>
+          <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+            <span aria-hidden='true'>&times;</span>
           </button>
-          <h4 class="modal-title">Đăng ký</h4>
+          <h4 class='modal-title'>Đăng ký</h4>
         </div>
-        <div class="modal-body">
-          <div class="form-row">
-            <div class="form-group col-md-12">
-              <p>
-                <em>
-                  Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong
-                  thời gian sớm nhất!
-                </em>
-              </p>
+        <div class='modal-body'>
+          <div class='form-row'>
+            <div class='form-group col-md-12'>
+              <p><em> Vui lòng để lại thông tin, Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất! </em></p>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="for-tax">
-                <i aria-hidden="true" class="fa fa-print"></i> MST</label>
-              <input
-                class="form-control"
-                id="for-tax"
-                name="entry.1013576786"
-                pattern="^\d{10,13}$"
-                placeholder="Nhập mã số thuế..."
-                required=""
-                type="text"
-                value="" />
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-tax'>
+                <i aria-hidden='true' class='fa fa-print'></i> MST</label>
+              <input class='form-control' id='for-tax' name='tax_code' pattern='^\d{10,13}$' placeholder='Nhập mã số thuế...' required='' type='text' value='' />
             </div>
-            <div class="form-group col-md-6">
-              <label for="for-name">
-                <i aria-hidden="true" class="fa fa-user"></i> Họ tên</label>
-              <input
-                class="form-control"
-                id="for-name"
-                name="entry.912541212"
-                placeholder="Nhập tên của bạn..."
-                required=""
-                type="text"
-                value="" />
+            <div class='form-group col-md-6'>
+              <label for='for-name'>
+                <i aria-hidden='true' class='fa fa-user'></i> Họ tên</label>
+              <input class='form-control' id='for-name' name='username' placeholder='Nhập tên của bạn...' required='' type='text' value='' />
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="for-phone">
-                <i aria-hidden="true" class="fa fa-phone"></i> Điện
-                thoại</label>
-              <input
-                class="form-control"
-                id="for-phone"
-                name="entry.305010059"
-                pattern="^\d{10}$"
-                placeholder="Nhập số điện thoại..."
-                required=""
-                type="text"
-                value="" />
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='for-phone'>
+                <i aria-hidden='true' class='fa fa-phone'></i> Điện thoại</label>
+              <input class='form-control' id='for-phone' name='phone' pattern='^\d{10}$' placeholder='Nhập số điện thoại...' required='' type='text' value='' />
             </div>
-            <div class="form-group col-md-6">
-              <label for="for-email">
-                <i aria-hidden="true" class="fa fa-envelope"></i> Email</label>
-              <input
-                class="form-control"
-                id="for-email"
-                name="entry.819416013"
-                pattern="[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?"
-                placeholder="Nhập địa chỉ email..."
-                required=""
-                type="email"
-                value="" />
+            <div class='form-group col-md-6'>
+              <label for='for-email'>
+                <i aria-hidden='true' class='fa fa-envelope'></i> Email</label>
+              <input class='form-control' id='for-email' name='email' pattern='[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+(\.[\-a-zA-Z0-9~!$%^&*_=+\}\{&#39;?]+)*@[a-zA-Z0-9_][\-a-zA-Z0-9_]*(\.[\-a-zA-Z0-9_]+)*\.[cC][oO][mM](:[0-9]{1,5})?' placeholder='Nhập địa chỉ email...' required='' type='email' value='' />
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LfqH5olAAAAAFejH_3Td1AeTsMuv3HjeA5ya1Co"></div>
-              <div class="error-message"></div>
-            </div>
-          </div>
-          <input name="entry.708968311" type="hidden" value="" />
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal" type="button">
-            Đóng
-          </button>
-          <button class="btn btn-primary" type="submit">Đăng ký</button>
+        <div class='modal-footer'>
+          <button class='btn btn-default' data-dismiss='modal' type='button'>Đóng</button>
+          <button class='btn btn-primary' type='submit'>Đăng ký</button>
         </div>
       </form>
     </div>

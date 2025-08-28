@@ -78,6 +78,38 @@ $resultproducts = $conn->query($sql);
   <script src='./ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .modal.fade .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      transform: none !important;
+    }
+
+    .modal:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+
+    .modal-dialog {
+      width: auto !important;
+      max-width: 600px;
+    }
+
+    @media (max-width: 767px) {
+      .modal-dialog {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -90,19 +122,7 @@ $resultproducts = $conn->query($sql);
     <div class='container'>
       <div class='row'>
         <div class='col-md-12'>
-          <!-- <div class='flex-align' style='margin-top: 10px'> -->
-          <!-- <ul class='quick_action nav flex flex-right'>
-              <li>
-                <a href='tel:+84866531668' title='Liên hệ mua hàng - 0866531668'>Liên hệ mua hàng: 0866531668</a>
-              </li>
-              <li class='noiDungHoTro'>
-                <p class='level hidden'>Liên hệ mua hàng</p>
-                <a data-target='#form-order' data-toggle='modal' href='#' style='text-align: center;'>Đăng ký</a>
-              </li>
-              <li>
-                <a alt='Đăng nhập HDDT v2.0' href='https://vinvoice.viettel.vn/account/login' rel='nofollow noopener' target='_blank' title='Đăng nhập'>Đăng nhập</a>
-              </li>
-            </ul> -->
+          
 
           <!-- </div> -->
         </div>
@@ -261,269 +281,8 @@ $resultproducts = $conn->query($sql);
             </div>
           </div>
         <?php endwhile ?>
-
-        <!-- <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT500</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>583</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 500 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item featured noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT1000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>913</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 1.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT2000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>1.375</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 2.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
+        
       </div>
-      <div class='row'>
-        <div class='col-md-12'>
-          <div class='section-title text-center'>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT3000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>1.936</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 3.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT5000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>2.937</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 5.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item featured noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT10000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>4.862</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 10.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12'>
-          <div class='price-item noiDungHoTro'>
-            <div class='info'>
-              <p class='level'>DT20000</p>
-              <p class='price'>
-                <span class='dollar'>VNĐ</span>
-                <span class='number'>8.294</span>
-                <span>.000</span>
-              </p>
-            </div>
-            <div class='features'>
-              <ul>
-                <li>
-                  <p>Số lượng: 20.000 hóa đơn
-                  </p>
-                </li>
-                <li>
-                  <p>Tặng chữ ký số HSM 6 tháng
-                  </p>
-                </li>
-                <li>
-                  <p>Hỗ trợ gửi TBPH lên CQThuế
-                  </p>
-                </li>
-                <li>
-                  <p>Không giới hạn thời gian
-                  </p>
-                </li>
-                <li>
-                  <p>Không thu phí duy trì</p>
-                </li>
-              </ul>
-            </div>
-            <a class='btn' data-target='#form-order' data-toggle='modal' href='#'>Đăng ký</a>
-          </div>
-        </div>
-      </div> -->
         <div class='row'>
           <div class='col-md-12'>
             <div class='section-title text-center'>
@@ -708,302 +467,7 @@ $resultproducts = $conn->query($sql);
         </div>
       </div>
     </div>
-    <!-- Section Tin tức mới nhất -->
-    <!-- <div class='testimonial-area section-big section' id='testimonial'>
-    <div class='container'>
-      <div class='row'>
-        <div class='col-md-12 text-center'>
-          <div class='section-title'>
-            <h2>Tin tức</h2>
-          </div>
-        </div>
-      </div>
-      <div class='col-md-12'>
-        <div class='testimonial-list'>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php' title='Các bước cấu hình ký hóa đơn điện tử S-Invoice bằng USB token Viettel'>
-                    <img alt='Các bước cấu hình ký hóa đơn điện tử S-Invoice bằng USB token Viettel' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnfXxohujHFQO1lUTzFBZHzvaQCqDYDlYKoUgjvqI-CJNQ0YKKNbYf8015T_TRdLgLFiIAaaiHaKkCXpbOv-6MMVCqw_IW6vf-HpSjpNVZrPAxdZaz3r7rLZdqxJgGLk8bLEvqQYRaaLYKp4Yfy6vzKHmEnaE2jxeQQ_GeKAqzQH50oTakRPnmMK9sbZiq/s16000/logo_500_300.webp' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php' title='Các bước cấu hình ký hóa đơn điện tử S-Invoice bằng USB token Viettel'>
-                    Các bước cấu hình ký hóa đơn điện tử S-Invoice bằng USB token Viettel
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    Để lập được hóa đơn điện tử, người dùng phải sử dụng chữ ký số để ký lên hóa đơn. Trong bài hướng dẫn này, S-Invocie sẽ hướng dẫ...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2021/02/hdsd-danh-sach-cac-loi-thuong-gap-tren-he-thong-hoa-don-dien-tu-viettel.php' title='Danh sách các lỗi thường gặp trên hệ thống Hóa đơn điện tử S-Invoice'>
-                    <img alt='Danh sách các lỗi thường gặp trên hệ thống Hóa đơn điện tử S-Invoice' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnfXxohujHFQO1lUTzFBZHzvaQCqDYDlYKoUgjvqI-CJNQ0YKKNbYf8015T_TRdLgLFiIAaaiHaKkCXpbOv-6MMVCqw_IW6vf-HpSjpNVZrPAxdZaz3r7rLZdqxJgGLk8bLEvqQYRaaLYKp4Yfy6vzKHmEnaE2jxeQQ_GeKAqzQH50oTakRPnmMK9sbZiq/s16000/logo_500_300.webp' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2021/02/hdsd-danh-sach-cac-loi-thuong-gap-tren-he-thong-hoa-don-dien-tu-viettel.php' title='Danh sách các lỗi thường gặp trên hệ thống Hóa đơn điện tử S-Invoice'>
-                    Danh sách các lỗi thường gặp trên hệ thống Hóa đơn điện tử S-Invoice
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    1. &#8220;Không thể kết nối đến USB-TOKEN. Yêu cầu cắm USB-TOKEN hoặc cài đặt phần mềm ký số của Viettel&#8221; Mô tả ...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2021/02/hdsd-danh-sach-cac-loi-thuong-gap-tren-he-thong-hoa-don-dien-tu-viettel.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2020/11/hdsd-cac-buoc-cau-hinh-gui-mail-hoa-don-dien-tu-cho-nguoi-mua-bang-gmail-hotmail-yahoo.php' title='Các bước cấu hình gửi mail hóa đơn điện tử cho người mua hàng bằng Gmail, Yahoo, Hotmail'>
-                    <img alt='Các bước cấu hình gửi mail hóa đơn điện tử cho người mua hàng bằng Gmail, Yahoo, Hotmail' class='lazyload' data-src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2020/11/hdsd-cac-buoc-cau-hinh-gui-mail-hoa-don-dien-tu-cho-nguoi-mua-bang-gmail-hotmail-yahoo.php' title='Các bước cấu hình gửi mail hóa đơn điện tử cho người mua hàng bằng Gmail, Yahoo, Hotmail'>
-                    Các bước cấu hình gửi mail hóa đơn điện tử cho người mua hàng bằng Gmail, Yahoo, Hotmail
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    Kể từ ngày 31/05/2022, Google Mail thay đổi chính sách bảo mật dẫn đến các bước cấu hình bên dưới không còn hiệu lực nữa. Quý ...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2020/11/hdsd-cac-buoc-cau-hinh-gui-mail-hoa-don-dien-tu-cho-nguoi-mua-bang-gmail-hotmail-yahoo.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2020/11/hdsd-cach-lap-bien-ban-dieu-chinh-hoa-don-dien-tu-sinvoice.php' title='Cách lập biên bản điều chỉnh hóa đơn điện tử S-Invoice'>
-                    <img alt='Cách lập biên bản điều chỉnh hóa đơn điện tử S-Invoice' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRECRi60eOyS82s8Q7HVm42K5AYeVAOhRgPXJAji2nCRb8nBHgNfUAo5Ok2Nt0kpki3nSKtM44HTScb21xMLvMcmrwfdh7o1R7LLHftQJwzs6NJFGMrvHEc3Ps6bbPI2OO7gccK3hQ_z1d/s16000/cach-lap-bien-ban-dieu-chinh-hoa-don-dien-tu.jpg' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2020/11/hdsd-cach-lap-bien-ban-dieu-chinh-hoa-don-dien-tu-sinvoice.php' title='Cách lập biên bản điều chỉnh hóa đơn điện tử S-Invoice'>
-                    Cách lập biên bản điều chỉnh hóa đơn điện tử S-Invoice
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    [Hóa đơn điện tử S-Invoice] - Sai sót trong quá trình sử dụng hóa đơn điện tử là không thể tránh khỏi. Khi phát hiện s...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2020/11/hdsd-cach-lap-bien-ban-dieu-chinh-hoa-don-dien-tu-sinvoice.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2020/11/cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb.php' title='Cấu hình ký hóa đơn điện tử Sinvoice bằng USB token Viettel'>
-                    <img alt='Cấu hình ký hóa đơn điện tử Sinvoice bằng USB token Viettel' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWyP8q8MRAAk2ksuFf72nX4ip_kU3Kg_2PoTIK7TAHl82IiTr_O_iQmMLZZGdPxBSFg8QBQA8CFsPP2Hu8K1oyXpiv2-x41xfjK4BoEGhgp5d9ea86PfqhaHNcsRwAIFoed_NkQVt_0K8P/d/thumnail.jpg' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2020/11/cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb.php' title='Cấu hình ký hóa đơn điện tử Sinvoice bằng USB token Viettel'>
-                    Cấu hình ký hóa đơn điện tử Sinvoice bằng USB token Viettel
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    [Hóa đơn điện tử S-Invoice] - Khi đăng ký Hóa đơn điện tử của Viettel, khách hàng sẽ được tặng miễn phí chứng thư số HSM chỉ ký trê...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2020/11/cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2023/02/goi-500-chung-tu-thue-tncn-dien-tu-cua-viettel.php' title='Gói 500 chứng từ khấu trừ Thuế TNCN điện tử Viettel cung cấp'>
-                    <img alt='Gói 500 chứng từ khấu trừ Thuế TNCN điện tử Viettel cung cấp' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JV-nk48uut3HJ80N1DMnZZdmh9A4EyVtAWopXI_yQIjBY-C_yfus3EFcO_c4ztyMHrQpHJ8FC1xu4msvPM7KPr7a2yEz63pkiEuEayHDQiRyCJtZxgfhutDG45asBvVY4dHJU5jck15iMm9wEO2O-JuqNBJcyQt_cqBgrJWNc8FvB_4R5cnmhKFq-w/s16000/mau-03-tncn-chung-tu-khau-tru-thue-tncn-nd123-viettel-cung-cap.webp' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2023/02/goi-500-chung-tu-thue-tncn-dien-tu-cua-viettel.php' title='Gói 500 chứng từ khấu trừ Thuế TNCN điện tử Viettel cung cấp'>
-                    Gói 500 chứng từ khấu trừ Thuế TNCN điện tử Viettel cung cấp
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    Gói 500 chứn...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2023/02/goi-500-chung-tu-thue-tncn-dien-tu-cua-viettel.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2024/05/goi-1k-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-viettel.php' title='Gói 1000 hóa đơn điện tử khởi tạo từ máy tính tiền'>
-                    <img alt='Gói 1000 hóa đơn điện tử khởi tạo từ máy tính tiền' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3RbQ99ODaN8y0Hscdtw9YMymScYFT_p5lOd66Bt4Luw3JlOy51yytqg3zlSELhcIZmBT1pBUPJoZp64v4gTbxHqbGkEwm1IUbWBnu1kupELKHdpSs8i8-4QySVkmp2Hw_nZa1DxLChPgn/s16000/033R020.png' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2024/05/goi-1k-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-viettel.php' title='Gói 1000 hóa đơn điện tử khởi tạo từ máy tính tiền'>
-                    Gói 1000 hóa đơn điện tử khởi tạo từ máy tính tiền
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    Gói hóa đơn ...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2024/05/goi-1k-hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-viettel.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2020/11/hdsd-chuyen-doi-hoa-don-dien-tu-sinvoice-sang-hoa-don-giay.php' title='Hướng dẫn chuyển đổi hóa đơn điện tử S-Invoice thành hóa đơn giấy'>
-                    <img alt='Hướng dẫn chuyển đổi hóa đơn điện tử S-Invoice thành hóa đơn giấy' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9vsZ3dxaY2CJTY4X55T1DCHmqNwpzhp1OX2eAHx7TtJgnUw2Da_etrubUxd4zG_wdi-OOe64bDGuNkEZ2kUgFtovGJebnNL3xRgNu6Q9tqG9q8y-frBtLQ9_OUr30iO7DnqoEBnd1tAhN/s16000/huong-dan-in-hoa-don-chuyen-doi-s-invoice-BANNER.jpg' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2020/11/hdsd-chuyen-doi-hoa-don-dien-tu-sinvoice-sang-hoa-don-giay.php' title='Hướng dẫn chuyển đổi hóa đơn điện tử S-Invoice thành hóa đơn giấy'>
-                    Hướng dẫn chuyển đổi hóa đơn điện tử S-Invoice thành hóa đơn giấy
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    [Hóa đơn điện tử S-Invoice] - Ngày nay, việc sử dụng hóa đơn điện tử thay cho hóa đơn giấy được nhiều doanh nghiệp lựa...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2020/11/hdsd-chuyen-doi-hoa-don-dien-tu-sinvoice-sang-hoa-don-giay.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2024/01/hdsd-xoa-bo-hoac-khoi-phuc-hoa-don-dien-tu-sinvoice.php' title='[VIDEO] Hướng dẫn xóa bỏ và khôi phục lại hóa đơn điện tử Sinvoice'>
-                    <img alt='[VIDEO] Hướng dẫn xóa bỏ và khôi phục lại hóa đơn điện tử Sinvoice' class='lazyload' data-src='data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2024/01/hdsd-xoa-bo-hoac-khoi-phuc-hoa-don-dien-tu-sinvoice.php' title='[VIDEO] Hướng dẫn xóa bỏ và khôi phục lại hóa đơn điện tử Sinvoice'>
-                    [VIDEO] Hướng dẫn xóa bỏ và khôi phục lại hóa đơn điện tử Sinvoice
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    [Hóa đơn điện tử S-Invoice] - Trong video dưới đây, Sinvoice xin hướng dẫn quý khách hàng cách xóa bỏ hóa đơn lập sai và...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2024/01/hdsd-xoa-bo-hoac-khoi-phuc-hoa-don-dien-tu-sinvoice.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-          <div class='single-testimonial'>
-            <article class='card'>
-              <div class='card-header pd-0'>
-                <div class='featured-image'>
-                  <a class='flex' href='2020/07/03-cach-kiem-tra-thoi-han-chu-ky-so.php' title='03 cách kiểm tra thời hạn chữ ký số Viettel-CA'>
-                    <img alt='03 cách kiểm tra thời hạn chữ ký số Viettel-CA' class='lazyload' data-src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifHxv72CaRl5HTATCbX3DyNetLmh7UmNnJNeX0TjMU9RZ3KoBy773DdSnmn1qEB4vu_MIVmJE-MXEk8O9SJoZgOsK62Rj2NEWy_lykXw85U5-Ohvig6sswEV5FAuUvNwrXbRUmZAZ9hc4L/d/cach-kiem-tra-thoi-han-chu-ky-so.png' src='data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=' />
-                  </a>
-                </div>
-              </div>
-              <div class='card-body'>
-                <div class='card-title'>
-                  <a class='flex' href='2020/07/03-cach-kiem-tra-thoi-han-chu-ky-so.php' title='03 cách kiểm tra thời hạn chữ ký số Viettel-CA'>
-                    03 cách kiểm tra thời hạn chữ ký số Viettel-CA
-                  </a>
-                </div>
-                <div class='clearfix'></div>
-                <div>
-                  <p>
-                    [Chữ ký số Viettel-CA] - Hiện nay, chữ ký số hay còn gọi là &quot;chữ ký điện tử&quot; đã trở nên phổ biến và thông dụng trong ...[...]</p>
-                </div>
-              </div>
-              <div class='card-footer text-center'>
-                <a class='btn' href='2020/07/03-cach-kiem-tra-thoi-han-chu-ky-so.php#more' title='Đọc thêm'>
-                  Đọc thêm
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+
     <!-- Section Why choose us (Không hiển thị) -->
     <div class='why-choose-area section-big no-items section' id='why-choose'>
     </div>
@@ -1214,7 +678,7 @@ $resultproducts = $conn->query($sql);
                 alert("✅ Đăng ký thành công!");
                 $("#registerForm")[0].reset(); // reset form
               } else {
-                alert("❌ Đăng ký thất bại,!");
+                alert("❌ Đăng ký thất bại,chùng!");
               }
             },
             error: function() {
@@ -1999,6 +1463,7 @@ $resultproducts = $conn->query($sql);
 
       gtag('config', 'UA-182978106-1');
     </script>
+
 </body><!--<head><style type='text/css'>@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiArmlw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiArmlw.woff2)format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiArmlw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiArmlw.woff2)format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiArmlw.woff2)format('woff2');unicode-range:U+0302-0303,U+0305,U+0307-0308,U+0310,U+0312,U+0315,U+031A,U+0326-0327,U+032C,U+032F-0330,U+0332-0333,U+0338,U+033A,U+0346,U+034D,U+0391-03A1,U+03A3-03A9,U+03B1-03C9,U+03D1,U+03D5-03D6,U+03F0-03F1,U+03F4-03F5,U+2016-2017,U+2034-2038,U+203C,U+2040,U+2043,U+2047,U+2050,U+2057,U+205F,U+2070-2071,U+2074-208E,U+2090-209C,U+20D0-20DC,U+20E1,U+20E5-20EF,U+2100-2112,U+2114-2115,U+2117-2121,U+2123-214F,U+2190,U+2192,U+2194-21AE,U+21B0-21E5,U+21F1-21F2,U+21F4-2211,U+2213-2214,U+2216-22FF,U+2308-230B,U+2310,U+2319,U+231C-2321,U+2336-237A,U+237C,U+2395,U+239B-23B7,U+23D0,U+23DC-23E1,U+2474-2475,U+25AF,U+25B3,U+25B7,U+25BD,U+25C1,U+25CA,U+25CC,U+25FB,U+266D-266F,U+27C0-27FF,U+2900-2AFF,U+2B0E-2B11,U+2B30-2B4C,U+2BFE,U+3030,U+FF5B,U+FF5D,U+1D400-1D7FF,U+1EE00-1EEFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iArmlw.woff2)format('woff2');unicode-range:U+0001-000C,U+000E-001F,U+007F-009F,U+20DD-20E0,U+20E2-20E4,U+2150-218F,U+2190,U+2192,U+2194-2199,U+21AF,U+21E6-21F0,U+21F3,U+2218-2219,U+2299,U+22C4-22C6,U+2300-243F,U+2440-244A,U+2460-24FF,U+25A0-27BF,U+2800-28FF,U+2921-2922,U+2981,U+29BF,U+29EB,U+2B00-2BFF,U+4DC0-4DFF,U+FFF9-FFFB,U+10140-1018E,U+10190-1019C,U+101A0,U+101D0-101FD,U+102E0-102FB,U+10E60-10E7E,U+1D2C0-1D2D3,U+1D2E0-1D37F,U+1F000-1F0FF,U+1F100-1F1AD,U+1F1E6-1F1FF,U+1F30D-1F30F,U+1F315,U+1F31C,U+1F31E,U+1F320-1F32C,U+1F336,U+1F378,U+1F37D,U+1F382,U+1F393-1F39F,U+1F3A7-1F3A8,U+1F3AC-1F3AF,U+1F3C2,U+1F3C4-1F3C6,U+1F3CA-1F3CE,U+1F3D4-1F3E0,U+1F3ED,U+1F3F1-1F3F3,U+1F3F5-1F3F7,U+1F408,U+1F415,U+1F41F,U+1F426,U+1F43F,U+1F441-1F442,U+1F444,U+1F446-1F449,U+1F44C-1F44E,U+1F453,U+1F46A,U+1F47D,U+1F4A3,U+1F4B0,U+1F4B3,U+1F4B9,U+1F4BB,U+1F4BF,U+1F4C8-1F4CB,U+1F4D6,U+1F4DA,U+1F4DF,U+1F4E3-1F4E6,U+1F4EA-1F4ED,U+1F4F7,U+1F4F9-1F4FB,U+1F4FD-1F4FE,U+1F503,U+1F507-1F50B,U+1F50D,U+1F512-1F513,U+1F53E-1F54A,U+1F54F-1F5FA,U+1F610,U+1F650-1F67F,U+1F687,U+1F68D,U+1F691,U+1F694,U+1F698,U+1F6AD,U+1F6B2,U+1F6B9-1F6BA,U+1F6BC,U+1F6C6-1F6CF,U+1F6D3-1F6D7,U+1F6E0-1F6EA,U+1F6F0-1F6F3,U+1F6F7-1F6FC,U+1F700-1F7FF,U+1F800-1F80B,U+1F810-1F847,U+1F850-1F859,U+1F860-1F887,U+1F890-1F8AD,U+1F8B0-1F8BB,U+1F8C0-1F8C1,U+1F900-1F90B,U+1F93B,U+1F946,U+1F984,U+1F996,U+1F9E9,U+1FA00-1FA6F,U+1FA70-1FA7C,U+1FA80-1FA89,U+1FA8F-1FAC6,U+1FACE-1FADC,U+1FADF-1FAE9,U+1FAF0-1FAF8,U+1FB00-1FBFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiArmlw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiArmlw.woff2)format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(//fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
