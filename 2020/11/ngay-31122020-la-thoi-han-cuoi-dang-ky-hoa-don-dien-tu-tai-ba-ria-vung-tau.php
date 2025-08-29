@@ -3393,7 +3393,7 @@
                     <p>
                       Để đăng ký hóa đơn điện tử Viettel, doanh nghiệp có thể
                       để đăng ký online ngay bên dưới hoặc liên hệ hotline
-                      <strong>0866 531 668</strong> để được tư vấn!
+                      <strong>0586 899 444</strong> để được tư vấn!
                     </p>
                     <div class="text-center" style="display: inline">
                       <p>

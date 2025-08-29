@@ -3072,7 +3072,7 @@
                       <strong>đăng ký chữ ký số Viettel-CA</strong> để có thể
                       đăng ký và phê duyệt hồ sơ trên hệ thống dịch vụ công
                       trực tuyến. Nếu chưa có chữ ký số, quý đơn vị vui lòng
-                      liên hệ tổng đài <strong>0866 531 668</strong> để được
+                      liên hệ tổng đài <strong>0586 899 444</strong> để được
                       tư vấn và hỗ trợ
                     </p>
                     <p>
@@ -4404,7 +4404,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

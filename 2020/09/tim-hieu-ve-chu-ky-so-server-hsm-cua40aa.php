@@ -3515,7 +3515,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

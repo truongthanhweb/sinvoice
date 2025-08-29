@@ -3385,7 +3385,7 @@
                     <p>
                       <strong>Nếu có nhu cầu đăng ký dịch vụ Hóa đơn điện tử
                         S-Invoice, quý khách vui lòng liên hệ hotline bán hàng
-                        <span class="color-primary">0866 531 668</span> để
+                        <span class="color-primary">0586 899 444</span> để
                         được tư vấn và hỗ trợ! Trân trọng cảm ơn!</strong>
                     </p>
 
@@ -3785,7 +3785,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

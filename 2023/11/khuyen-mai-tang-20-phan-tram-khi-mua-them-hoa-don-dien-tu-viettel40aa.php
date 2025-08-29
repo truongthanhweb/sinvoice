@@ -3350,7 +3350,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
                       </table>
                       <p style="text-align: center">
                         <strong><span style="color: red">MUA CÀNG NHIỀU ƯU ĐÃI CÀNG LỚN!!! CHI TIẾT LIÊN
-                            HỆ 0866 531 668</span></strong>
+                            HỆ 0586 899 444</span></strong>
                       </p>
                     </div>
                     <h2 class="entry-subtitle">
@@ -3433,7 +3433,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
                         Văn phòng miền Bắc: Số 1, Trần Hữu Dực, Phường Mỹ Đình
                         2, Q.Nam Từ Liêm, TP.Hà Nội.
                       </li>
-                      <li>Điện thoại: 0866 531 668 (Zalo)</li>
+                      <li>Điện thoại: 0586 899 444 (Zalo)</li>
                       <li>Email: hoadondientu@sinvoice.vn</li>
                     </ul>
                     <p>
@@ -3830,7 +3830,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

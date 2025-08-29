@@ -3449,7 +3449,7 @@
                     Văn phòng tại TP.Hồ Chí Minh: 285 Cách Mạng Tháng Tám,
                     P12, Q10, TP.HCM.
                   </li>
-                  <li>Điện thoại: 0866 531 668 (Zalo)</li>
+                  <li>Điện thoại: 0586 899 444 (Zalo)</li>
                   <li>Website: www.sinvoice.vn</li>
                 </ul>
                 <p>
@@ -3765,7 +3765,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

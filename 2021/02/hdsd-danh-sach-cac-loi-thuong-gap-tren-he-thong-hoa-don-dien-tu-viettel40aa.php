@@ -3509,7 +3509,7 @@
                           <li>
                             Nếu doanh nghiệp sử dụng chữ ký số HSM, vui lòng
                             liên hệ nhân viên Viettel hoặc tổng đài
-                            <strong>0866 531 668</strong> để được hỗ trợ cấp
+                            <strong>0586 899 444</strong> để được hỗ trợ cấp
                             chứng thư số.
                           </li>
                           <li>
@@ -3926,7 +3926,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

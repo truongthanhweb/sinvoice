@@ -3376,7 +3376,7 @@
                     <p>
                       <strong>Nếu có nhu cầu đăng ký dịch vụ Tem/Vé/Thẻ của
                         Viettel, quý khách vui lòng liên hệ tổng đài
-                        <span style="color: red">0866 531 668</span> để được
+                        <span style="color: red">0586 899 444</span> để được
                         tư vấn và hỗ trợ! Trân trọng cảm ơn!</strong>
                     </p>
                     <p style="text-align: right">
@@ -3768,7 +3768,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

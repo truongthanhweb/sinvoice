@@ -3588,7 +3588,7 @@
                     </p>
                     <p>
                       Nếu cần tư vấn mua hàng, Quý khách hàng vui lòng liên hệ
-                      <span style="color: red; font-weight: 700">0866 531 668 (Mobile, SMS hoặc Zalo)</span>
+                      <span style="color: red; font-weight: 700">0586 899 444 (Mobile, SMS hoặc Zalo)</span>
                     </p>
 
                     <p>
@@ -3677,7 +3677,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

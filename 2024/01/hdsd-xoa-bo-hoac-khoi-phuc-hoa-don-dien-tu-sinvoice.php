@@ -3246,7 +3246,7 @@
                         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO918B8dTZXMK4UyXaYpicXSXJrg4srbEjh5CMFiVCMAQoiMLON0miZUut4hI91hytRT0Nv2tTp_lZq_tS5oSluboIxX5vnAt3YSTDKIBaC5y8EA9HbWWVGZAQ5rV1rod9_d3HouL-_bwgDGFiDStM55aJw5Z-DzTDOw-P5c-ke9eX8VaCN5drM6vct-KJ/s16000/BANNER%20VIDEO%20-%20HUONG%20DAN%20XOA%20BO%20VA%20KHOI%20PHUC%20HOA%20DON.webp",
                         "https://blogger.googleusercontent.com/img/a/AVvXsEh9FDwLDsuHrO2iY9f2sLMQF8XC8jQHY5FTdvvxC1Krgm24y4MHmULJ_qA31OBJn7BRoi6Rs0SzPZ-zoVQO97BM732LRf98F6bDS-2QfnD0QA2MGwZZfwHAR4t2ZnE1NE9w6ff9uEx5rS4tAGdeGT8mZdUKU_s94K4Hlaxkk8Yd2lrq4XvdnswbwTIj4A=s16000"
                       ],
-                      "description": "Hướng dẫn người dùng xóa bỏ các hóa đơn sai và khôi phục lại hóa đơn đã xóa bỏ trước đó.- Phòng Bán hàng KHDN - Viettel Telecom - Điện thoại: 0866 531 668 - Website: www.sinvoice.vn",
+                      "description": "Hướng dẫn người dùng xóa bỏ các hóa đơn sai và khôi phục lại hóa đơn đã xóa bỏ trước đó.- Phòng Bán hàng KHDN - Viettel Telecom - Điện thoại: 0586 899 444 - Website: www.sinvoice.vn",
                       "sku": "146036HDDT009",
                       "mpn": "HDDT009",
                       "brand": {
@@ -3435,7 +3435,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>
