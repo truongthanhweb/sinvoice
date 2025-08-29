@@ -252,7 +252,7 @@ $resultproducts = $conn->query($sql);
       <div class='row'>
         <?php
         while ($row = $resultproducts->fetch_assoc()):
-          $featuredClass = $row['outstanding_products'] ? 'featured' : '';
+          $featuredClass = ($row['outstanding_products'] === 'true') ? 'featured' : '';
         ?>
           <div class='col-md-3 col-sm-6 col-xs-12'>
             <div class="price-item noiDungHoTro<?php echo $featuredClass ? ' ' . $featuredClass : ''; ?>">
