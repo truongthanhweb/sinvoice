@@ -3851,7 +3851,7 @@
                     <p>
                       Nếu chưa đăng ký tài khoản Hóa đơn điện tử Viettel, quý
                       doanh nghiệp vui lòng liên hệ hotline
-                      <strong>0866 531 668 </strong>để được tư vấn và hỗ trợ.
+                      <strong>0586 899 444 </strong>để được tư vấn và hỗ trợ.
                     </p>
                     <p>
                       Xem thêm:
@@ -4416,7 +4416,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

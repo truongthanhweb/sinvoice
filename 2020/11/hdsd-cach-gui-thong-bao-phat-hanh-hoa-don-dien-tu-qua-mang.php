@@ -3536,7 +3536,7 @@
                     <p>
                       Ngoài ra, chúng tôi còn giúp các doanh nghiệp thiết kế
                       các mẫu hóa đơn theo nhu cầu riêng. Liên hệ tổng đài
-                      <strong> <span>0866 531 668</span> </strong> để được tư
+                      <strong> <span>0586 899 444</span> </strong> để được tư
                       vấn và hỗ trợ 24/7.
                     </p>
                     <p>
@@ -4390,7 +4390,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>

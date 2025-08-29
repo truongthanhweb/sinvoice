@@ -80,7 +80,7 @@
 
     .menu img {
       margin: 5px;
-      height: 45px;
+      height: 55px;
       flex-shrink: 0;
     }
 
@@ -176,7 +176,7 @@
 
   <!-- TOP BAR -->
   <div class="top-bar">
-    <div><i class="ri-phone-line"></i> 0868.56.8788</div>
+    <div><i class="ri-phone-line"></i> 0586.89.9444</div>
     <div class="divider"></div>
     <div><i class="ri-file-list-3-line"></i> Hỗ trợ 24/24</div>
     <div class="divider"></div>
@@ -195,7 +195,7 @@
   <!-- NAVBAR -->
   <nav class="menu">
     <a href="index.php" class="logo">
-      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2hCrDiNPvpg2ffitFvNvnWNMya1K1tBfp46BGDHpleHyUxu7Jr4tpxgLoJGWqKxqmAsp4A_8ceGwSPaTYmEXCaezSuP8cvMmucJfU9a7hva2NTkEE7itHJ-seqDhFx1ZB8I3yOPq--MFgYpTLAjtl-LEFSvfXlyz-6NokcVSe7VNPE9z017KL6PnZ_g=s320" alt="S-Invoice Logo">
+      <img src="./vninvoice.png" alt="S-Invoice Logo">
     </a>
     <i class="ri-menu-line menu-toggle"></i>
     <?php $base = '/sinvoice/'; ?>

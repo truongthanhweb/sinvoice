@@ -426,14 +426,14 @@ $resultproducts = $conn->query($sql);
               <div class='col-md-12'>
                 <p><span class='ms-icon-sm ms-icon-small'>
                     <i class='zmdi zmdi-pin'></i>
-                  </span> 285 Cách Mạng Tháng Tám, Phường 12, Quận 10, TPHCM</p>
+                  </span>Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
               </div>
             </div>
             <div class='address-box clearfix'>
               <div class='col-md-6' itemprop='telephone'>
                 <p><span class='ms-icon-sm ms-icon-small'>
                     <i class='zmdi zmdi-phone'></i>
-                  </span> 0866 531 668</p>
+                  </span> 0586 899 444</p>
               </div>
               <div class='col-md-6' itemprop='email'>
                 <p><span class='ms-icon-sm ms-icon-small'>
@@ -444,7 +444,7 @@ $resultproducts = $conn->query($sql);
             <div class='address-box clearfix text-center'>
               <div class='col-md-12'>
                 <img alt='QR-Zalo Sinvoice'
-                  src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjl3rMn8bGB1dyK73p1voXoheRsPb9_mD_aI6t7FRp/s320/zalo-sinvoice-qr.png'
+                  src='./QRinvoice.png'
                   style="max-width: 200px; height: auto;" />
               </div>
             </div>
@@ -460,7 +460,7 @@ $resultproducts = $conn->query($sql);
         <div class='col-md-6 pb-20'>
           <div class='address'>
             <div class='address-box clearfix'>
-              <iframe allowfullscreen='' aria-hidden='false' frameborder='0' height='300' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4367362294784!2d106.6801643!3d10.777823999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbdcb91c223%3A0x3b59a40d30fa03fb!2sS-Invoice!5e0!3m2!1svi!2s!4v1689739875552!5m2!1svi!2s' style='border:0;' tabindex='0' title='GG maps' width='600'></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9882032659866!2d105.785927275864!3d20.993109989000914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acb6910fcf09%3A0x4271d83daba3d31!2sThe%20Light%20Trung%20V%C4%83n!5e0!3m2!1svi!2s!4v1756444855573!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -497,7 +497,7 @@ $resultproducts = $conn->query($sql);
                 <a href='https://www.sinvoice.com.vn/' target='_blank'>Hóa đơn điện tử S-Invoice</a>
               </li>
               <li>
-                <p class='email'>Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM</p>
+                <p class='email'>Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
               </li>
               <li>
                 <p class='email'>Hotline bán hàng: 0866531668</p>
@@ -585,39 +585,43 @@ $resultproducts = $conn->query($sql);
       border-radius: 35px;
       margin-top: -4px;
     }
+
     .hotline {
-    height: 48px;
-    background: linear-gradient(180deg, #fdfbfb, rgba(231, 231, 231, 1.0));
-    border-style: solid;
-    border-color: #e52d27;
-    border-width: 1px;
-    border-radius: 24px;
-    padding: 0 15px 0 4px;
-}.hotline a {
-    font-family: "Roboto", sans-serif;
-    color: #e52d27;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 10px 0;
-}
-.hotline a img {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    background: linear-gradient(180deg, #e52d27, #b31217);
-    border-radius: 21px;
-    animation-name: tada;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
+      height: 48px;
+      background: linear-gradient(180deg, #fdfbfb, rgba(231, 231, 231, 1.0));
+      border-style: solid;
+      border-color: #e52d27;
+      border-width: 1px;
+      border-radius: 24px;
+      padding: 0 15px 0 4px;
+    }
+
+    .hotline a {
+      font-family: "Roboto", sans-serif;
+      color: #e52d27;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    .hotline a img {
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      background: linear-gradient(180deg, #e52d27, #b31217);
+      border-radius: 21px;
+      animation-name: tada;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
   </style>
   <div class="float-contact">
     <button class="chat-zalo">
-      <a href="https://zalo.me/0868568788"><img src="https://dichvuviettel.com.vn/assets/images/zalo-icon-20210125061217-1.png"> Chat Zalo</a>
+      <a href="https://zalo.me/0586899444"><img src="https://dichvuviettel.com.vn/assets/images/zalo-icon-20210125061217-1.png"> Chat Zalo</a>
     </button>
     <button class="hotline">
-      <a href="tel:0868.56.8788"><img src="https://dichvuviettel.com.vn/assets/images/call-icon-white.png"> 0868.56.8788</a>
+      <a href="tel:0586.89.9444"><img src="https://dichvuviettel.com.vn/assets/images/call-icon-white.png">0586.89.9444</a>
     </button>
   </div>
   <div class='modal fade' id='form-order' role='dialog' tabindex='-1'>

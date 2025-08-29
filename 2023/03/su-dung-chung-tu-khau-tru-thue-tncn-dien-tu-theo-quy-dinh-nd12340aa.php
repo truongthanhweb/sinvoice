@@ -3765,7 +3765,7 @@
                         đáp ứng đầy đủ các nghiệp vụ chứng từ điện tử mới
                         nhất, cùng với nhiều lợi ích vượt trội. Để đăng ký sử
                         dụng, quý doanh nghiệp vui lòng liên hệ
-                        <strong>0866 531 668</strong> để được tư vấn.</em>
+                        <strong>0586 899 444</strong> để được tư vấn.</em>
                     </div>
 
                     <h3 class="entry-subtitle">
@@ -3812,7 +3812,7 @@
                         đáp ứng đầy đủ các nghiệp vụ chứng từ điện tử mới
                         nhất, cùng với nhiều lợi ích vượt trội. Để đăng ký sử
                         dụng, quý doanh nghiệp vui lòng liên hệ
-                        <strong>0866 531 668</strong> để được tư vấn.</em>
+                        <strong>0586 899 444</strong> để được tư vấn.</em>
                     </div>
                     <p>
                       <strong>***** Xem thêm:</strong>
@@ -3961,7 +3961,7 @@
                     </ul>
                     <p>
                       Quý khách hàng vui lòng liên hệ tổng đài
-                      <span style="color: red"><strong>0866 531 668</strong></span>
+                      <span style="color: red"><strong>0586 899 444</strong></span>
                       để được tư vấn và hỗ trợ về Chứng từ khấu trừ Thuế TNCN
                       điện tử của Viettel. Trân trọng!
                     </p>
@@ -4350,7 +4350,7 @@
               </li>
               <li>
                 <p class="email">
-                  Địa chỉ: 285 Cách Mạng Tháng Tám, P.12, Q.10, Tp.HCM
+                  Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội
                 </p>
               </li>
               <li>
