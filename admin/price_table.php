@@ -86,7 +86,7 @@ $conn->close();
         }
 
         .pagination {
-            margin: margin-top: 20px;
+            margin: 20px;
         }
 
         .page-item.active .page-link {
