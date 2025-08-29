@@ -79,7 +79,8 @@
     }
 
     .menu img {
-      height: 55px;
+      margin: 5px;
+      height: 45px;
       flex-shrink: 0;
     }
 
@@ -194,7 +195,7 @@
   <!-- NAVBAR -->
   <nav class="menu">
     <a href="index.php" class="logo">
-      <img src="https://dichvuviettel.com.vn/upload/data/config/2/682C88BF-4FDB-9A87-5DE2-EFB4086F18AF.png" alt="S-Invoice Logo">
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi2hCrDiNPvpg2ffitFvNvnWNMya1K1tBfp46BGDHpleHyUxu7Jr4tpxgLoJGWqKxqmAsp4A_8ceGwSPaTYmEXCaezSuP8cvMmucJfU9a7hva2NTkEE7itHJ-seqDhFx1ZB8I3yOPq--MFgYpTLAjtl-LEFSvfXlyz-6NokcVSe7VNPE9z017KL6PnZ_g=s320" alt="S-Invoice Logo">
     </a>
     <i class="ri-menu-line menu-toggle"></i>
     <?php $base = '/sinvoice/'; ?>
