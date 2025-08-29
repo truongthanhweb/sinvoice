@@ -2855,7 +2855,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3439,7 +3439,7 @@
                       <li>
                         Bước 2: Cung cấp hồ sơ đăng ký dịch vụ bằng cách gửi
                         vào email: cskh@sinvoice.vn hoặc zalo S-Invoice, số
-                        0866531668. <br />
+                        0586899444. <br />
 
                         Hồ sơ đăng ký dịch vụ sẽ cần các giấy tờ sau đây:<br />
                         <ul class="ulPostBody">
@@ -3524,7 +3524,7 @@
                       Trên đây là những thông tin đáng chú ý liên quan đến
                       chứng từ khấu trừ thuế TNCN theo quy định mới nhất. Nếu
                       còn vấn đề vướng mắc, bạn đọc vui lòng liên hệ tổng đài
-                      <span style="color: red">0866531668</span> để được tư
+                      <span style="color: red">0586899444</span> để được tư
                       vấn, hỗ trợ chi tiết.
                     </p>
 
@@ -3928,7 +3928,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -4674,7 +4674,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4689,7 +4689,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

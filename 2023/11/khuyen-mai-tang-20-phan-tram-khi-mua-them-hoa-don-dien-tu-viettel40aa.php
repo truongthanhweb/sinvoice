@@ -2857,7 +2857,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3380,7 +3380,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
                       <li>
                         <strong>B1:</strong> Gửi thông tin doanh nghiệp (MST,
                         tên doanh nghiệp) về email hoadondientu@sinvoice.vn
-                        hoặc Zalo 0866531668 (S-Invoice) ;
+                        hoặc Zalo 0586899444 (S-Invoice) ;
                       </li>
                       <li>
                         <strong>B2:</strong> Dùng USB token ký điện tử phiếu
@@ -3834,7 +3834,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -4580,7 +4580,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4595,7 +4595,7 @@ Phát hành hóa đơn nháp thất bại! Đơn vị đã dùng hết số hóa
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

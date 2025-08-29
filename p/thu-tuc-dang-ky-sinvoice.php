@@ -2842,7 +2842,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3089,7 +3089,7 @@
                         src="../blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIao1FN-yADRnxnc5FrlqXD2TVjqOw3L-CHKqgMov/w200-h20/hoadondientu-at-sinvoice-vn.png"
                         title="Mail Hóa đơn điện tử S-Invoice"
                         width="20%" /></strong>
-                    hoặc liên hệ tổng đài <strong>0866531668</strong> để được
+                    hoặc liên hệ tổng đài <strong>0586899444</strong> để được
                     tư vấn và hỗ trợ.
                   </li>
                   <li>
@@ -3257,7 +3257,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -3840,7 +3840,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -3855,7 +3855,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

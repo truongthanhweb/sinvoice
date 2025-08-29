@@ -194,18 +194,33 @@
 
   <!-- NAVBAR -->
   <nav class="menu">
-    <a href="index.php" class="logo">
+    <?php
+    $base = '/sinvoice/';
+    $current = basename($_SERVER['SCRIPT_NAME']); // lấy tên file hiện tại
+    ?>
+    <a href="<?= $base ?>index.php" class="logo">
       <img src="./vninvoice.png" alt="S-Invoice Logo">
     </a>
     <i class="ri-menu-line menu-toggle"></i>
-    <?php $base = '/sinvoice/'; ?>
     <ul>
-      <li><a href="<?= $base ?>index.php">Trang chủ</a></li>
-      <li><a href="<?= $base ?>p/bang-gia-sinvoice.php">Bảng giá</a></li>
-      <li><a href="<?= $base ?>p/mau-hoa-don-gtgt.php">Mẫu hóa đơn</a></li>
-      <li><a href="<?= $base ?>p/tinh-nang.php">Tính năng</a></li>
-      <li><a href="<?= $base ?>p/tai-ve.php">Tải về</a></li>
-      <li><a href="<?= $base ?>2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php">Hỗ trợ</a></li>
+      <li class="<?= $current == 'index.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>index.php">Trang chủ</a>
+      </li>
+      <li class="<?= $current == 'bang-gia-sinvoice.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>p/bang-gia-sinvoice.php">Bảng giá</a>
+      </li>
+      <li class="<?= $current == 'mau-hoa-don-gtgt.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>p/mau-hoa-don-gtgt.php">Mẫu hóa đơn</a>
+      </li>
+      <li class="<?= $current == 'tinh-nang.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>p/tinh-nang.php">Tính năng</a>
+      </li>
+      <li class="<?= $current == 'tai-ve.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>p/tai-ve.php">Tải về</a>
+      </li>
+      <li class="<?= $current == 'hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php' ? 'active' : '' ?>">
+        <a href="<?= $base ?>2021/02/hdsd-cac-buoc-cau-hinh-ky-hoa-don-dien-tu-sinvoice-bang-usb-viettel.php">Hỗ trợ</a>
+      </li>
     </ul>
   </nav>
 

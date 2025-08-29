@@ -2855,7 +2855,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -2986,7 +2986,7 @@
                         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH1wN3jkKwm2mskFJnDFOpidPnI8ynuSkCYxI-EBacDYp3hzd7_0tTo8roLBM5Y_5rzXyAEs_-w_mgtsrmKNLX7IVHpaEr79F5ii8Oiy4i3jV4ujqMV3xn7_iu-IVaFxbgcq8WBYdZRl8EORCPzseL5_5267vA9dE2XcZuW_TUWs-uDCrB6hY8XnfvcQ/s16000/mua-chu-ky-so-tang-hoa-don-dien-tu---zalo.webp",
                         "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JV-nk48uut3HJ80N1DMnZZdmh9A4EyVtAWopXI_yQIjBY-C_yfus3EFcO_c4ztyMHrQpHJ8FC1xu4msvPM7KPr7a2yEz63pkiEuEayHDQiRyCJtZxgfhutDG45asBvVY4dHJU5jck15iMm9wEO2O-JuqNBJcyQt_cqBgrJWNc8FvB_4R5cnmhKFq-w/s16000/mau-03-tncn-chung-tu-khau-tru-thue-tncn-nd123-viettel-cung-cap.webp"
                       ],
-                      "description": "Từ ngày 01/03/2024 đến ngày 31/12/2024, Viettel triển khai chương trình khuyến mãi Mua chữ ký số tặng hóa đơn điện tử, áp dụng trên toàn quốc. Chi tiết liên hệ 0866531668.",
+                      "description": "Từ ngày 01/03/2024 đến ngày 31/12/2024, Viettel triển khai chương trình khuyến mãi Mua chữ ký số tặng hóa đơn điện tử, áp dụng trên toàn quốc. Chi tiết liên hệ 0586899444.",
                       "sku": "146036CA001",
                       "mpn": "146036CA001",
                       "brand": {
@@ -3276,7 +3276,7 @@
                       </li>
                       <li>
                         Chi tiết vui lòng liên hệ hotline bán hàng
-                        <span class="color-primary">0866531668</span> để được
+                        <span class="color-primary">0586899444</span> để được
                         tư vấn.
                       </li>
                     </ul>
@@ -3312,7 +3312,7 @@
                         </ul>
                         <p>
                           <strong>Mọi thông tin chi tiết vui lòng liên hệ hotline
-                            bán hàng 0866531668. Trân trọng!</strong>
+                            bán hàng 0586899444. Trân trọng!</strong>
                         </p>
                       </em>
                     </div>
@@ -3718,7 +3718,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -4464,7 +4464,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4479,7 +4479,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {
