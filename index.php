@@ -122,8 +122,6 @@ $resultproducts = $conn->query($sql);
     <div class='container'>
       <div class='row'>
         <div class='col-md-12'>
-
-
           <!-- </div> -->
         </div>
       </div>
@@ -137,20 +135,32 @@ $resultproducts = $conn->query($sql);
   <!--Submenu Bảng giá-->
   <!-- Section content Thủ tục, Văn bản, Câu hỏi thường gặp và Mẫu hóa đơn-->
   <!-- Section Banner lớn -->
+  <style>
+    .carousel-inner img {
+      width: 100%;
+      /* ảnh tự co theo chiều ngang */
+      height: auto;
+      /* giữ tỉ lệ */
+      display: block;
+      /* loại bỏ khoảng trắng thừa */
+      object-fit: cover;
+      /* tránh ảnh méo, cắt vừa khung */
+    }
+  </style>
   <div class='slider-area grd-bg section' id='slider'>
     <div class='carousel slide carousel-fade' id='carousel-example-generic'>
       <div aria-label='Slide Hóa đơn điện tử S-Invoice' class='carousel-inner' role='listbox'>
         <div class='item active' role='option'>
-          <img alt='Khuyến mãi: Mua chữ ký số tặng hóa đơn điện tử Viettel' class='img-responsive' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWMR0d-VU4xUSXd0JXu6fSGvON8rVIxw-FnJFWXIPsLoVm_xC8udWeRnKLT0b69BDdnD1a3YOozqcWtEDeleGrV5ST26ZUdWXRYDNuUs9t7CdrLY-C5LgJaT6ylRLOVrIbStNEpAm06BluhNuv2DRdSSuS9TCAvRSin5_9o0SHW-pun_lyZUYShW1wbHBK/s16000/mua-mot-tang-bon-uu-dai-nam-2025.webp' />
-          <a class='btn bannerBtn' data-toggle='modal' href='2024/11/sieu-uu-dai-mua-mot-tang-bon-chu-ky-so-viettel-hoa-don-dien-tu-viettel.php' target='_blank'>Tìm hiểu thêm <i class='zmdi zmdi-play-circle'></i></a>
+          <img alt='Khuyến mãi: Mua chữ ký số tặng hóa đơn điện tử Viettel' class='img-responsive' src='./assets/img/Banner.png' />
+
         </div>
         <div class='item' role='option'>
           <img alt='Hóa đơn điện tử S-Invoice - Hóa đơn khởi tạo từ máy tính tiền' class='img-responsive' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJPSZ3DH78u2CLmr9iF8JmSCM64o3SY0SIpfpNdHgpSRldFOD0jtQ8ovKHjHChviMkikkoGx2iYse0Rkor3lrmVm8hWAfRmP903J9onCUCaMTshKIVww43Ct_H0ufQVG8mNvgWDtXSfCNlHiht7SYevpH_7cWDvNFEqk6XoWfIbzBCE-by9CVYZyJZ_pJO/s16000/banner-hoa-don-may-tinh-tien-2025.webp' />
-          <a class='btn bannerBtn2' data-toggle='modal' href='2024/05/hoa-don-dien-tu-khoi-tao-tu-may-tinh-tien-la-gi.php' target='_blank'>Xem thêm...<i class='zmdi zmdi-play-circle'></i></a>
+
         </div>
         <div class='item' role='option'>
           <img alt='Hóa đơn điện tử S-Invoice - Tặng 20% khi mua thêm hóa đơn' class='img-responsive' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq7aMzcNL9Nqa0ZYw_f6WpixY74jzHJsw57NVBtrQLXufMwlqSDdvzBABBjHMI8jlEBGCWj7Zbhhvp98C4yWD1u7PLQlFG3OQw1THgsdpDKc142XC5cKJ5J1p78Ace6ENwZS2AQevYZgLGOoViUsTZoEXohMXILR5b0InOTPz8skBOV1_0yRy_8jxXIkIO/s16000/tang-20ptr-khi-mua-them-hoa-don-dien-tu-viettel-2025.webp' />
-          <a class='btn bannerBtn2' data-toggle='modal' href='2023/11/khuyen-mai-tang-20-phan-tram-khi-mua-them-hoa-don-dien-tu-viettel.php' target='_blank'>Tìm hiểu thêm <i class='zmdi zmdi-play-circle'></i></a>
+
         </div>
       </div>
       <ol class='carousel-indicators'>
@@ -404,6 +414,22 @@ $resultproducts = $conn->query($sql);
           </div>
         </div>
       </div>
+      <style>
+        .address-box {
+          margin-bottom: 12px;
+        }
+
+        .address-box p {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .subtitle {
+          margin-bottom: 15px;
+        }
+      </style>
       <div class='row'>
         <div class='col-md-6 pb-20'>
           <div class='address'>

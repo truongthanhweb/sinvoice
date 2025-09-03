@@ -1,3 +1,6 @@
+<?php
+$base = '/sinvoice/';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,10 +31,10 @@
                                 <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
                             </li>
                             <li>
-                                <p class='email'>eMail: <img alt='Mail Hóa đơn điện tử S-Invoice' src='./blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8qpGLee4LWMcheXSMhfJ6aoZ_PA2rsvHKCWX3L3T/s320/hoadondientu-at-sinvoice-vn.png-trang.png' title='Mail Hóa đơn điện tử S-Invoice' width='45%' /></p>
-                            </li>
-                            <li>
-                                <p class='email'>Website: <a href='index.php'>www.sinvoice.vn</a>
+                                <p class='email'>eMail:
+                                    <img alt="Mail Hóa đơn điện tử S-Invoice"
+                                        src="<?= $base ?>hoadondientu-at-sinvoice-vn.png-trang.png"
+                                        title="Mail Hóa đơn điện tử S-Invoice" width="45%" />
                                 </p>
                             </li>
                         </ul>
@@ -62,7 +65,6 @@
                     <div class='foot-social footer_icon'>
                         <a class='email' href='https://www.viettelsolutions.com.vn/' style='text-align:left; display: block; padding-bottom:10px' target='_blank' title='Viettel Solutions'><img alt='Hóa đơn điện tử S-Invoice' height='88' loading='lazy' src='./vninvoice.png' width='146' /></a>
                         <p class='email'>Cơ quan chủ quản: Tập đoàn Công nghiệp - Viễn thông Quân đội. Giấy phép số: 144/GP - BC do Bộ thông tin - Truyền thông cấp ngày 18/04/2007.</p>
-                        <p class='email'>&#169;S-Invoice 2018. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
