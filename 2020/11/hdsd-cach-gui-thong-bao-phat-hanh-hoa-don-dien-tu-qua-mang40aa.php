@@ -2855,7 +2855,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -4299,7 +4299,7 @@
                       Các bước còn lại làm y như thông báo phát hành hóa đơn
                       điện tử lần đầu. Nếu ở những bước này, quý doanh nghiệp
                       có thắc mắc, khó hiểu, khó thao tác gì thì hãy liên hệ
-                      tổng đài <strong>0866531668</strong> để được hỗ trợ nhé.
+                      tổng đài <strong>0586899444</strong> để được hỗ trợ nhé.
                     </p>
                     <p>
                       Như vậy, trên đây <strong>Viettel Solutions</strong> đã
@@ -4394,7 +4394,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -5140,7 +5140,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -5155,7 +5155,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

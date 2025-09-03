@@ -2738,7 +2738,7 @@
           <div class='flex-align' style='margin-top: 10px'>
             <ul class='quick_action nav flex flex-right'>
               <li>
-                <a href='tel:+84866531668' title='Liên hệ mua hàng - 0866531668'>Liên hệ mua hàng: 0866531668</a>
+                <a href='tel:+84866531668' title='Liên hệ mua hàng - 0586899444'>Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class='noiDungHoTro'>
                 <p class='level hidden'>Liên hệ mua hàng</p>
@@ -2910,7 +2910,7 @@
         <div class='col-md-12'>
           <div class='section-title text-center'>
             <h2><a href='p/bang-gia-sinvoice.php' target='_blank' title='Bảng giá hóa đơn điện tử S-Invoice'>Bảng giá hóa đơn điện tử S-Invoice</a></h2>
-            <p>Áp dụng đối với doanh nghiệp/hộ kinh doanh sử dụng HĐĐT, chứng từ điện tử theo Thông tư 78/2021/TT-BTC. <br />Chi tiết liên hệ <span class='color-primary'>0866531668</span>. (Bảng giá đã bao gồm 10% VAT)</p>
+            <p>Áp dụng đối với doanh nghiệp/hộ kinh doanh sử dụng HĐĐT, chứng từ điện tử theo Thông tư 78/2021/TT-BTC. <br />Chi tiết liên hệ <span class='color-primary'>0586899444</span>. (Bảng giá đã bao gồm 10% VAT)</p>
           </div>
         </div>
       </div>
@@ -3444,7 +3444,7 @@
               <div class='col-md-6' itemprop='telephone'>
                 <p><span class='ms-icon-sm ms-icon-small'>
                     <i class='zmdi zmdi-phone'></i>
-                  </span> 0586 899 444</p>
+                  </span> 0866 531 668</p>
               </div>
               <div class='col-md-6' itemprop='email'>
                 <p><span class='ms-icon-sm ms-icon-small'>
@@ -3806,7 +3806,7 @@
                 <p class='email'>Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
               </li>
               <li>
-                <p class='email'>Hotline bán hàng: 0866531668</p>
+                <p class='email'>Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
@@ -4217,7 +4217,7 @@
         },
         sms: {
           visible: 'true',
-          id: '0866531668',
+          id: '0586899444',
           messages: 'Nhắn tin'
         },
         viber: {
@@ -4232,7 +4232,7 @@
         },
         zalo: {
           visible: 'true',
-          id: '0866531668',
+          id: '0586899444',
           messages: 'Chat Zalo'
         },
         facebook: {

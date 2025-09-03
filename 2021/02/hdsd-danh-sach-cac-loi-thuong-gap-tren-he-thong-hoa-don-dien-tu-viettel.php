@@ -2854,7 +2854,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3312,7 +3312,7 @@
                       <li>
                         <strong>Trường hợp 1:</strong> Chứng thư số của đơn vị
                         đã hết hạn theo hợp đồng. Khách hàng vui lòng liên hệ
-                        <span class="color-primary">0866531668</span> để hỗ
+                        <span class="color-primary">0586899444</span> để hỗ
                         trợ gia hạn chứng thư số mới.
                       </li>
                       <li>
@@ -3930,7 +3930,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -4676,7 +4676,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4691,7 +4691,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

@@ -2855,7 +2855,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3148,7 +3148,7 @@
                       đến 90% chi phí in ấn, giúp quản lý dễ dàng trên hệ
                       thống, khởi tạo, phát hành nhanh chóng, tránh rủi ro bị
                       làm giả, bảo mật cao, an toàn dữ liệu. Khách hàng quan
-                      tâm, có thể liên hệ tới hotline 0866531668 để được hỗ
+                      tâm, có thể liên hệ tới hotline 0586899444 để được hỗ
                       trợ trực tiếp.
                     </p>
                     <p style="text-align: right">
@@ -3543,7 +3543,7 @@
                 </p>
               </li>
               <li>
-                <p class="email">Hotline bán hàng: 0866531668</p>
+                <p class="email">Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class="email">Hotline CSKH: 18008000 nhánh 1</p>
@@ -4289,7 +4289,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4304,7 +4304,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {

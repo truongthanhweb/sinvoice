@@ -2845,7 +2845,7 @@
               <li>
                 <a
                   href="tel:+84866531668"
-                  title="Liên hệ mua hàng - 0866531668">Liên hệ mua hàng: 0866531668</a>
+                  title="Liên hệ mua hàng - 0586899444">Liên hệ mua hàng: 0586899444</a>
               </li>
               <li class="noiDungHoTro">
                 <p class="level hidden">Liên hệ mua hàng</p>
@@ -3186,7 +3186,7 @@
                 </li>
                 <li>
                   Chi tiết vui lòng liên hệ hotline bán hàng
-                  <span class="color-primary">0866531668</span> để được tư
+                  <span class="color-primary">0586899444</span> để được tư
                   vấn.
                 </li>
               </ul>
@@ -3321,7 +3321,7 @@
                 </li>
                 <li>
                   Chi tiết vui lòng liên hệ hotline bán hàng
-                  <span class="color-primary">0866531668</span> để được tư
+                  <span class="color-primary">0586899444</span> để được tư
                   vấn.
                 </li>
               </ul>
@@ -3512,7 +3512,7 @@
                 </ul>
                 <p>
                   <strong>Mọi thông tin chi tiết vui lòng liên hệ hotline bán hàng
-                    0866531668. Trân trọng!</strong>
+                    0586899444. Trân trọng!</strong>
                 </p>
               </em>
             </div>
@@ -3828,7 +3828,7 @@
                 <p class='email'>Địa chỉ: Tòa nhà The Light ,Đ. Tố Hữu, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
               </li>
               <li>
-                <p class='email'>Hotline bán hàng: 0866531668</p>
+                <p class='email'>Hotline bán hàng: 0586899444</p>
               </li>
               <li>
                 <p class='email'>Hotline CSKH: 18008000 nhánh 1</p>
@@ -4352,7 +4352,7 @@
         },
         sms: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Nhắn tin"
         },
         viber: {
@@ -4367,7 +4367,7 @@
         },
         zalo: {
           visible: "true",
-          id: "0866531668",
+          id: "0586899444",
           messages: "Chat Zalo"
         },
         facebook: {
