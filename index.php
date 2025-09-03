@@ -245,7 +245,7 @@ $resultproducts = $conn->query($sql);
         <div class='col-md-12'>
           <div class='section-title text-center'>
             <h2><a href='p/bang-gia-sinvoice.php' target='_blank' title='Bảng giá hóa đơn điện tử S-Invoice'>Bảng giá hóa đơn điện tử S-Invoice</a></h2>
-            <p>Áp dụng đối với doanh nghiệp/hộ kinh doanh sử dụng HĐĐT, chứng từ điện tử theo Thông tư 78/2021/TT-BTC. <br />Chi tiết liên hệ <span class='color-primary'>0866531668</span>. (Bảng giá đã bao gồm 10% VAT)</p>
+            <p>Áp dụng đối với doanh nghiệp/hộ kinh doanh sử dụng HĐĐT, chứng từ điện tử theo Thông tư 78/2021/TT-BTC. <br />Chi tiết liên hệ <span class='color-primary'>0586899444</span>. (Bảng giá đã bao gồm 10% VAT)</p>
           </div>
         </div>
       </div>
