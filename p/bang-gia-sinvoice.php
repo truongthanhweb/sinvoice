@@ -3466,7 +3466,7 @@ $resultproducts = $conn->query($sql);
                     <strong>Thông tin thanh toán: </strong>
                   </p>
                   <ul class="ulPostBody">
-                    <li><strong>Số tài khoản:</strong> 0514100062201</li>
+                    <li><strong>Số tài khoản:</strong> 0001232184569</li>
                     <li>
                       <strong>Mở tại:</strong> Ngân hàng TMCP Quân đội (MB) -
                       Chi nhánh Điện Biên Phủ - Thành phố Hà Nội
@@ -3474,6 +3474,12 @@ $resultproducts = $conn->query($sql);
                     <li>
                       <strong>Đơn vị thụ hưởng:</strong> Tập đoàn Công nghiệp
                       - Viễn thông Quân đội (VIETTEL)
+                    </li>
+                    <li>
+                      <strong>Địa chỉ đơn vị:</strong>Lô D26 Khu đô thị mới Cầu Giấy,Phường Yên Hòa, Quận Cầu Giấy, Thành Phố Hà Nội,Việt Nam
+                    </li>
+                    <li>
+                      <strong>Địa chỉ ngân hàng:</strong>28A Điện Biên Phủ, Phương Điện Biên, Quận Ba Đình, Tp. Hà Nội
                     </li>
                   </ul>
                   <p>
